@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>server/methods/core/groups.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="FS.Store.GridFS.html">GridFS</a></li></ul><h3>Namespaces</h3><ul><li><a href="FS.TempStore.html">TempStore</a><ul class='methods'><li data-type='method'><a href="FS.TempStore.html#.createReadStream">createReadStream</a></li><li data-type='method'><a href="FS.TempStore.html#.createWriteStream">createWriteStream</a></li><li data-type='method'><a href="FS.TempStore.html#.exists">exists</a></li><li data-type='method'><a href="FS.TempStore.html#.listParts">listParts</a></li><li data-type='method'><a href="FS.TempStore.html#.removeAll">removeAll</a></li><li data-type='method'><a href="FS.TempStore.html#.removeFile">removeFile</a></li></ul></li><li><a href="Hooks.Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Hooks.Events.html#.add">add</a></li><li data-type='method'><a href="Hooks.Events.html#.remove">remove</a></li><li data-type='method'><a href="Hooks.Events.html#.run">run</a></li><li data-type='method'><a href="Hooks.Events.html#.runAsync">runAsync</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#%2522cart/addToCart%2522">"cart/addToCart"</a></li><li><a href="global.html#%2522cart/copyCartToOrder%2522">"cart/copyCartToOrder"</a></li><li><a href="global.html#%2522cart/createCart%2522">"cart/createCart"</a></li><li><a href="global.html#%2522cart/mergeCart%2522">"cart/mergeCart"</a></li><li><a href="global.html#%2522cart/removeFromCart%2522">"cart/removeFromCart"</a></li><li><a href="global.html#%2522cart/resetShipmentMethod%2522">"cart/resetShipmentMethod"</a></li><li><a href="global.html#%2522cart/setPaymentAddress%2522">"cart/setPaymentAddress"</a></li><li><a href="global.html#%2522cart/setShipmentAddress%2522">"cart/setShipmentAddress"</a></li><li><a href="global.html#%2522cart/setShipmentMethod%2522">"cart/setShipmentMethod"</a></li><li><a href="global.html#%2522cart/setUserCurrency%2522">"cart/setUserCurrency"</a></li><li><a href="global.html#%2522cart/submitPayment%2522">"cart/submitPayment"</a></li><li><a href="global.html#%2522cart/unsetAddresses%2522">"cart/unsetAddresses"</a></li><li><a href="global.html#%2522email/saveSettings%2522">"email/saveSettings"</a></li><li><a href="global.html#%2522email/verifySettings%2522">"email/verifySettings"</a></li><li><a href="global.html#%2522emails/retryFailed%2522">"emails/retryFailed"</a></li><li><a href="global.html#%2522group/addUser%2522">"group/addUser"</a></li><li><a href="global.html#%2522group/createGroup%2522">"group/createGroup"</a></li><li><a href="global.html#%2522group/removeUser%2522">"group/removeUser"</a></li><li><a href="global.html#%2522group/updateGroup%2522">"group/updateGroup"</a></li><li><a href="global.html#%2522i18n/addTranslation%2522">"i18n/addTranslation"</a></li><li><a href="global.html#%2522i18n/flushTranslations%2522">"i18n/flushTranslations"</a></li><li><a href="global.html#%2522products/archiveProduct%2522">"products/archiveProduct"</a></li><li><a href="global.html#%2522products/cloneProduct%2522">"products/cloneProduct"</a></li><li><a href="global.html#%2522products/cloneVariant%2522">"products/cloneVariant"</a></li><li><a href="global.html#%2522products/createProduct%2522">"products/createProduct"</a></li><li><a href="global.html#%2522products/createVariant%2522">"products/createVariant"</a></li><li><a href="global.html#%2522products/deleteVariant%2522">"products/deleteVariant"</a></li><li><a href="global.html#%2522products/publishProduct%2522">"products/publishProduct"</a></li><li><a href="global.html#%2522products/removeMetaFields%2522">"products/removeMetaFields"</a></li><li><a href="global.html#%2522products/removeProductTag%2522">"products/removeProductTag"</a></li><li><a href="global.html#%2522products/setHandle%2522">"products/setHandle"</a></li><li><a href="global.html#%2522products/setHandleTag%2522">"products/setHandleTag"</a></li><li><a href="global.html#%2522products/toggleVisibility%2522">"products/toggleVisibility"</a></li><li><a href="global.html#%2522products/updateMetaFields%2522">"products/updateMetaFields"</a></li><li><a href="global.html#%2522products/updateProductField%2522">"products/updateProductField"</a></li><li><a href="global.html#%2522products/updateProductPosition%2522">"products/updateProductPosition"</a></li><li><a href="global.html#%2522products/updateProductTags%2522">"products/updateProductTags"</a></li><li><a href="global.html#%2522products/updateVariant%2522">"products/updateVariant"</a></li><li><a href="global.html#%2522products/updateVariantsPosition%2522">"products/updateVariantsPosition"</a></li><li><a href="global.html#%2522reaction/getUserId%2522">"reaction/getUserId"</a></li><li><a href="global.html#%2522shop/createShop%2522">"shop/createShop"</a></li><li><a href="global.html#%2522shop/createTag%2522">"shop/createTag"</a></li><li><a href="global.html#%2522shop/fetchCurrencyRate%2522">"shop/fetchCurrencyRate"</a></li><li><a href="global.html#%2522shop/flushCurrencyRate%2522">"shop/flushCurrencyRate"</a></li><li><a href="global.html#%2522shop/getCurrencyRates%2522">"shop/getCurrencyRates"</a></li><li><a href="global.html#%2522shop/getLocale%2522">"shop/getLocale"</a></li><li><a href="global.html#%2522shop/getWorkflow%2522">"shop/getWorkflow"</a></li><li><a href="global.html#%2522shop/hideHeaderTag%2522">"shop/hideHeaderTag"</a></li><li><a href="global.html#%2522shop/locateAddress%2522">"shop/locateAddress"</a></li><li><a href="global.html#%2522shop/removeHeaderTag%2522">"shop/removeHeaderTag"</a></li><li><a href="global.html#%2522shop/updateBrandAssets%2522">"shop/updateBrandAssets"</a></li><li><a href="global.html#%2522shop/updateCurrencyConfiguration%2522">"shop/updateCurrencyConfiguration"</a></li><li><a href="global.html#%2522shop/updateHeaderTags%2522">"shop/updateHeaderTags"</a></li><li><a href="global.html#%2522shop/updateLanguageConfiguration%2522">"shop/updateLanguageConfiguration"</a></li><li><a href="global.html#%2522shop/updateShopExternalServices%2522">"shop/updateShopExternalServices"</a></li><li><a href="global.html#%2522workflow/coreOrderWorkflow/coreOrderCompleted%2522">"workflow/coreOrderWorkflow/coreOrderCompleted"</a></li><li><a href="global.html#%2522workflow/coreOrderWorkflow/coreOrderProcessing%2522">"workflow/coreOrderWorkflow/coreOrderProcessing"</a></li><li><a href="global.html#addressBookAdd">addressBookAdd</a></li><li><a href="global.html#addressBookRemove">addressBookRemove</a></li><li><a href="global.html#addressBookUpdate">addressBookUpdate</a></li><li><a href="global.html#addRolesToGroups">addRolesToGroups</a></li><li><a href="global.html#addUserPermissions">addUserPermissions</a></li><li><a href="global.html#assignOwnerRoles">assignOwnerRoles</a></li><li><a href="global.html#changeMarketplaceOwner">changeMarketplaceOwner</a></li><li><a href="global.html#compareAddress">compareAddress</a></li><li><a href="global.html#compileHandlebarsTemplate">compileHandlebarsTemplate</a></li><li><a href="global.html#copyMedia">copyMedia</a></li><li><a href="global.html#createFallbackLoginToken">createFallbackLoginToken</a></li><li><a href="global.html#createHandle">createHandle</a></li><li><a href="global.html#createTitle">createTitle</a></li><li><a href="global.html#denormalize">denormalize</a></li><li><a href="global.html#doRightJoinNoIntersection">doRightJoinNoIntersection</a></li><li><a href="global.html#flushQuantity">flushQuantity</a></li><li><a href="global.html#GeoCoder">GeoCoder</a></li><li><a href="global.html#getCartItem">getCartItem</a></li><li><a href="global.html#getCurrentShop">getCurrentShop</a></li><li><a href="global.html#getCurrentShopCursor">getCurrentShopCursor</a></li><li><a href="global.html#getMailConfig">getMailConfig</a></li><li><a href="global.html#getMailUrl">getMailUrl</a></li><li><a href="global.html#getMarketplaceSettings">getMarketplaceSettings</a></li><li><a href="global.html#getRegistryDomain">getRegistryDomain</a></li><li><a href="global.html#getRouteName">getRouteName</a></li><li><a href="global.html#getSessionCarts">getSessionCarts</a></li><li><a href="global.html#getSlug">getSlug</a></li><li><a href="global.html#getSubject">getSubject</a></li><li><a href="global.html#getTemplate">getTemplate</a></li><li><a href="global.html#getTemplateFile">getTemplateFile</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#getValidator">getValidator</a></li><li><a href="global.html#Hook">Hook</a></li><li><a href="global.html#inviteShopMember">inviteShopMember</a></li><li><a href="global.html#inviteShopOwner">inviteShopOwner</a></li><li><a href="global.html#isBackorder">isBackorder</a></li><li><a href="global.html#isLowQuantity">isLowQuantity</a></li><li><a href="global.html#isSoldOut">isSoldOut</a></li><li><a href="global.html#loadCoreTranslations">loadCoreTranslations</a></li><li><a href="global.html#loadSettings">loadSettings</a></li><li><a href="global.html#loadTranslation">loadTranslation</a></li><li><a href="global.html#loadTranslations">loadTranslations</a></li><li><a href="global.html#metaField">metaField</a></li><li><a href="global.html#methods">methods</a></li><li><a href="global.html#ordersInventoryAdjust">ordersInventoryAdjust</a></li><li><a href="global.html#productVariant">productVariant</a></li><li><a href="global.html#quantityProcessing">quantityProcessing</a></li><li><a href="global.html#randomProcessor">randomProcessor</a></li><li><a href="global.html#Reaction">Reaction</a></li><li><a href="global.html#removeMedia">removeMedia</a></li><li><a href="global.html#resetRegisteredTemplates">resetRegisteredTemplates</a></li><li><a href="global.html#send">send</a></li><li><a href="global.html#sendResetPasswordEmail">sendResetPasswordEmail</a></li><li><a href="global.html#sendVerificationEmail">sendVerificationEmail</a></li><li><a href="global.html#sendWelcomeEmail">sendWelcomeEmail</a></li><li><a href="global.html#ServerSessions">ServerSessions</a></li><li><a href="global.html#setUserPermissions">setUserPermissions</a></li><li><a href="global.html#toDenormalize">toDenormalize</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#updateMediaPriorities">updateMediaPriorities</a></li><li><a href="global.html#updateVariantProductField">updateVariantProductField</a></li><li><a href="global.html#user">user</a></li><li><a href="global.html#validateAddress">validateAddress</a></li><li><a href="global.html#verifyAccount">verifyAccount</a></li><li><a href="global.html#verifyConfig">verifyConfig</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">server/methods/core/groups.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { Meteor } from "meteor/meteor";
+import { check, Match } from "meteor/check";
+import _ from "lodash";
+import { Roles } from "meteor/alanning:roles";
+import { Reaction, Logger, Hooks } from "/server/api";
+import { Accounts, Groups } from "/lib/collections";
+import { getSlug } from "/lib/api";
+
+/**
+ * Reaction Permission Group Methods
+ */
+Meteor.methods({
+  /**
+   * group/createGroup
+   * @summary creates a new permission group for a shop
+   * It creates permission group for a given shop with passed in roles
+   * @param {Object} groupData - info about group to create
+   * @param {String} groupData.name - name of the group to be created
+   * @param {String} groupData.description - Optional description of the group to be created
+   * @param {Array} groupData.permissions - permissions to assign to the group being created
+   * @param {String} shopId - id of the shop the group belongs to
+   * @return {Object} - object.status of 200 on success or Error object on failure
+   */
+  "group/createGroup": function (groupData, shopId) {
+    check(groupData, Object);
+    check(groupData.name, String);
+    check(groupData.description, Match.Optional(String));
+    check(groupData.permissions,  Match.Optional([String]));
+    check(shopId, String);
+    let _id;
+
+    if (!Reaction.hasPermission("admin", Meteor.userId(), shopId)) {
+      throw new Meteor.Error(403, "Access Denied");
+    }
+
+    const defaultCustomerGroupForShop = Groups.findOne({ slug: "customer", shopId }) || {};
+    const defaultAdminPermissions = (defaultCustomerGroupForShop.permissions || []).concat("dashboard");
+    const newGroupData = Object.assign({}, groupData, {
+      slug: getSlug(groupData.name), shopId
+    });
+
+    if (!newGroupData.permissions) {
+      newGroupData.permissions = [];
+    }
+
+    newGroupData.permissions = _.uniq([...newGroupData.permissions, ...defaultAdminPermissions]);
+
+    // ensure one group type per shop
+    const groupExists = Groups.findOne({ slug: newGroupData.slug, shopId });
+    if (groupExists) {
+      throw new Meteor.Error(409, "Group already exist for this shop");
+    }
+    try {
+      _id = Groups.insert(newGroupData);
+    } catch (error) {
+      Logger.error(error);
+      throw new Meteor.Error(400, "Bad request");
+    }
+
+    return { status: 200, group: Groups.findOne({ _id }) };
+  },
+
+  /**
+   * group/updateGroup
+   * @summary updates a permission group for a shop
+   * changes the details of a group (name, desc, permissions etc) to the values passed in.
+   * It also goes into affected user data to modify both the groupName (using Accounts schema)
+   * and group permissions (using "accounts/removeUserPermissions")
+   * @param {Object} groupId - group to be updated
+   * @param {Object} newGroupData - updated group info (similar to current group data)
+   * @param {String} shopId - id of the shop the group belongs to
+   * @return {Object} - object.status of 200 on success or Error object on failure
+   */
+  "group/updateGroup": function (groupId, newGroupData, shopId) {
+    check(groupId, String);
+    check(newGroupData, Object);
+    check(shopId, String);
+
+    if (!Reaction.hasPermission("admin", Meteor.userId(), shopId)) {
+      throw new Meteor.Error(403, "Access Denied");
+    }
+
+    // 1. Update the group data
+    const update = newGroupData;
+    Groups.update({ _id: groupId, shopId }, { $set: update });
+
+    // 2. Check &amp; Modify users in the group that changed
+    const users = Accounts.find({ groups: { $in: [groupId] } }).fetch();
+    let error;
+
+    if (newGroupData.permissions &amp;&amp; newGroupData.permissions.length) {
+      error = setUserPermissions(users, newGroupData.permissions, shopId);
+    }
+
+    // 3. Return response
+    if (!error) {
+      return { status: 200, group: Groups.findOne({ _id: groupId }) };
+    }
+    Logger.error(error);
+    throw new Meteor.Error(500, "Update not successful");
+  },
+  /**
+   * group/addUser
+   * @summary adds a user to a permission group
+   * It updates the user's list of permissions/roles with the defined the list defined for the group
+   * (NB: At this time, a user only belongs to only one group per shop)
+   * @param {String} userId - current data of the group to be updated
+   * @param {String} groupId - id of the group
+   * @return {Object} - object.status of 200 on success or Error object on failure
+   */
+  "group/addUser": function (userId, groupId) {
+    check(userId, String);
+    check(groupId, String);
+
+    const { permissions, shopId, slug } = Groups.findOne({ _id: groupId }) || {};
+
+    if (!Reaction.hasPermission("admin", Meteor.userId(), shopId)) {
+      throw new Meteor.Error(403, "Access Denied");
+    }
+
+    if (slug === "owner") {
+      // if adding a user to the owner group, check that the request is done by current owner
+      if (!Reaction.hasPermission("owner", Meteor.userId(), shopId)) {
+        throw new Meteor.Error(403, "Access Denied");
+      }
+    }
+
+    // make sure user only belongs to one group per shop
+    const allGroupsInShop = Groups.find({ shopId }).fetch().map((grp) => grp._id);
+    const user = Accounts.findOne({ _id: userId }) || {};
+    const currentUserGroups = user.groups || [];
+    let newGroups = [];
+    let currentUserGrpInShop;
+    currentUserGroups.forEach((grp) => {
+      if (allGroupsInShop.indexOf(grp) &lt; 0) {
+        newGroups.push(grp);
+      } else {
+        currentUserGrpInShop = grp;
+      }
+    });
+    newGroups = newGroups.concat(groupId);
+
+    try {
+      setUserPermissions({ _id: userId }, permissions, shopId);
+      Accounts.update({ _id: userId }, { $set: { groups: newGroups } });
+
+      if (slug === "owner") {
+        if (shopId === Reaction.getPrimaryShopId()) {
+          changeMarketplaceOwner({ userId, permissions });
+        }
+        // remove current shop owner after setting another admin as the new owner
+        Meteor.call("group/addUser", Meteor.userId(), currentUserGrpInShop);
+      }
+
+      return { status: 200 };
+    } catch (error) {
+      Logger.error(error);
+      throw new Meteor.Error(500, "Could not add user");
+    }
+  },
+
+  /**
+   * group/removeUser
+   * @summary removes a user from a group for a shop, and adds them to the default customer group.
+   * It updates the user's permission list to reflect. (NB: At this time, a user only belongs to only one group per shop)
+   * @param {String} userId - current data of the group to be updated
+   * @param {String} groupId - name of the group
+   * @return {Object} - object.status of 200 on success or Error object on failure
+   */
+  "group/removeUser": function (userId, groupId) {
+    check(userId, String);
+    check(groupId, String);
+
+    const user = Accounts.findOne({ _id: userId });
+    const { shopId } = Groups.findOne({ _id: groupId }) || {};
+    const defaultCustomerGroupForShop = Groups.findOne({ slug: "customer", shopId }) || {};
+
+    if (!Reaction.hasPermission("admin", Meteor.userId(), shopId)) {
+      throw new Meteor.Error(403, "Access Denied");
+    }
+
+    if (!user) {
+      throw new Meteor.Error(404, "Could not find user");
+    }
+
+    try {
+      setUserPermissions(user, defaultCustomerGroupForShop.permissions, shopId);
+      Accounts.update({ _id: userId, groups: groupId }, { $set: { "groups.$": defaultCustomerGroupForShop._id } }); // replace the old id with new id
+      return { status: 200 };
+    } catch (error) {
+      Logger.error(error);
+      throw new Meteor.Error(500, "Could not add user");
+    }
+  }
+});
+
+/**
+ * changeMarketplaceOwner
+ * @summary checks if the user making the request is allowed to make invitation to that group
+ * @param {Object} options -
+ * @param {String} options.userId - userID
+ * @param {String} options.permissions - permissions
+* @return {null} -
+ */
+function changeMarketplaceOwner({ userId, permissions }) {
+  // give global marketplace role to new owner
+  Roles.setUserRoles(userId, permissions, Roles.GLOBAL_GROUP);
+  // remove global from previous owner
+  Meteor.users.update({ _id: Meteor.userId() }, { $unset: { [`roles.${Roles.GLOBAL_GROUP}`]: "" } });
+}
+
+function setUserPermissions(users, permissions, shopId) {
+  let affectedUsers = users;
+  if (!Array.isArray(users)) {
+    affectedUsers = [users];
+  }
+
+  return affectedUsers.forEach((user) => Roles.setUserRoles(user._id, permissions, shopId));
+}
+
+// set default admin user's account as "owner"
+Hooks.Events.add("afterCreateDefaultAdminUser", (user) => {
+  const group = Groups.findOne({ slug: "owner", shopId: Reaction.getShopId() });
+  Accounts.update({ _id: user._id  }, { $set: { groups: [group._id] } });
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.3</a> on Wed Aug 09 2017 11:56:59 GMT-0700 (PDT) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

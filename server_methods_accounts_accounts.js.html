@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>server/methods/accounts/accounts.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="FS.Store.GridFS.html">GridFS</a></li></ul><h3>Namespaces</h3><ul><li><a href="FS.TempStore.html">TempStore</a><ul class='methods'><li data-type='method'><a href="FS.TempStore.html#.createReadStream">createReadStream</a></li><li data-type='method'><a href="FS.TempStore.html#.createWriteStream">createWriteStream</a></li><li data-type='method'><a href="FS.TempStore.html#.exists">exists</a></li><li data-type='method'><a href="FS.TempStore.html#.listParts">listParts</a></li><li data-type='method'><a href="FS.TempStore.html#.removeAll">removeAll</a></li><li data-type='method'><a href="FS.TempStore.html#.removeFile">removeFile</a></li></ul></li><li><a href="Hooks.Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Hooks.Events.html#.add">add</a></li><li data-type='method'><a href="Hooks.Events.html#.remove">remove</a></li><li data-type='method'><a href="Hooks.Events.html#.run">run</a></li><li data-type='method'><a href="Hooks.Events.html#.runAsync">runAsync</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#%2522cart/addToCart%2522">"cart/addToCart"</a></li><li><a href="global.html#%2522cart/copyCartToOrder%2522">"cart/copyCartToOrder"</a></li><li><a href="global.html#%2522cart/createCart%2522">"cart/createCart"</a></li><li><a href="global.html#%2522cart/mergeCart%2522">"cart/mergeCart"</a></li><li><a href="global.html#%2522cart/removeFromCart%2522">"cart/removeFromCart"</a></li><li><a href="global.html#%2522cart/resetShipmentMethod%2522">"cart/resetShipmentMethod"</a></li><li><a href="global.html#%2522cart/setPaymentAddress%2522">"cart/setPaymentAddress"</a></li><li><a href="global.html#%2522cart/setShipmentAddress%2522">"cart/setShipmentAddress"</a></li><li><a href="global.html#%2522cart/setShipmentMethod%2522">"cart/setShipmentMethod"</a></li><li><a href="global.html#%2522cart/setUserCurrency%2522">"cart/setUserCurrency"</a></li><li><a href="global.html#%2522cart/submitPayment%2522">"cart/submitPayment"</a></li><li><a href="global.html#%2522cart/unsetAddresses%2522">"cart/unsetAddresses"</a></li><li><a href="global.html#%2522email/saveSettings%2522">"email/saveSettings"</a></li><li><a href="global.html#%2522email/verifySettings%2522">"email/verifySettings"</a></li><li><a href="global.html#%2522emails/retryFailed%2522">"emails/retryFailed"</a></li><li><a href="global.html#%2522group/addUser%2522">"group/addUser"</a></li><li><a href="global.html#%2522group/createGroup%2522">"group/createGroup"</a></li><li><a href="global.html#%2522group/removeUser%2522">"group/removeUser"</a></li><li><a href="global.html#%2522group/updateGroup%2522">"group/updateGroup"</a></li><li><a href="global.html#%2522i18n/addTranslation%2522">"i18n/addTranslation"</a></li><li><a href="global.html#%2522i18n/flushTranslations%2522">"i18n/flushTranslations"</a></li><li><a href="global.html#%2522products/archiveProduct%2522">"products/archiveProduct"</a></li><li><a href="global.html#%2522products/cloneProduct%2522">"products/cloneProduct"</a></li><li><a href="global.html#%2522products/cloneVariant%2522">"products/cloneVariant"</a></li><li><a href="global.html#%2522products/createProduct%2522">"products/createProduct"</a></li><li><a href="global.html#%2522products/createVariant%2522">"products/createVariant"</a></li><li><a href="global.html#%2522products/deleteVariant%2522">"products/deleteVariant"</a></li><li><a href="global.html#%2522products/publishProduct%2522">"products/publishProduct"</a></li><li><a href="global.html#%2522products/removeMetaFields%2522">"products/removeMetaFields"</a></li><li><a href="global.html#%2522products/removeProductTag%2522">"products/removeProductTag"</a></li><li><a href="global.html#%2522products/setHandle%2522">"products/setHandle"</a></li><li><a href="global.html#%2522products/setHandleTag%2522">"products/setHandleTag"</a></li><li><a href="global.html#%2522products/toggleVisibility%2522">"products/toggleVisibility"</a></li><li><a href="global.html#%2522products/updateMetaFields%2522">"products/updateMetaFields"</a></li><li><a href="global.html#%2522products/updateProductField%2522">"products/updateProductField"</a></li><li><a href="global.html#%2522products/updateProductPosition%2522">"products/updateProductPosition"</a></li><li><a href="global.html#%2522products/updateProductTags%2522">"products/updateProductTags"</a></li><li><a href="global.html#%2522products/updateVariant%2522">"products/updateVariant"</a></li><li><a href="global.html#%2522products/updateVariantsPosition%2522">"products/updateVariantsPosition"</a></li><li><a href="global.html#%2522reaction/getUserId%2522">"reaction/getUserId"</a></li><li><a href="global.html#%2522shop/createShop%2522">"shop/createShop"</a></li><li><a href="global.html#%2522shop/createTag%2522">"shop/createTag"</a></li><li><a href="global.html#%2522shop/fetchCurrencyRate%2522">"shop/fetchCurrencyRate"</a></li><li><a href="global.html#%2522shop/flushCurrencyRate%2522">"shop/flushCurrencyRate"</a></li><li><a href="global.html#%2522shop/getCurrencyRates%2522">"shop/getCurrencyRates"</a></li><li><a href="global.html#%2522shop/getLocale%2522">"shop/getLocale"</a></li><li><a href="global.html#%2522shop/getWorkflow%2522">"shop/getWorkflow"</a></li><li><a href="global.html#%2522shop/hideHeaderTag%2522">"shop/hideHeaderTag"</a></li><li><a href="global.html#%2522shop/locateAddress%2522">"shop/locateAddress"</a></li><li><a href="global.html#%2522shop/removeHeaderTag%2522">"shop/removeHeaderTag"</a></li><li><a href="global.html#%2522shop/updateBrandAssets%2522">"shop/updateBrandAssets"</a></li><li><a href="global.html#%2522shop/updateCurrencyConfiguration%2522">"shop/updateCurrencyConfiguration"</a></li><li><a href="global.html#%2522shop/updateHeaderTags%2522">"shop/updateHeaderTags"</a></li><li><a href="global.html#%2522shop/updateLanguageConfiguration%2522">"shop/updateLanguageConfiguration"</a></li><li><a href="global.html#%2522shop/updateShopExternalServices%2522">"shop/updateShopExternalServices"</a></li><li><a href="global.html#%2522workflow/coreOrderWorkflow/coreOrderCompleted%2522">"workflow/coreOrderWorkflow/coreOrderCompleted"</a></li><li><a href="global.html#%2522workflow/coreOrderWorkflow/coreOrderProcessing%2522">"workflow/coreOrderWorkflow/coreOrderProcessing"</a></li><li><a href="global.html#addressBookAdd">addressBookAdd</a></li><li><a href="global.html#addressBookRemove">addressBookRemove</a></li><li><a href="global.html#addressBookUpdate">addressBookUpdate</a></li><li><a href="global.html#addRolesToGroups">addRolesToGroups</a></li><li><a href="global.html#addUserPermissions">addUserPermissions</a></li><li><a href="global.html#assignOwnerRoles">assignOwnerRoles</a></li><li><a href="global.html#changeMarketplaceOwner">changeMarketplaceOwner</a></li><li><a href="global.html#compareAddress">compareAddress</a></li><li><a href="global.html#compileHandlebarsTemplate">compileHandlebarsTemplate</a></li><li><a href="global.html#copyMedia">copyMedia</a></li><li><a href="global.html#createFallbackLoginToken">createFallbackLoginToken</a></li><li><a href="global.html#createHandle">createHandle</a></li><li><a href="global.html#createTitle">createTitle</a></li><li><a href="global.html#denormalize">denormalize</a></li><li><a href="global.html#doRightJoinNoIntersection">doRightJoinNoIntersection</a></li><li><a href="global.html#flushQuantity">flushQuantity</a></li><li><a href="global.html#GeoCoder">GeoCoder</a></li><li><a href="global.html#getCartItem">getCartItem</a></li><li><a href="global.html#getCurrentShop">getCurrentShop</a></li><li><a href="global.html#getCurrentShopCursor">getCurrentShopCursor</a></li><li><a href="global.html#getMailConfig">getMailConfig</a></li><li><a href="global.html#getMailUrl">getMailUrl</a></li><li><a href="global.html#getMarketplaceSettings">getMarketplaceSettings</a></li><li><a href="global.html#getRegistryDomain">getRegistryDomain</a></li><li><a href="global.html#getRouteName">getRouteName</a></li><li><a href="global.html#getSessionCarts">getSessionCarts</a></li><li><a href="global.html#getSlug">getSlug</a></li><li><a href="global.html#getSubject">getSubject</a></li><li><a href="global.html#getTemplate">getTemplate</a></li><li><a href="global.html#getTemplateFile">getTemplateFile</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#getValidator">getValidator</a></li><li><a href="global.html#Hook">Hook</a></li><li><a href="global.html#inviteShopMember">inviteShopMember</a></li><li><a href="global.html#inviteShopOwner">inviteShopOwner</a></li><li><a href="global.html#isBackorder">isBackorder</a></li><li><a href="global.html#isLowQuantity">isLowQuantity</a></li><li><a href="global.html#isSoldOut">isSoldOut</a></li><li><a href="global.html#loadCoreTranslations">loadCoreTranslations</a></li><li><a href="global.html#loadSettings">loadSettings</a></li><li><a href="global.html#loadTranslation">loadTranslation</a></li><li><a href="global.html#loadTranslations">loadTranslations</a></li><li><a href="global.html#metaField">metaField</a></li><li><a href="global.html#methods">methods</a></li><li><a href="global.html#ordersInventoryAdjust">ordersInventoryAdjust</a></li><li><a href="global.html#productVariant">productVariant</a></li><li><a href="global.html#quantityProcessing">quantityProcessing</a></li><li><a href="global.html#randomProcessor">randomProcessor</a></li><li><a href="global.html#Reaction">Reaction</a></li><li><a href="global.html#removeMedia">removeMedia</a></li><li><a href="global.html#resetRegisteredTemplates">resetRegisteredTemplates</a></li><li><a href="global.html#send">send</a></li><li><a href="global.html#sendResetPasswordEmail">sendResetPasswordEmail</a></li><li><a href="global.html#sendVerificationEmail">sendVerificationEmail</a></li><li><a href="global.html#sendWelcomeEmail">sendWelcomeEmail</a></li><li><a href="global.html#ServerSessions">ServerSessions</a></li><li><a href="global.html#setUserPermissions">setUserPermissions</a></li><li><a href="global.html#toDenormalize">toDenormalize</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#updateMediaPriorities">updateMediaPriorities</a></li><li><a href="global.html#updateVariantProductField">updateVariantProductField</a></li><li><a href="global.html#user">user</a></li><li><a href="global.html#validateAddress">validateAddress</a></li><li><a href="global.html#verifyAccount">verifyAccount</a></li><li><a href="global.html#verifyConfig">verifyConfig</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">server/methods/accounts/accounts.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import _ from "lodash";
+import moment from "moment";
+import path from "path";
+import { Meteor } from "meteor/meteor";
+import { Random } from "meteor/random";
+import { Accounts as MeteorAccounts } from "meteor/accounts-base";
+import { check, Match } from "meteor/check";
+import { Roles } from "meteor/alanning:roles";
+import { SSR } from "meteor/meteorhacks:ssr";
+import { Accounts, Cart, Media, Shops, Packages } from "/lib/collections";
+import * as Schemas from "/lib/collections/schemas";
+import { Logger, Reaction } from "/server/api";
+
+
+/**
+ * verifyAccount
+ * @summary verify registered user account
+ * @param {String} email - user email
+ * @param {String} token - user token, if the user is invited
+ * @returns {Boolean} - returns boolean
+ */
+export function verifyAccount(email, token) {
+  check(email, String);
+  check(token, Match.Optional(String));
+
+  let account;
+  if (token) {
+    account = Meteor.users.findOne({
+      "services.password.reset.token": token
+    });
+  } else {
+    account = Accounts.findOne({
+      "emails.address": email
+    });
+  }
+
+  if (account) {
+    const verified = account.emails[0].verified;
+    if (!verified) {
+      Meteor.users.update({
+        "_id": account._id,
+        "emails.address": account.emails[0].address
+      }, {
+        $set: {
+          "emails.$.verified": true
+        }
+      });
+      Accounts.update({
+        "userId": account._id,
+        "emails.address": account.emails[0].address
+      }, {
+        $set: {
+          "emails.$.verified": true
+        }
+      });
+    }
+    return true;
+  }
+  return false;
+}
+
+/**
+ * @summary Returns the name of the geocoder method to use
+ * @returns {string} Name of the Geocoder method to use
+ */
+function getValidator() {
+  const shopId = Reaction.getShopId();
+  const geoCoders = Packages.find({
+    "registry.provides": "addressValidation",
+    "settings.addressValidation.enabled": true,
+    "shopId": shopId,
+    "enabled": true
+  }).fetch();
+
+  if (!geoCoders.length) {
+    return "";
+  }
+  let geoCoder;
+  // Just one?, use that one
+  if (geoCoders.length === 1) {
+    geoCoder = geoCoders[0];
+  }
+  // If there are two, we default to the one that is not the Reaction one
+  if (geoCoders.length === 2) {
+    geoCoder = _.filter(geoCoders, function (coder) {
+      return !_.includes(coder.name, "reaction");
+    })[0];
+  }
+
+  // check if addressValidation is enabled but the package is disabled, don't do address validation
+  let registryName;
+  for (const registry of geoCoder.registry) {
+    if (registry.provides === "addressValidation") {
+      registryName = registry.name;
+    }
+  }
+  const packageKey = registryName.split("/")[2];  // "taxes/addressValidation/{packageKey}"
+  if (!_.get(geoCoder.settings[packageKey], "enabled")) {
+    return "";
+  }
+
+  const methodName = geoCoder.settings.addressValidation.addressValidationMethod;
+  return methodName;
+}
+
+/**
+ * @summary Compare individual fields of address and accumulate errors
+ * @param {Object} address - the address provided by the customer
+ * @param {Object} validationAddress - address provided by validator
+ * @returns {Object} An object with an array of errors per field
+ */
+function compareAddress(address, validationAddress) {
+  const errors = {
+    address1: [],
+    address2: [],
+    city: [],
+    postal: [],
+    region: [],
+    country: [],
+    totalErrors: 0
+  };
+  // first check, if a field is missing (and was present in original address), that means it didn't validate
+  // TODO rewrite with just a loop over field names but KISS for now
+  if (address.address1 &amp;&amp; !validationAddress.address1) {
+    errors.address1.push("Address line one did not validate");
+    errors.totalErrors++;
+  }
+
+  if (address.address2 &amp;&amp; validationAddress.address2 &amp;&amp; _.trim(_.upperCase(address.address2)) !== _.trim(_.upperCase(validationAddress.address2))) {
+    errors.address2.push("Address line 2 did not validate");
+    errors.totalErrors++;
+  }
+
+  if (!validationAddress.city) {
+    errors.city.push("City did not validate");
+    errors.totalErrors++;
+  }
+  if (address.postal &amp;&amp; !validationAddress.postal) {
+    errors.postal.push("Postal did not validate");
+    errors.totalErrors++;
+  }
+
+  if (address.region &amp;&amp; !validationAddress.region) {
+    errors.region.push("Region did not validate");
+    errors.totalErrors++;
+  }
+
+  if (address.country &amp;&amp; !validationAddress.country) {
+    errors.country.push("Country did not validate");
+    errors.totalErrors++;
+  }
+  // second check if both fields exist, but they don't match (which almost always happen for certain fields on first time)
+  if (validationAddress.address1 &amp;&amp; address.address1 &amp;&amp; _.trim(_.upperCase(address.address1)) !== _.trim(_.upperCase(validationAddress.address1))) {
+    errors.address1.push({ address1: "Address line 1 did not match" });
+    errors.totalErrors++;
+  }
+
+  if (validationAddress.address2 &amp;&amp; address.address2 &amp;&amp; (_.upperCase(address.address2) !== _.upperCase(validationAddress.address2))) {
+    errors.address2.push("Address line 2 did not match");
+    errors.totalErrors++;
+  }
+
+  if (validationAddress.city &amp;&amp; address.city &amp;&amp; _.trim(_.upperCase(address.city)) !== _.trim(_.upperCase(validationAddress.city))) {
+    errors.city.push("City did not match");
+    errors.totalErrors++;
+  }
+
+  if (validationAddress.postal &amp;&amp; address.postal &amp;&amp; _.trim(_.upperCase(address.postal)) !== _.trim(_.upperCase(validationAddress.postal))) {
+    errors.postal.push("Postal Code did not match");
+    errors.totalErrors++;
+  }
+
+  if (validationAddress.region &amp;&amp; address.region &amp;&amp; _.trim(_.upperCase(address.region)) !== _.trim(_.upperCase(validationAddress.region))) {
+    errors.region.push("Region did not match");
+    errors.totalErrors++;
+  }
+
+  if (validationAddress.country &amp;&amp; address.country &amp;&amp; _.upperCase(address.country) !== _.upperCase(validationAddress.country)) {
+    errors.country.push("Country did not match");
+    errors.totalErrors++;
+  }
+  return errors;
+}
+
+/**
+ * @summary Validates an address, and if fails returns details of issues
+ * @param {Object} address - The address object to validate
+ * @returns {{validated: boolean, address: *}} - The results of the validation
+ */
+export function validateAddress(address) {
+  check(address, Object);
+  let validated = true;
+  let validationErrors;
+  let validatedAddress = address;
+  let formErrors;
+  Schemas.Address.clean(address);
+  const validator = getValidator();
+  if (validator) {
+    const validationResult = Meteor.call(validator, address);
+    validatedAddress = validationResult.validatedAddress;
+    formErrors = validationResult.errors;
+    if (validatedAddress) {
+      validationErrors = compareAddress(address, validatedAddress);
+      if (validationErrors.totalErrors || formErrors.length) {
+        validated = false;
+        validatedAddress.failedValidation = false;
+      }
+    } else {
+      // No address, fail validation
+      validated = false;
+      validatedAddress.failedValidation = false;
+    }
+  }
+  const validationResults = { validated, fieldErrors: validationErrors, formErrors, validatedAddress };
+  return validationResults;
+}
+
+/*
+   * check if current user has password
+   */
+function currentUserHasPassword() {
+  const user = Meteor.users.findOne(Meteor.userId());
+  return !!user.services.password;
+}
+
+/**
+ * addressBookAdd
+ * @description add new addresses to an account
+ * @param {Object} address - address
+ * @param {String} [accountUserId] - `account.userId` used by admin to edit
+ * users
+ * @return {Object} with keys `numberAffected` and `insertedId` if doc was
+ * inserted
+ */
+export function addressBookAdd(address, accountUserId) {
+  check(address, Schemas.Address);
+  check(accountUserId, Match.Optional(String));
+  // security, check for admin access. We don't need to check every user call
+  // here because we are calling `Meteor.userId` from within this Method.
+  if (typeof accountUserId === "string") { // if this will not be a String -
+    // `check` will not pass it.
+    if (!Reaction.hasAdminAccess()) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+  }
+  this.unblock();
+
+  const userId = accountUserId || Meteor.userId();
+  // required default id
+  if (!address._id) {
+    address._id = Random.id();
+  }
+  // if address got shippment or billing default, we need to update cart
+  // addresses accordingly
+  if (address.isShippingDefault || address.isBillingDefault) {
+    const cart = Cart.findOne({ userId: userId });
+    // if cart exists
+    // First amend the cart,
+    if (typeof cart === "object") {
+      if (address.isShippingDefault) {
+        Meteor.call("cart/setShipmentAddress", cart._id, address);
+      }
+      if (address.isBillingDefault) {
+        Meteor.call("cart/setPaymentAddress", cart._id, address);
+      }
+    }
+    // then change the address that has been affected
+    if (address.isShippingDefault) {
+      Accounts.update({
+        "userId": userId,
+        "profile.addressBook.isShippingDefault": true
+      }, {
+        $set: {
+          "profile.addressBook.$.isShippingDefault": false
+        }
+      });
+    }
+    if (address.isBillingDefault) {
+      Accounts.update({
+        "userId": userId,
+        "profile.addressBook.isBillingDefault": true
+      }, {
+        $set: {
+          "profile.addressBook.$.isBillingDefault": false
+        }
+      });
+    }
+  }
+
+  Meteor.users.update(Meteor.userId(), {
+    $set: {
+      "name": address.fullName,
+      "profile.addressBook": address
+    }
+  });
+
+  return Accounts.upsert({
+    userId: userId
+  }, {
+    $set: {
+      name: address.fullName,
+      userId: userId
+    },
+    $addToSet: {
+      "profile.addressBook": address
+    }
+  });
+}
+
+/**
+   * addressBookUpdate
+   * @description update existing address in user's profile
+   * @param {Object} address - address
+   * @param {String|null} [accountUserId] - `account.userId` used by admin to
+   * edit users
+   * @param {shipping|billing} [type] - name of selected address type
+   * @return {Number} The number of affected documents
+   */
+export function addressBookUpdate(address, accountUserId, type) {
+  check(address, Schemas.Address);
+  check(accountUserId, Match.OneOf(String, null, undefined));
+  check(type, Match.Optional(String));
+  // security, check for admin access. We don't need to check every user call
+  // here because we are calling `Meteor.userId` from within this Method.
+  if (typeof accountUserId === "string") { // if this will not be a String -
+    // `check` will not pass it.
+    if (!Reaction.hasAdminAccess()) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+  }
+  this.unblock();
+
+  const userId = accountUserId || Meteor.userId();
+  // we need to compare old state of isShippingDefault, isBillingDefault with
+  // new state and if it was enabled/disabled reflect this changes in cart
+  const account = Accounts.findOne({
+    userId: userId
+  });
+  const oldAddress = account.profile.addressBook.find(function (addr) {
+    return addr._id === address._id;
+  });
+
+  // happens when the user clicked the address in grid. We need to set type
+  // to `true`
+  if (typeof type === "string") {
+    Object.assign(address, { [type]: true });
+  }
+
+  // We want the cart addresses to be updated when current default address
+  // (shipping or Billing) are different than the previous one, but also
+  // when the current default address(ship or bill) gets edited(so Current and Previous default are the same).
+  // This check can be simplified to :
+  if (address.isShippingDefault || address.isBillingDefault ||
+    oldAddress.isShippingDefault || address.isBillingDefault) {
+    const cart = Cart.findOne({ userId: userId });
+    // Cart should exist to this moment, so we doesn't need to to verify its
+    // existence.
+    if (oldAddress.isShippingDefault !== address.isShippingDefault) {
+      // if isShippingDefault was changed and now it is `true`
+      if (address.isShippingDefault) {
+        // we need to add this address to cart
+        Meteor.call("cart/setShipmentAddress", cart._id, address);
+        // then, if another address was `ShippingDefault`, we need to unset it
+        Accounts.update({
+          "userId": userId,
+          "profile.addressBook.isShippingDefault": true
+        }, {
+          $set: {
+            "profile.addressBook.$.isShippingDefault": false
+          }
+        });
+      } else {
+        // if new `isShippingDefault` state is false, then we need to remove
+        // this address from `cart.shipping`
+        Meteor.call("cart/unsetAddresses", address._id, userId, "shipping");
+      }
+    } else if (address.isShippingDefault &amp;&amp; oldAddress.isShippingDefault) {
+      // If current Shipping Address was edited but not changed update it to cart too
+      Meteor.call("cart/setShipmentAddress", cart._id, address);
+    }
+
+    // the same logic used for billing
+    if (oldAddress.isBillingDefault !== address.isBillingDefault) {
+      if (address.isBillingDefault) {
+        Meteor.call("cart/setPaymentAddress", cart._id, address);
+        Accounts.update({
+          "userId": userId,
+          "profile.addressBook.isBillingDefault": true
+        }, {
+          $set: {
+            "profile.addressBook.$.isBillingDefault": false
+          }
+        });
+      } else {
+        Meteor.call("cart/unsetAddresses", address._id, userId, "billing");
+      }
+    } else if (address.isBillingDefault &amp;&amp; oldAddress.isBillingDefault) {
+      // If current Billing Address was edited but not changed update it to cart too
+      Meteor.call("cart/setPaymentAddress", cart._id, address);
+    }
+  }
+
+  Meteor.users.update(Meteor.userId(), {
+    $set: {
+      "name": address.fullName,
+      "profile.addressBook": address
+    }
+  });
+
+  return Accounts.update({
+    "userId": userId,
+    "profile.addressBook._id": address._id
+  }, {
+    $set: {
+      "name": address.fullName,
+      "profile.addressBook.$": address
+    }
+  });
+}
+
+/**
+   * addressBookRemove
+   * @description remove existing address in user's profile
+   * @param {String} addressId - address `_id`
+   * @param {String} [accountUserId] - `account.userId` used by admin to edit
+   * users
+   * @return {Number|Object} The number of removed documents or error object
+   */
+export function addressBookRemove(addressId, accountUserId) {
+  check(addressId, String);
+  check(accountUserId, Match.Optional(String));
+  // security, check for admin access. We don't need to check every user call
+  // here because we are calling `Meteor.userId` from within this Method.
+  if (typeof accountUserId === "string") { // if this will not be a String -
+    // `check` will not pass it.
+    if (!Reaction.hasAdminAccess()) {
+      throw new Meteor.Error(403, "Access denied");
+    }
+  }
+  this.unblock();
+
+  const userId = accountUserId || Meteor.userId();
+  // remove this address in cart, if used, before completely removing
+  Meteor.call("cart/unsetAddresses", addressId, userId);
+
+  return Accounts.update({
+    "userId": userId,
+    "profile.addressBook._id": addressId
+  }, {
+    $pull: {
+      "profile.addressBook": {
+        _id: addressId
+      }
+    }
+  });
+}
+
+/**
+ * inviteShopOwner
+ * invite a new user as owner of a new shop
+ * @param {Object} options -
+ * @param {String} options.email - email of invitee
+ * @param {String} options.name - name of invitee
+ * @returns {Boolean} returns true
+ */
+export function inviteShopOwner(options) {
+  check(options, Object);
+  check(options.email, String);
+  check(options.name, String);
+  const { name, email } = options;
+
+  if (!Reaction.hasPermission("admin", this.userId, Reaction.getPrimaryShopId())) {
+    throw new Meteor.Error("access-denied", "Access denied");
+  }
+  const user = Meteor.users.findOne({ "emails.address": email });
+  let userId;
+  if (user) {
+    // TODO: Verify email address
+    userId = user._id;
+  } else {
+    userId = MeteorAccounts.createUser({
+      email: email,
+      name: name,
+      profile: { invited: true }
+    });
+  }
+
+  const { shopId } = Meteor.call("shop/createShop", userId) || {};
+  const shop = Shops.findOne(shopId);
+
+  // Compile Email with SSR
+  const tpl = "accounts/inviteShopOwner";
+  const subject = "accounts/inviteShopOwner/subject";
+
+  SSR.compileTemplate(tpl, Reaction.Email.getTemplate(tpl));
+  SSR.compileTemplate(subject, Reaction.Email.getSubject(tpl));
+
+  const emailLogo = getEmailLogo(shop);
+  const token = Random.id();
+  const currentUser = Meteor.users.findOne(this.userId);
+  const currentUserName = getCurrentUserName(currentUser);
+  const dataForEmail = getDataForEmail({ shop, currentUserName, name, token, emailLogo });
+
+  Meteor.users.update(userId, {
+    $set: {
+      "services.password.reset": { token, email, when: new Date() },
+      "name": name,
+      "profile.preferences.reaction.activeShopId": shopId
+    }
+  });
+
+  Reaction.Email.send({
+    to: email,
+    from: `${shop.name} &lt;${_.get(shop, "emails[0].address")}>`,
+    subject: SSR.render(subject, dataForEmail),
+    html: SSR.render(tpl, dataForEmail)
+  });
+
+  return true;
+}
+
+/**
+   * inviteShopMember
+   * invite new admin users
+   * (not consumers) to secure access in the dashboard
+   * to permissions as specified in packages/roles
+   * @param {Object} options -
+   * @param {String} options.shopId - shop to invite user
+   * @param {String} options.groupId - groupId to invite user
+   * @param {String} options.email - email of invitee
+   * @param {String} options.name - name of invitee
+   * @returns {Boolean} returns true
+   */
+export function inviteShopMember(options) {
+  const { shopId, email, name, groupId } = options;
+  check(options, Object);
+  check(shopId, String);
+  check(email, String);
+  check(name, String);
+  check(groupId, String);
+
+  this.unblock();
+
+  const shop = Shops.findOne(shopId);
+
+  if (!shop) {
+    const msg = `accounts/inviteShopMember - Shop ${shopId} not found`;
+    Logger.error(msg);
+    throw new Meteor.Error("shop-not-found", msg);
+  }
+
+  if (!Reaction.hasPermission("reaction-accounts", this.userId, shopId)) {
+    Logger.error(`User ${this.userId} does not have reaction-accounts permissions`);
+    throw new Meteor.Error("access-denied", "Access denied");
+  }
+
+  const currentUser = Meteor.users.findOne(this.userId);
+  const currentUserName = getCurrentUserName(currentUser);
+
+  // Compile Email with SSR
+  const tpl = "accounts/inviteShopMember";
+  const subject = "accounts/inviteShopMember/subject";
+  SSR.compileTemplate(tpl, Reaction.Email.getTemplate(tpl));
+  SSR.compileTemplate(subject, Reaction.Email.getSubject(tpl));
+
+  const emailLogo = getEmailLogo(shop);
+  const token = Random.id();
+  const dataForEmail = getDataForEmail({ shop, name, currentUserName, token, emailLogo });
+
+  const user = Meteor.users.findOne({
+    "emails.address": email
+  });
+
+  if (!user) {
+    const userId = MeteorAccounts.createUser({
+      email,
+      name,
+      groupId,
+      profile: { invited: true }
+    });
+
+    const newUser = Meteor.users.findOne(userId);
+
+    if (!newUser) {
+      throw new Error("Can't find user");
+    }
+
+    Meteor.users.update(userId, {
+      $set: {
+        "services.password.reset": { token, email, when: new Date() },
+        "name": name
+      }
+    });
+
+    Reaction.Email.send({
+      to: email,
+      from: `${shop.name} &lt;${shop.emails[0].address}>`,
+      subject: SSR.render(subject, dataForEmail),
+      html: SSR.render(tpl, dataForEmail)
+    });
+  } else {
+    throw new Meteor.Error("409", "A user with this email address already exists");
+  }
+  return true;
+}
+
+
+/**
+   * accounts/sendWelcomeEmail
+   * send an email to consumers on sign up
+   * @param {String} shopId - shopId of new User
+   * @param {String} userId - new userId to welcome
+   * @returns {Boolean} returns boolean
+   */
+export function sendWelcomeEmail(shopId, userId) {
+  check(shopId, String);
+  check(userId, String);
+
+  this.unblock();
+
+  const user = Accounts.findOne(userId);
+  const shop = Shops.findOne(shopId);
+
+  // Get shop logo, if available. If not, use default logo from file-system
+  let emailLogo;
+  if (Array.isArray(shop.brandAssets)) {
+    const brandAsset = _.find(shop.brandAssets, (asset) => asset.type === "navbarBrandImage");
+    const mediaId = Media.findOne(brandAsset.mediaId);
+    emailLogo = path.join(Meteor.absoluteUrl(), mediaId.url());
+  } else {
+    emailLogo = Meteor.absoluteUrl() + "resources/email-templates/shop-logo.png";
+  }
+
+  const dataForEmail = {
+    // Shop Data
+    shop: shop,
+    contactEmail: shop.emails[0].address,
+    emailLogo: emailLogo,
+    copyrightDate: moment().format("YYYY"),
+    legalName: shop.addressBook[0].company,
+    physicalAddress: {
+      address: shop.addressBook[0].address1 + " " + shop.addressBook[0].address2,
+      city: shop.addressBook[0].city,
+      region: shop.addressBook[0].region,
+      postal: shop.addressBook[0].postal
+    },
+    shopName: shop.name,
+    socialLinks: {
+      display: true,
+      facebook: {
+        display: true,
+        icon: Meteor.absoluteUrl() + "resources/email-templates/facebook-icon.png",
+        link: "https://www.facebook.com"
+      },
+      googlePlus: {
+        display: true,
+        icon: Meteor.absoluteUrl() + "resources/email-templates/google-plus-icon.png",
+        link: "https://plus.google.com"
+      },
+      twitter: {
+        display: true,
+        icon: Meteor.absoluteUrl() + "resources/email-templates/twitter-icon.png",
+        link: "https://www.twitter.com"
+      }
+    },
+    // Account Data
+    user: Meteor.user()
+  };
+
+  // anonymous users arent welcome here
+  if (!user.emails || !user.emails.length > 0) {
+    return true;
+  }
+
+  // assign verification url
+  const prefix = Reaction.getShopPrefix().replace(/\//, "");
+  dataForEmail.verificationUrl = `${Meteor.absoluteUrl()}${prefix}/account/profile/verify?email=${user.emails[0].address}`;
+  const userEmail = user.emails[0].address;
+
+  let shopEmail;
+  // provide some defaults for missing shop email.
+  if (!shop.emails) {
+    shopEmail = `${shop.name}@localhost`;
+    Logger.debug(`Shop email address not configured. Using ${shopEmail}`);
+  } else {
+    shopEmail = shop.emails[0].address;
+  }
+
+  const tpl = "accounts/sendWelcomeEmail";
+  const subject = "accounts/sendWelcomeEmail/subject";
+  SSR.compileTemplate(tpl, Reaction.Email.getTemplate(tpl));
+  SSR.compileTemplate(subject, Reaction.Email.getSubject(tpl));
+
+  Reaction.Email.send({
+    to: userEmail,
+    from: `${shop.name} &lt;${shopEmail}>`,
+    subject: SSR.render(subject, dataForEmail),
+    html: SSR.render(tpl, dataForEmail)
+  });
+
+  return true;
+}
+
+/**
+   * accounts/addUserPermissions
+   * @param {String} userId - userId
+   * @param {Array|String} permissions -
+   *               Name of role/permission.  If array, users
+   *               returned will have at least one of the roles
+   *               specified but need not have _all_ roles.
+   * @param {String} [group] Optional name of group to restrict roles to.
+   *                         User"s Roles.GLOBAL_GROUP will also be checked.
+   * @returns {Boolean} success/failure
+   */
+export function addUserPermissions(userId, permissions, group) {
+  if (!Reaction.hasPermission("reaction-accounts", Meteor.userId(), group)) {
+    throw new Meteor.Error(403, "Access denied");
+  }
+  check(userId, Match.OneOf(String, Array));
+  check(permissions, Match.OneOf(String, Array));
+  check(group, Match.Optional(String));
+  this.unblock();
+  try {
+    return Roles.addUsersToRoles(userId, permissions, group);
+  } catch (error) {
+    return Logger.error(error);
+  }
+}
+
+/*
+ * removeUserPermissions
+ */
+export function removeUserPermissions(userId, permissions, group) {
+  if (!Reaction.hasPermission("reaction-accounts", Meteor.userId(), group)) {
+    throw new Meteor.Error(403, "Access denied");
+  }
+  check(userId, String);
+  check(permissions, Match.OneOf(String, Array));
+  check(group, Match.Optional(String, null));
+  this.unblock();
+
+  try {
+    return Roles.removeUsersFromRoles(userId, permissions, group);
+  } catch (error) {
+    Logger.error(error);
+    throw new Meteor.Error(403, "Access Denied");
+  }
+}
+
+/**
+ * accounts/setUserPermissions
+ * @param {String} userId - userId
+ * @param {String|Array} permissions - string/array of permissions
+ * @param {String} group - group
+ * @returns {Boolean} returns Roles.setUserRoles result
+ */
+export function setUserPermissions(userId, permissions, group) {
+  if (!Reaction.hasPermission("reaction-accounts", Meteor.userId(), group)) {
+    throw new Meteor.Error(403, "Access denied");
+  }
+  check(userId, String);
+  check(permissions, Match.OneOf(String, Array));
+  check(group, Match.Optional(String));
+  this.unblock();
+  try {
+    return Roles.setUserRoles(userId, permissions, group);
+  } catch (error) {
+    Logger.error(error);
+    return error;
+  }
+}
+
+// Get shop logo, if available. If not, use default logo from file-system
+function getEmailLogo(shop) {
+  let emailLogo;
+  if (Array.isArray(shop.brandAssets)) {
+    const brandAsset = _.find(shop.brandAssets, (asset) => asset.type === "navbarBrandImage");
+    const mediaId = Media.findOne(brandAsset.mediaId);
+    emailLogo = path.join(Meteor.absoluteUrl(), mediaId.url());
+  } else {
+    emailLogo = Meteor.absoluteUrl() + "resources/email-templates/shop-logo.png";
+  }
+  return emailLogo;
+}
+
+function getCurrentUserName(currentUser) {
+  let currentUserName;
+  if (currentUser) {
+    if (currentUser.profile) {
+      currentUserName = currentUser.profile.name || currentUser.username;
+    } else {
+      currentUserName = currentUser.username;
+    }
+  } else {
+    currentUserName = "Admin";
+  }
+  return currentUserName;
+}
+
+function getDataForEmail(options) {
+  const { shop, currentUserName, token, emailLogo, name } = options;
+  return {
+    shop: shop, // Shop Data
+    contactEmail: _.get(shop, "emails[0].address"),
+    homepage: Meteor.absoluteUrl(),
+    emailLogo: emailLogo,
+    copyrightDate: moment().format("YYYY"),
+    legalName: _.get(shop, "addressBook[0].company"),
+    physicalAddress: {
+      address: `${_.get(shop, "addressBook[0].address1")} ${_.get(shop, "addressBook[0].address2")}`,
+      city: _.get(shop, "addressBook[0].city"),
+      region: _.get(shop, "addressBook[0].region"),
+      postal: _.get(shop, "addressBook[0].postal")
+    },
+    shopName: shop.name,
+    socialLinks: {
+      display: true,
+      facebook: {
+        display: true,
+        icon: Meteor.absoluteUrl() + "resources/email-templates/facebook-icon.png",
+        link: "https://www.facebook.com"
+      },
+      googlePlus: {
+        display: true,
+        icon: Meteor.absoluteUrl() + "resources/email-templates/google-plus-icon.png",
+        link: "https://plus.google.com"
+      },
+      twitter: {
+        display: true,
+        icon: Meteor.absoluteUrl() + "resources/email-templates/twitter-icon.png",
+        link: "https://www.twitter.com"
+      }
+    },
+    user: Meteor.user(), // Account Data
+    currentUserName,
+    invitedUserName: name,
+    url: MeteorAccounts.urls.enrollAccount(token)
+  };
+}
+
+/**
+ * accounts/createFallbackLoginToken
+ * @returns {String} returns a new loginToken for current user,
+ *   that can be used for special login scenarios - e.g. store the
+ *   newly created token as cookie on the browser, if the client
+ *   does not offer local storage.
+ */
+export function createFallbackLoginToken() {
+  if (this.userId) {
+    const stampedLoginToken = MeteorAccounts._generateStampedLoginToken();
+    const loginToken = stampedLoginToken.token;
+    MeteorAccounts._insertLoginToken(this.userId, stampedLoginToken);
+    return loginToken;
+  }
+}
+
+/**
+ * Reaction Account Methods
+ */
+Meteor.methods({
+  "accounts/verifyAccount": verifyAccount,
+  "accounts/validateAddress": validateAddress,
+  "accounts/currentUserHasPassword": currentUserHasPassword,
+  "accounts/addressBookAdd": addressBookAdd,
+  "accounts/addressBookUpdate": addressBookUpdate,
+  "accounts/addressBookRemove": addressBookRemove,
+  "accounts/inviteShopMember": inviteShopMember,
+  "accounts/inviteShopOwner": inviteShopOwner,
+  "accounts/sendWelcomeEmail": sendWelcomeEmail,
+  "accounts/addUserPermissions": addUserPermissions,
+  "accounts/removeUserPermissions": removeUserPermissions,
+  "accounts/setUserPermissions": setUserPermissions,
+  "accounts/createFallbackLoginToken": createFallbackLoginToken
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.3</a> on Wed Aug 09 2017 11:56:59 GMT-0700 (PDT) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
