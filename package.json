@@ -1,0 +1,22 @@
+{
+  "name": "reaction-jsdoc",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reactioncommerce/reaction-jsdoc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/reactioncommerce/reaction-jsdoc/issues"
+  },
+  "homepage": "https://github.com/reactioncommerce/reaction-jsdoc#readme",
+  "dependencies": {
+    "docdash": "^0.4.0"
+  }
+}
