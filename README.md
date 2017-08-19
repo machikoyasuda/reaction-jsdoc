@@ -42,7 +42,7 @@ Document a function by adding comments above the function definition with the fo
 
 Example of a method:
 
-JSDoc comments source:
+**JSDoc comments source:**
 
 ```js
 /**
@@ -55,7 +55,7 @@ JSDoc comments source:
  */
 ```
 
-Documentation:
+**Documentation:**
 
 <h4 class="name" id="quantityProcessing"><span class="type-signature"></span>quantityProcessing<span class="signature">(product, variant, itemQty)</span><span class="type-signature"> → {Number}</span></h4>
 
@@ -118,6 +118,8 @@ Documentation:
     </tr>
   </tbody>
 </table>
+
+See the resulting documentation live: https://reactioncommerce.github.io/reaction-jsdoc/global.html#quantityProcessing
 
 ### documenting React components
 
