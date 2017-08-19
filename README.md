@@ -40,19 +40,84 @@ Document a function by adding comments above the function definition with the fo
 - `@since` version number
 - `@todo` any todo notes here
 
-Example:
+Example of a method:
+
+JSDoc comments source:
 
 ```js
 /**
- * quantityProcessing
+ * @method quantityProcessing
  * @summary perform calculations admissibility of adding product to cart
  * @param {Object} product - product to add to Cart
- * @param {Number} itemQty - qty to add to cart, defaults to 1, deducts
- *  from inventory
+ * @param {Number} itemQty - qty to add to cart, defaults to 1, deducts from inventory
  * @since 1.10.1
  * @return {Number} quantity - revised quantity to be added to cart
  */
 ```
+
+Documentation:
+
+<h4 class="name" id="quantityProcessing"><span class="type-signature"></span>quantityProcessing<span class="signature">(product, variant, itemQty)</span><span class="type-signature"> → {Number}</span></h4>
+
+<p class="summary">perform calculations admissibility of adding product to cart</p>
+
+<dl class="details">
+  <dt class="tag-source">Source:</dt>
+  <dd class="tag-source">
+    <ul class="dummy">
+      <li>
+        <a href="server_methods_core_cart.js.html">server/methods/core/cart.js</a>, <a href="server_methods_core_cart.js.html#line19">line 19</a>
+      </li>
+    </ul>
+  </dd>
+  <dt class="tag-since">Since:</dt>
+  <dd class="tag-since">
+    <ul class="dummy">
+      <li>1.10.1</li>
+    </ul>
+  </dd>  
+</dl>
+
+<h5>Parameters:</h5>
+
+<table class="params">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Default</th>
+      <th class="last">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="name"><code>product</code></td>
+      <td class="type">
+        <span class="param-type">Object</span>
+      </td>
+      <td class="default"></td>
+      <td class="description last"><p>product to add to Cart</p></td>
+    </tr>
+    <tr>
+      <td class="name"><code>variant</code></td>
+      <td class="type">
+        <span class="param-type">Object</span>
+      </td>
+      <td class="default"></td>
+      <td class="description last"><p>product variant</p></td>
+    </tr>
+    <tr>
+      <td class="name"><code>itemQty</code></td>
+      <td class="type">
+        <span class="param-type">Number</span>
+      </td>
+      <td class="default">
+        <code>1</code>
+      </td>
+      <td class="description last"><p>qty to add to cart, defaults to 1, deducts from inventory</p></td>
+    </tr>
+  </tbody>
+</table>
 
 ### documenting React components
 
