@@ -162,7 +162,7 @@ More on organizing modules from JSDoc: http://usejsdoc.org/howto-es2015-modules.
 
 ## example jsdoc configuration
 
-Create a `jsoc.json` file in the `reaction` repository. This file configures what files will be parsed for JSDoc comments, what theme to use and what plugins to use.
+Create a `jsdoc.json` file in the `reaction` repository. This file configures what files will be parsed for JSDoc comments, what theme to use and what plugins to use.
 
 ```js
 {
