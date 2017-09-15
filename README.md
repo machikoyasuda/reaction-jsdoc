@@ -195,18 +195,6 @@ Document a Class with a one-line description of the class:
 
 More on documenting classes from JSDoc: http://usejsdoc.org/howto-es2015-classes.html
 
-### organizing modules
-
-Any file that a developer will require using `import` should be defined as a module with `@module` at the top of the file:
-
-```
-/**
- * Accounts module.
- * @module ./accounts
- */
-```
-
-More on organizing modules from JSDoc: http://usejsdoc.org/howto-es2015-modules.html
 
 ## example jsdoc configuration
 
