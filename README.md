@@ -23,38 +23,86 @@ See [here](#example-jsdoc-configuration) for an example configuration file.
 
 ## how to write docs
 
+![image](https://user-images.githubusercontent.com/1203639/30391482-b94e7666-9876-11e7-9336-3a306825fb76.png)
+
+
+### documenting a file
+
+In every file, following `import`:
+
+```/**
+ * @file Shopify connector webhook methods
+ *       contains methods for creating and deleting webhooks providing
+ *       synchronization between a Shopify store and a Reaction shop
+ * @module connectors/shopify/webhooks
+ */
+```
+
 ### documenting a function
 
-Document a function by adding comments above the function definition with the following @tags:
+Document a function by adding comments above the function definition with the following tags:
 
 #### required:
-- `@method` name - (`@method` can be omitted)
+- `@method` name
 - `@summary` can use Markdown here
-- `@param` {Type} name - description
-- `@return` {Type} name - description
+- `@param` {type} name - description, use `[]` square brackets around param for optional params
+- `@return` {type} name - description, or `@return {undefined}` 
 
 #### optional:
+- `@async`
 - `@public` or `@private`
 - `@default`
 - `@deprecated` since version number
 - `@since` version number
 - `@todo` any todo notes here
 
+#### other things:
+* `@ignore` - if you don't want the function to output docs
+* Lowercase type names, like `object`, `string`
+
 Example of a method:
 
-**JSDoc comments source:**
+**examples:**
 
 ```js
 /**
  * @method quantityProcessing
  * @summary perform calculations admissibility of adding product to cart
- * @param {Object} product - product to add to Cart
- * @param {Number} itemQty - qty to add to cart, defaults to 1, deducts from inventory
+ * @param {object} product - product to add to Cart
+ * @param {number} itemQty - qty to add to cart, defaults to 1, deducts from inventory
  * @since 1.10.1
- * @return {Number} quantity - revised quantity to be added to cart
+ * @return {number} quantity - revised quantity to be added to cart
  */
 ```
 
+```js
+/**
+ * Meteor method for creating a shopify webhook for the active shop
+ * See: https://help.shopify.com/api/reference/webhook for list of valid topics
+ * @async
+ * @method connectors/shopify/webhooks/create
+ * @param {object} options Options object
+ * @param {string} options.topic - the shopify topic to subscribe to
+ * @param {string} [options.absoluteUrl] - Url to send webhook requests - should only be used in development mode
+ * @return {undefined}
+ */
+```js
+
+```js
+/**
+ * Transforms a Shopify product into a Reaction product.
+ * @private
+ * @method createReactionProductFromShopifyProduct
+ * @param  {object} options Options object 
+ * @param  {object} options.shopifyProduct the Shopify product object
+ * @param  {string} options.shopId The shopId we're importing for
+ * @param  {[string]} options.hashtags An array of hashtags that should be attached to this product.
+ * @return {object} An object that fits the `Product` schema
+ *
+ * @todo consider abstracting private Shopify import helpers into a helpers file
+ */
+```js
+ 
 **Documentation:**
 
 <h4 class="name" id="quantityProcessing"><span class="type-signature"></span>quantityProcessing<span class="signature">(product, variant, itemQty)</span><span class="type-signature"> → {Number}</span></h4>
@@ -93,7 +141,7 @@ Example of a method:
     <tr>
       <td class="name"><code>product</code></td>
       <td class="type">
-        <span class="param-type">Object</span>
+        <span class="param-type">object</span>
       </td>
       <td class="default"></td>
       <td class="description last"><p>product to add to Cart</p></td>
@@ -109,7 +157,7 @@ Example of a method:
     <tr>
       <td class="name"><code>itemQty</code></td>
       <td class="type">
-        <span class="param-type">Number</span>
+        <span class="param-type">number</span>
       </td>
       <td class="default">
         <code>1</code>
