@@ -86,7 +86,7 @@ Example of a method:
  * @param {string} [options.absoluteUrl] - Url to send webhook requests - should only be used in development mode
  * @return {undefined}
  */
-```js
+```
 
 ```js
 /**
@@ -101,7 +101,7 @@ Example of a method:
  *
  * @todo consider abstracting private Shopify import helpers into a helpers file
  */
-```js
+```
  
 **Documentation:**
 
