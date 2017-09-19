@@ -77,10 +77,9 @@ Example of a method:
 
 ```js
 /**
- * Meteor method for creating a shopify webhook for the active shop
- * See: https://help.shopify.com/api/reference/webhook for list of valid topics
- * @async
  * @method connectors/shopify/webhooks/create
+ * @summary Meteor method for creating a shopify webhook for the active shop
+ * @async
  * @param {object} options Options object
  * @param {string} options.topic - the shopify topic to subscribe to
  * @param {string} [options.absoluteUrl] - Url to send webhook requests - should only be used in development mode
@@ -90,9 +89,9 @@ Example of a method:
 
 ```js
 /**
- * Transforms a Shopify product into a Reaction product.
- * @private
  * @method createReactionProductFromShopifyProduct
+ * @summary Transforms a Shopify product into a Reaction product.
+ * @private
  * @param  {object} options Options object 
  * @param  {object} options.shopifyProduct the Shopify product object
  * @param  {string} options.shopId The shopId we're importing for
