@@ -62,7 +62,7 @@ Document a function by adding comments above the function definition with the fo
 
 Example of a method:
 
-**examples:**
+**basic example:**
 
 ```js
 /**
@@ -74,6 +74,12 @@ Example of a method:
  * @return {number} quantity - revised quantity to be added to cart
  */
 ```
+
+<img width="917" alt="screen shot 2017-10-04 at 9 47 43 am" src="https://user-images.githubusercontent.com/3673236/31188268-2caac880-a8e9-11e7-973d-77567b3dffcc.png">
+
+Live: https://reactioncommerce.github.io/reaction-jsdoc/global.html#quantityProcessing
+
+**more examples:**
 
 ```js
 /**
@@ -104,70 +110,6 @@ Example of a method:
  
 **Documentation:**
 
-<h4 class="name" id="quantityProcessing"><span class="type-signature"></span>quantityProcessing<span class="signature">(product, variant, itemQty)</span><span class="type-signature"> → {Number}</span></h4>
-
-<p class="summary">perform calculations admissibility of adding product to cart</p>
-
-<dl class="details">
-  <dt class="tag-source">Source:</dt>
-  <dd class="tag-source">
-    <ul class="dummy">
-      <li>
-        <a href="server_methods_core_cart.js.html">server/methods/core/cart.js</a>, <a href="server_methods_core_cart.js.html#line19">line 19</a>
-      </li>
-    </ul>
-  </dd>
-  <dt class="tag-since">Since:</dt>
-  <dd class="tag-since">
-    <ul class="dummy">
-      <li>1.10.1</li>
-    </ul>
-  </dd>  
-</dl>
-
-<h5>Parameters:</h5>
-
-<table class="params">
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Type</th>
-      <th>Default</th>
-      <th class="last">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="name"><code>product</code></td>
-      <td class="type">
-        <span class="param-type">object</span>
-      </td>
-      <td class="default"></td>
-      <td class="description last"><p>product to add to Cart</p></td>
-    </tr>
-    <tr>
-      <td class="name"><code>variant</code></td>
-      <td class="type">
-        <span class="param-type">Object</span>
-      </td>
-      <td class="default"></td>
-      <td class="description last"><p>product variant</p></td>
-    </tr>
-    <tr>
-      <td class="name"><code>itemQty</code></td>
-      <td class="type">
-        <span class="param-type">number</span>
-      </td>
-      <td class="default">
-        <code>1</code>
-      </td>
-      <td class="description last"><p>qty to add to cart, defaults to 1, deducts from inventory</p></td>
-    </tr>
-  </tbody>
-</table>
-
-See the resulting documentation live: https://reactioncommerce.github.io/reaction-jsdoc/global.html#quantityProcessing
-
 ### documenting React components
 
 Document a React component's props with `@property` tags:
@@ -193,7 +135,6 @@ Document a Class with a one-line description of the class:
 ```
 
 More on documenting classes from JSDoc: http://usejsdoc.org/howto-es2015-classes.html
-
 
 ## example jsdoc configuration
 
