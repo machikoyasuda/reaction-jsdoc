@@ -16,7 +16,7 @@ npm install docdash
 Make sure you have a `jsdoc.json` configuration file in the `reaction` repository. Then run:
 
 ```sh
-jsdoc --verbose --configure jsdoc.json
+jsdoc . --verbose --configure jsdoc.json
 ```
 
 See [here](#example-jsdoc-configuration) for an example configuration file.
