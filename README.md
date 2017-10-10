@@ -30,7 +30,8 @@ See [here](#example-jsdoc-configuration) for an example configuration file.
 
 In every file, following `import`:
 
-```/**
+```
+/**
  * @file Shopify connector webhook methods
  *       contains methods for creating and deleting webhooks providing
  *       synchronization between a Shopify store and a Reaction shop
