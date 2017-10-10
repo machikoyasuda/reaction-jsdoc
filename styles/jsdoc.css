@@ -1,4 +1,9 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700);
+
+.type-signature,
+.signature-attributes {
+  display: none;
+}
 
 * {
   box-sizing: border-box
@@ -13,15 +18,14 @@ body {
   color: #4d4e53;
   background-color: white;
   margin: 0 auto;
-  padding: 0 20px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 160%;
 }
 
 a,
 a:active {
-  color: #606;
+  color: #000;
   text-decoration: none;
 }
 
@@ -42,7 +46,7 @@ p, ul, ol, blockquote {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -58,8 +62,8 @@ h1 {
 }
 
 h1.page-title {
-  font-size: 48px;
-  margin: 1em 30px;
+  font-size: 40px;
+  margin: 1em 40px;
 }
 
 h2 {
@@ -80,12 +84,10 @@ h4 {
 
 h4.name {
   color: #fff;
-  background: #6d426d;
-  box-shadow: 0 .25em .5em #d3d3d3;
-  border-top: 1px solid #d3d3d3;
-  border-bottom: 1px solid #d3d3d3;
-  margin: 1.5em 0 0.5em;
+  background: #052a4e;
+  margin: 2.5em 0 0.5em;
   padding: .75em 0 .75em 10px;
+  font-size: 22px;
 }
 
 h4.name a {
@@ -110,7 +112,7 @@ h6 {
 }
 
 tt, code, kbd, samp {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-family: "Menlo", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
   background: #f4f4f4;
   padding: 1px 5px;
 }
@@ -129,7 +131,7 @@ tt, code, kbd, samp {
 #main {
   float: right;
   min-width: 360px;
-  width: calc(100% - 240px);
+  width: calc(100% - 300px);
 }
 
 header {
@@ -139,7 +141,8 @@ header {
 section {
   display: block;
   background-color: #fff;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 40px;
+  max-width: 900px;
 }
 
 .variation {
@@ -156,19 +159,21 @@ section {
 nav {
   float: left;
   display: block;
-  width: 250px;
+  width: 300px;
   background: #fff;
-  overflow: auto;
+  overflow-y: scroll;
   position: fixed;
   height: 100%;
+  border-right: 1px solid #e6e6e5;
+  padding: 20px 20px 80px;
 }
 
 nav h3 {
   margin-top: 12px;
-  font-size: 13px;
+  font-size: 16px;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
+  letter-spacing: normal;
+  font-weight: 600;
   line-height: 24px;
   margin: 15px 0 10px;
   padding: 0;
@@ -176,7 +181,7 @@ nav h3 {
 }
 
 nav ul {
-  font-family: 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   font-size: 100%;
   line-height: 17px;
   padding: 0;
@@ -186,16 +191,21 @@ nav ul {
 
 nav ul a,
 nav ul a:active {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
   line-height: 18px;
   padding: 0;
   display: block;
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+nav > ul > li > a {
+  font-weight: 600;
 }
 
 nav a:hover,
 nav a:active {
-  color: #606;
+  color: #000;
 }
 
 nav > ul {
@@ -203,7 +213,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-  color: #606;
+  color: #000;
 }
 
 nav ul ul {
@@ -233,12 +243,12 @@ nav h2 {
 nav > h2 > a {
    display: block;
    margin: 10px 0 -10px;
-   color: #606 !important;
+   color: #000 !important;
 }
 
 footer {
   color: hsl(0, 0%, 28%);
-  margin-left: 250px;
+  margin-left: 325px;
   display: block;
   padding: 15px;
   font-style: italic;
@@ -275,11 +285,11 @@ footer {
 }
 
 .name, .signature {
-  font-family: Consolas, Monaco, 'Andale Mono', monospace
+  font-family: "Menlo", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace
 }
 
 .signature {
-    color: #fc83ff;
+    color: #fd8283;
 }
 
 .details {
@@ -396,7 +406,6 @@ footer {
   border: 1px solid #ddd;
   border-collapse: collapse;
   border-radius: 3px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   width: 100%;
   font-size: 14px;
   margin: 1em 0;
@@ -412,7 +421,7 @@ footer {
 
 .params td, .params .name, .props .name, .name code {
    color: #4D4E53;
-   font-family: Consolas, Monaco, 'Andale Mono', monospace;
+   font-family: "Menlo", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace;
    font-size: 100%;
 }
 
@@ -449,8 +458,8 @@ footer {
 }
 
 span.param-type, .params td .param-type, .param-type dd {
-   color: #606;
-  font-family: Consolas, Monaco, 'Andale Mono', monospace
+   color: #000;
+  font-family: "Menlo", "Lucida Console", "Lucida Sans Typewriter", Monaco, monospace
 }
 
 .param-type dt, .param-type dd {
@@ -633,6 +642,7 @@ span.param-type, .params td .param-type, .param-type dd {
 
   footer {
     margin-left: 0;
+    display: none;
   }
 }
 
