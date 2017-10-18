@@ -8,7 +8,7 @@ The Core API Documentation uses [JSDoc](http://usejsdoc.org/) and a custom versi
 
 1. Add jsdoc tags to your code
 2. Run `npm run docs`
-3. Open `file:///tmp/reaction-jsdoc/index.html` in your browser.
+3. Open `file:///tmp/reaction-docs/index.html` in your browser.
 
 > ProTip: Did you get an error? Run the command in verbose mode to see where it broke: `jsdoc . --configure .reaction/jsdoc/jsdoc.json`
 
