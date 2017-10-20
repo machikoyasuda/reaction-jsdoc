@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>server/api/core/core.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="FS.Store.GridFS.html">GridFS</a></li><li><a href="Products.html">Products</a><ul class='methods'><li data-type='method'><a href="Products.html#render">render</a></li><li data-type='method'><a href="Products.html#renderLoadMoreProductsButton">renderLoadMoreProductsButton</a></li><li data-type='method'><a href="Products.html#renderNotFound">renderNotFound</a></li><li data-type='method'><a href="Products.html#renderProductGrid">renderProductGrid</a></li><li data-type='method'><a href="Products.html#renderSpinner">renderSpinner</a></li></ul></li><li><a href="ReactiveAggregate.html">ReactiveAggregate</a></li><li><a href="Router.html">Router</a><ul class='members'><li data-type='member'><a href="Router.html#._routes">_routes</a></li><li data-type='member'><a href="Router.html#.triggers">triggers</a></li><li data-type='member'><a href="Router.html#_initialized">_initialized</a></li><li data-type='member'><a href="Router.html#activeClassName">activeClassName</a></li><li data-type='member'><a href="Router.html#history">history</a></li><li data-type='member'><a href="Router.html#Hooks">Hooks</a></li><li data-type='member'><a href="Router.html#routes">routes</a></li></ul><ul class='methods'><li data-type='method'><a href="Router.html#.current">current</a></li><li data-type='method'><a href="Router.html#.getParam">getParam</a></li><li data-type='method'><a href="Router.html#.getQueryParam">getQueryParam</a></li><li data-type='method'><a href="Router.html#.getRouteName">getRouteName</a></li><li data-type='method'><a href="Router.html#.go">go</a></li><li data-type='method'><a href="Router.html#.initPackageRoutes">initPackageRoutes</a></li><li data-type='method'><a href="Router.html#.isActiveClassName">isActiveClassName</a></li><li data-type='method'><a href="Router.html#.pathFor">pathFor</a></li><li data-type='method'><a href="Router.html#.ready">ready</a></li><li data-type='method'><a href="Router.html#.reload">reload</a></li><li data-type='method'><a href="Router.html#.replace">replace</a></li><li data-type='method'><a href="Router.html#.setCurrentRoute">setCurrentRoute</a></li><li data-type='method'><a href="Router.html#.setQueryParams">setQueryParams</a></li><li data-type='method'><a href="Router.html#.triggerRouterReady">triggerRouterReady</a></li><li data-type='method'><a href="Router.html#.watchPathChange">watchPathChange</a></li></ul></li><li><a href="Validation.html">Validation</a><ul class='methods'><li data-type='method'><a href="Validation.html#validate">validate</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AddEmail.html">AddEmail</a><ul class='methods'><li data-type='method'><a href="module-AddEmail.html#~handleFieldChange()">handleFieldChange()</a></li><li data-type='method'><a href="module-AddEmail.html#~handleSubmit()">handleSubmit()</a></li></ul></li><li><a href="module-cartOrderTransform.html">cartOrderTransform</a><ul class='methods'><li data-type='method'><a href="module-cartOrderTransform.html#~cartCount">cartCount</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartDiscounts">cartDiscounts</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartShipping">cartShipping</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartSubtotal">cartSubtotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartTaxes">cartTaxes</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartTotal">cartTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getCount">getCount</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getDiscounts">getDiscounts</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getDiscountsByShop">getDiscountsByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getItemsByShop">getItemsByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getPaymentMethods">getPaymentMethods</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShippingTotal">getShippingTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShippingTotalByShop">getShippingTotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShopSummary">getShopSummary</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getSubTotal">getSubTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getSubtotalByShop">getSubtotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTaxesByShop">getTaxesByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTaxTotal">getTaxTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTotal">getTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTotalByShop">getTotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getUniquePaymentMethods">getUniquePaymentMethods</a></li></ul></li><li><a href="module-components.html">components</a><ul class='members'><li data-type='member'><a href="module-components.html#.getHOCs">getHOCs</a></li><li data-type='member'><a href="module-components.html#.getRawComponent">getRawComponent</a></li></ul><ul class='methods'><li data-type='method'><a href="module-components.html#.composeWithTracker">composeWithTracker</a></li><li data-type='method'><a href="module-components.html#.copyHOCs">copyHOCs</a></li><li data-type='method'><a href="module-components.html#.getComponent">getComponent</a></li><li data-type='method'><a href="module-components.html#.loadRegisteredComponents">loadRegisteredComponents</a></li><li data-type='method'><a href="module-components.html#.registerComponent">registerComponent</a></li><li data-type='method'><a href="module-components.html#.registerHOC">registerHOC</a></li><li data-type='method'><a href="module-components.html#.replaceComponent">replaceComponent</a></li><li data-type='method'><a href="module-components.html#.withCurrentAccount">withCurrentAccount</a></li><li data-type='method'><a href="module-components.html#.withCurrentUser">withCurrentUser</a></li><li data-type='method'><a href="module-components.html#.withIsAdmin">withIsAdmin</a></li><li data-type='method'><a href="module-components.html#.withIsOwner">withIsOwner</a></li><li data-type='method'><a href="module-components.html#.withPermissions">withPermissions</a></li><li data-type='method'><a href="module-components.html#~getTrackerLoader">getTrackerLoader</a></li></ul></li><li><a href="module-connectors-shopify.html">connectors-shopify</a><ul class='methods'><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/api/products/count">connectors/shopify/api/products/count</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/import/products">connectors/shopify/import/products</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/orders/created">connectors/shopify/sync/orders/created</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/setup">connectors/shopify/sync/setup</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/teardown">connectors/shopify/sync/teardown</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/create">connectors/shopify/webhooks/create</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/delete">connectors/shopify/webhooks/delete</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/deleteAll">connectors/shopify/webhooks/deleteAll</a></li></ul></li><li><a href="module-Invoice.html">Invoice</a><ul class='methods'><li data-type='method'><a href="module-Invoice.html#~formatDate()">formatDate()</a></li><li data-type='method'><a href="module-Invoice.html#~handleClick()">handleClick()</a></li><li data-type='method'><a href="module-Invoice.html#~renderConditionalDisplay()">renderConditionalDisplay()</a></li><li data-type='method'><a href="module-Invoice.html#~renderDiscountForm()">renderDiscountForm()</a></li><li data-type='method'><a href="module-Invoice.html#~renderInvoice()">renderInvoice()</a></li><li data-type='method'><a href="module-Invoice.html#~renderRefundsInfo()">renderRefundsInfo()</a></li><li data-type='method'><a href="module-Invoice.html#~renderTotal()">renderTotal()</a></li></ul></li><li><a href="module-InvoiceActions.html">InvoiceActions</a></li><li><a href="module-LineItems.html">LineItems</a></li><li><a href="module-OrderSearch.html">OrderSearch</a><ul class='methods'><li data-type='method'><a href="module-OrderSearch.html#~handleChange()">handleChange()</a></li><li data-type='method'><a href="module-OrderSearch.html#~handleClear()">handleClear()</a></li></ul></li><li><a href="module-ReactionAlerts.html">ReactionAlerts</a><ul class='methods'><li data-type='method'><a href="module-ReactionAlerts.html#~alert">alert</a></li></ul></li><li><a href="module-SortableTable.html">SortableTable</a></li><li><a href="module-Translations.html">Translations</a></li></ul><h3>Namespaces</h3><ul><li><a href="FS.TempStore.html">TempStore</a><ul class='methods'><li data-type='method'><a href="FS.TempStore.html#.createReadStream">createReadStream</a></li><li data-type='method'><a href="FS.TempStore.html#.createWriteStream">createWriteStream</a></li><li data-type='method'><a href="FS.TempStore.html#.exists">exists</a></li><li data-type='method'><a href="FS.TempStore.html#.listParts">listParts</a></li><li data-type='method'><a href="FS.TempStore.html#.removeAll">removeAll</a></li><li data-type='method'><a href="FS.TempStore.html#.removeFile">removeFile</a></li></ul></li><li><a href="Hooks.Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Hooks.Events.html#.add">add</a></li><li data-type='method'><a href="Hooks.Events.html#.remove">remove</a></li><li data-type='method'><a href="Hooks.Events.html#.run">run</a></li><li data-type='method'><a href="Hooks.Events.html#.runAsync">runAsync</a></li></ul></li><li><a href="i18n.html">i18n</a><ul class='methods'><li data-type='method'><a href="i18n.html#.currencySymbol">currencySymbol</a></li><li data-type='method'><a href="i18n.html#.formatNumber">formatNumber</a></li><li data-type='method'><a href="i18n.html#.formatPrice">formatPrice</a></li><li data-type='method'><a href="i18n.html#.formatPriceString">formatPriceString</a></li><li data-type='method'><a href="i18n.html#.getBrowserLanguage">getBrowserLanguage</a></li><li data-type='method'><a href="i18n.html#.getLabelsFor">getLabelsFor</a></li><li data-type='method'><a href="i18n.html#.getMessagesFor">getMessagesFor</a></li><li data-type='method'><a href="i18n.html#.i18n">i18n</a></li></ul></li><li><a href="Meteor_Accounts.html">Meteor/Accounts</a><ul class='methods'><li data-type='method'><a href="Meteor_Accounts.html#.addressBookAdd">addressBookAdd</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addressBookRemove">addressBookRemove</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addressBookUpdate">addressBookUpdate</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addUserPermissions">addUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.createFallbackLoginToken">createFallbackLoginToken</a></li><li data-type='method'><a href="Meteor_Accounts.html#.inviteShopMember">inviteShopMember</a></li><li data-type='method'><a href="Meteor_Accounts.html#.inviteShopOwner">inviteShopOwner</a></li><li data-type='method'><a href="Meteor_Accounts.html#.removeEmailAddress">removeEmailAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.removeUserPermissions">removeUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.sendResetPasswordEmail">sendResetPasswordEmail</a></li><li data-type='method'><a href="Meteor_Accounts.html#.sendWelcomeEmail">sendWelcomeEmail</a></li><li data-type='method'><a href="Meteor_Accounts.html#.setUserPermissions">setUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.syncUsersAndAccounts">syncUsersAndAccounts</a></li><li data-type='method'><a href="Meteor_Accounts.html#.updateEmailAddress">updateEmailAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.updateServiceConfiguration">updateServiceConfiguration</a></li><li data-type='method'><a href="Meteor_Accounts.html#.validateAddress">validateAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.verifyAccount">verifyAccount</a></li></ul></li><li><a href="Meteor_Accounts_Validation.html">Meteor/Accounts/Validation</a><ul class='methods'><li data-type='method'><a href="Meteor_Accounts_Validation.html#.email">email</a></li><li data-type='method'><a href="Meteor_Accounts_Validation.html#.password">password</a></li><li data-type='method'><a href="Meteor_Accounts_Validation.html#.username">username</a></li></ul></li><li><a href="Meteor_Cart.html">Meteor/Cart</a><ul class='methods'><li data-type='method'><a href="Meteor_Cart.html#.cart/addToCart">cart/addToCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/createCart">cart/createCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/mergeCart">cart/mergeCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/removeFromCart">cart/removeFromCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/resetShipmentMethod">cart/resetShipmentMethod</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setAnonymousUserEmail">cart/setAnonymousUserEmail</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setPaymentAddress">cart/setPaymentAddress</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setShipmentAddress">cart/setShipmentAddress</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setShipmentMethod">cart/setShipmentMethod</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setUserCurrency">cart/setUserCurrency</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/submitPayment">cart/submitPayment</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/unsetAddresses">cart/unsetAddresses</a></li></ul></li><li><a href="Meteor_Email.html">Meteor/Email</a><ul class='methods'><li data-type='method'><a href="Meteor_Email.html#.retryFailed">retryFailed</a></li><li data-type='method'><a href="Meteor_Email.html#.saveSettings">saveSettings</a></li><li data-type='method'><a href="Meteor_Email.html#.verifySettings">verifySettings</a></li></ul></li><li><a href="Meteor_Group.html">Meteor/Group</a><ul class='methods'><li data-type='method'><a href="Meteor_Group.html#.group/addUser">group/addUser</a></li><li data-type='method'><a href="Meteor_Group.html#.group/createGroup">group/createGroup</a></li><li data-type='method'><a href="Meteor_Group.html#.group/removeUser">group/removeUser</a></li><li data-type='method'><a href="Meteor_Group.html#.group/updateGroup">group/updateGroup</a></li></ul></li><li><a href="Meteor_i18n.html">Meteor/i18n</a><ul class='methods'><li data-type='method'><a href="Meteor_i18n.html#.addTranslation">addTranslation</a></li><li data-type='method'><a href="Meteor_i18n.html#.flushTranslations">flushTranslations</a></li></ul></li><li><a href="Meteor_Inventory.html">Meteor/Inventory</a><ul class='methods'><li data-type='method'><a href="Meteor_Inventory.html#.backorder">backorder</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearReserve">clearReserve</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearReserve">clearReserve</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearStatus">clearStatus</a></li><li data-type='method'><a href="Meteor_Inventory.html#.lowStock">lowStock</a></li><li data-type='method'><a href="Meteor_Inventory.html#.remove">remove</a></li><li data-type='method'><a href="Meteor_Inventory.html#.return">return</a></li><li data-type='method'><a href="Meteor_Inventory.html#.returnToStock">returnToStock</a></li><li data-type='method'><a href="Meteor_Inventory.html#.setStatus">setStatus</a></li><li data-type='method'><a href="Meteor_Inventory.html#.shipped">shipped</a></li><li data-type='method'><a href="Meteor_Inventory.html#.sold">sold</a></li></ul></li><li><a href="Meteor_Notification.html">Meteor/Notification</a><ul class='methods'><li data-type='method'><a href="Meteor_Notification.html#.delete">delete</a></li><li data-type='method'><a href="Meteor_Notification.html#.markOneAsRead">markOneAsRead</a></li><li data-type='method'><a href="Meteor_Notification.html#.send">send</a></li></ul></li><li><a href="Meteor_Product.html">Meteor/Product</a><ul class='methods'><li data-type='method'><a href="Meteor_Product.html#.archiveProduct">archiveProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.cloneProduct">cloneProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.cloneVariant">cloneVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.createProduct">createProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.createVariant">createVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.deleteVariant">deleteVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.publishProduct">publishProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.removeMetaFields">removeMetaFields</a></li><li data-type='method'><a href="Meteor_Product.html#.removeProductTag">removeProductTag</a></li><li data-type='method'><a href="Meteor_Product.html#.setHandle">setHandle</a></li><li data-type='method'><a href="Meteor_Product.html#.setHandleTag">setHandleTag</a></li><li data-type='method'><a href="Meteor_Product.html#.toggleVisibility">toggleVisibility</a></li><li data-type='method'><a href="Meteor_Product.html#.updateMetaFields">updateMetaFields</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductField">updateProductField</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductPosition">updateProductPosition</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductTags">updateProductTags</a></li><li data-type='method'><a href="Meteor_Product.html#.updateVariant">updateVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.updateVariantsPosition">updateVariantsPosition</a></li></ul></li><li><a href="Meteor_Reaction.html">Meteor/Reaction</a><ul class='methods'><li data-type='method'><a href="Meteor_Reaction.html#.getUserId">getUserId</a></li></ul></li><li><a href="Meteor_Shop.html">Meteor/Shop</a><ul class='methods'><li data-type='method'><a href="Meteor_Shop.html#.changeLayout">changeLayout</a></li><li data-type='method'><a href="Meteor_Shop.html#.createShop">createShop</a></li><li data-type='method'><a href="Meteor_Shop.html#.createTag">createTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.fetchCurrencyRate">fetchCurrencyRate</a></li><li data-type='method'><a href="Meteor_Shop.html#.flushCurrencyRate">flushCurrencyRate</a></li><li data-type='method'><a href="Meteor_Shop.html#.getCurrencyRates">getCurrencyRates</a></li><li data-type='method'><a href="Meteor_Shop.html#.getLocale">getLocale</a></li><li data-type='method'><a href="Meteor_Shop.html#.getWorkflow">getWorkflow</a></li><li data-type='method'><a href="Meteor_Shop.html#.hideHeaderTag">hideHeaderTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.locateAddress">locateAddress</a></li><li data-type='method'><a href="Meteor_Shop.html#.removeHeaderTag">removeHeaderTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.togglePackage">togglePackage</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateBrandAsset">updateBrandAsset</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateCurrencyConfiguration">updateCurrencyConfiguration</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateHeaderTags">updateHeaderTags</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateLanguageConfiguration">updateLanguageConfiguration</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateShopExternalServices">updateShopExternalServices</a></li></ul></li><li><a href="Meteor_SMS.html">Meteor/SMS</a><ul class='methods'><li data-type='method'><a href="Meteor_SMS.html#.saveSettings">saveSettings</a></li><li data-type='method'><a href="Meteor_SMS.html#.send">send</a></li></ul></li><li><a href="Meteor_Workflow.html">Meteor/Workflow</a><ul class='methods'><li data-type='method'><a href="Meteor_Workflow.html#.coreOrderWorkflow/coreOrderCompleted">coreOrderWorkflow/coreOrderCompleted</a></li><li data-type='method'><a href="Meteor_Workflow.html#.coreOrderWorkflow/coreOrderProcessing">coreOrderWorkflow/coreOrderProcessing</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pullOrderWorkflow">pullOrderWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushCartWorkflow">pushCartWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushItemWorkflow">pushItemWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushOrderWorkflow">pushOrderWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.revertCartWorkflow">revertCartWorkflow</a></li></ul></li><li><a href="schemas.html">schemas</a><ul class='members'><li data-type='member'><a href="schemas.html#.Accounts">Accounts</a></li><li data-type='member'><a href="schemas.html#.Address">Address</a></li><li data-type='member'><a href="schemas.html#.AnalyticsEvents">AnalyticsEvents</a></li><li data-type='member'><a href="schemas.html#.Assets">Assets</a></li><li data-type='member'><a href="schemas.html#.BrandAsset">BrandAsset</a></li><li data-type='member'><a href="schemas.html#.Cart">Cart</a></li><li data-type='member'><a href="schemas.html#.CartItem">CartItem</a></li><li data-type='member'><a href="schemas.html#.CartItems">CartItems</a></li><li data-type='member'><a href="schemas.html#.CorePackageConfig">CorePackageConfig</a></li><li data-type='member'><a href="schemas.html#.Currency">Currency</a></li><li data-type='member'><a href="schemas.html#.Currency">Currency</a></li><li data-type='member'><a href="schemas.html#.CustomEmailSettings">CustomEmailSettings</a></li><li data-type='member'><a href="schemas.html#.Document">Document</a></li><li data-type='member'><a href="schemas.html#.Email">Email</a></li><li data-type='member'><a href="schemas.html#.Emails">Emails</a></li><li data-type='member'><a href="schemas.html#.EventforEventLog">Event for EventLog</a></li><li data-type='member'><a href="schemas.html#.Group">Group</a></li><li data-type='member'><a href="schemas.html#.History">History</a></li><li data-type='member'><a href="schemas.html#.Inventory">Inventory</a></li><li data-type='member'><a href="schemas.html#.Invoice">Invoice</a></li><li data-type='member'><a href="schemas.html#.Languages">Languages</a></li><li data-type='member'><a href="schemas.html#.LayoutStructure">LayoutStructure</a></li><li data-type='member'><a href="schemas.html#.Locale">Locale</a></li><li data-type='member'><a href="schemas.html#.Logs">Logs</a></li><li data-type='member'><a href="schemas.html#.MerchantShop">MerchantShop</a></li><li data-type='member'><a href="schemas.html#.Metafield">Metafield</a></li><li data-type='member'><a href="schemas.html#.Notes">Notes</a></li><li data-type='member'><a href="schemas.html#.Notification">Notification</a></li><li data-type='member'><a href="schemas.html#.OrderSchema">Order Schema</a></li><li data-type='member'><a href="schemas.html#.OrderItems">OrderItems</a></li><li data-type='member'><a href="schemas.html#.OrderTransactionSchema">OrderTransaction Schema</a></li><li data-type='member'><a href="schemas.html#.PackageConfig">PackageConfig</a></li><li data-type='member'><a href="schemas.html#.Payment">Payment</a></li><li data-type='member'><a href="schemas.html#.Payment">Payment</a></li><li data-type='member'><a href="schemas.html#.PaymentItem">PaymentItem</a></li><li data-type='member'><a href="schemas.html#.PaymentMethod">PaymentMethod</a></li><li data-type='member'><a href="schemas.html#.Permissions">Permissions</a></li><li data-type='member'><a href="schemas.html#.PriceRange">PriceRange</a></li><li data-type='member'><a href="schemas.html#.Product">Product</a></li><li data-type='member'><a href="schemas.html#.ProductPosition">ProductPosition</a></li><li data-type='member'><a href="schemas.html#.ProductVariant">ProductVariant</a></li><li data-type='member'><a href="schemas.html#.Profile">Profile</a></li><li data-type='member'><a href="schemas.html#.ReactionAnalyticsPackageConfig">ReactionAnalyticsPackageConfig</a></li><li data-type='member'><a href="schemas.html#.ReactLayout">ReactLayout</a></li><li data-type='member'><a href="schemas.html#.Registry">Registry</a></li><li data-type='member'><a href="schemas.html#.Revisions">Revisions</a></li><li data-type='member'><a href="schemas.html#.sharedFields">sharedFields</a></li><li data-type='member'><a href="schemas.html#.Shipment">Shipment</a></li><li data-type='member'><a href="schemas.html#.ShipmentItem">ShipmentItem</a></li><li data-type='member'><a href="schemas.html#.ShipmentQuote">ShipmentQuote</a></li><li data-type='member'><a href="schemas.html#.ShipmentQuotesQueryStatusUsed">ShipmentQuotesQueryStatusUsed</a></li><li data-type='member'><a href="schemas.html#.Shipping">Shipping</a></li><li data-type='member'><a href="schemas.html#.ShippingMethod">ShippingMethod</a></li><li data-type='member'><a href="schemas.html#.ShippingPackage">ShippingPackage</a></li><li data-type='member'><a href="schemas.html#.ShippingParcel">ShippingParcel</a></li><li data-type='member'><a href="schemas.html#.ShippingProvider">ShippingProvider</a></li><li data-type='member'><a href="schemas.html#.ShippoShipment">ShippoShipment</a></li><li data-type='member'><a href="schemas.html#.ShippoShippingMethod">ShippoShippingMethod</a></li><li data-type='member'><a href="schemas.html#.ShippoShippingProviderSchema">ShippoShippingProvider Schema</a></li><li data-type='member'><a href="schemas.html#.Shop">Shop</a></li><li data-type='member'><a href="schemas.html#.ShopTheme">ShopTheme</a></li><li data-type='member'><a href="schemas.html#.Sms">Sms</a></li><li data-type='member'><a href="schemas.html#.SocialPackageConfig">SocialPackageConfig</a></li><li data-type='member'><a href="schemas.html#.SocialProvider">SocialProvider</a></li><li data-type='member'><a href="schemas.html#.Tag">Tag</a></li><li data-type='member'><a href="schemas.html#.TaxSettings">TaxSettings</a></li><li data-type='member'><a href="schemas.html#.Template">Template</a></li><li data-type='member'><a href="schemas.html#.Themes">Themes</a></li><li data-type='member'><a href="schemas.html#.Translation">Translation</a></li><li data-type='member'><a href="schemas.html#.VariantMedia">VariantMedia</a></li><li data-type='member'><a href="schemas.html#.Workflow">Workflow</a></li></ul><ul class='methods'><li data-type='method'><a href="schemas.html#.schemaIdAutoValue">schemaIdAutoValue</a></li><li data-type='method'><a href="schemas.html#.shopDefaultCountry">shopDefaultCountry</a></li><li data-type='method'><a href="schemas.html#.shopIdAutoValue">shopIdAutoValue</a></li><li data-type='method'><a href="schemas.html#.shopIdAutoValueForCart">shopIdAutoValueForCart</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#%2522changeinput.checkbox-switch.connector-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.connector-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput.checkbox-switch.shipping-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.shipping-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput%255Bname=enabled%255D%2522">"change input[name=enabled]"</a></li><li><a href="global.html#%2522click.js-paypal-express-checkout%2522">"click .js-paypal-express-checkout"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=cancelOrder%255D%2522">"click [data-event-action=cancelOrder]"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=showSecret%255D%2522">"click [data-event-action=showSecret]"</a></li><li><a href="global.html#%2522example/payment/capture%2522">"example/payment/capture"</a></li><li><a href="global.html#%2522example/refund/create%2522">"example/refund/create"</a></li><li><a href="global.html#%2522example/refund/list%2522">"example/refund/list"</a></li><li><a href="global.html#%2522submitform%2522">"submit form"</a></li><li><a href="global.html#%2522taxcloud/getTaxCodes%2522">"taxcloud/getTaxCodes"</a></li><li><a href="global.html#addBodyClasses">addBodyClasses</a></li><li><a href="global.html#addRolesToGroups">addRolesToGroups</a></li><li><a href="global.html#addTag">addTag</a></li><li><a href="global.html#approvePayment">approvePayment</a></li><li><a href="global.html#assignOwnerRoles">assignOwnerRoles</a></li><li><a href="global.html#AuthNetPackageConfig">AuthNetPackageConfig</a></li><li><a href="global.html#avaGet">avaGet</a></li><li><a href="global.html#AvalaraPackageConfig">AvalaraPackageConfig</a></li><li><a href="global.html#avaPost">avaPost</a></li><li><a href="global.html#baseOrder">baseOrder</a></li><li><a href="global.html#BraintreePackageConfig">BraintreePackageConfig</a></li><li><a href="global.html#capturePayments">capturePayments</a></li><li><a href="global.html#cardProps">cardProps</a></li><li><a href="global.html#cartShipmentMethods">cartShipmentMethods</a></li><li><a href="global.html#cartShippingQuotes">cartShippingQuotes</a></li><li><a href="global.html#cartToSalesOrder">cartToSalesOrder</a></li><li><a href="global.html#checkConfiguration">checkConfiguration</a></li><li><a href="global.html#checked">checked</a></li><li><a href="global.html#checkout">checkout</a></li><li><a href="global.html#cleanupAvalaraJobs">cleanupAvalaraJobs</a></li><li><a href="global.html#collectDropSource">collectDropSource</a></li><li><a href="global.html#compileHandlebarsTemplate">compileHandlebarsTemplate</a></li><li><a href="global.html#CompletedOrder">CompletedOrder</a></li><li><a href="global.html#CompletedOrderItem">CompletedOrderItem</a></li><li><a href="global.html#CompletedOrderPaymentMethod">CompletedOrderPaymentMethod</a></li><li><a href="global.html#CompletedOrderSummary">CompletedOrderSummary</a></li><li><a href="global.html#CompletedShopOrders">CompletedShopOrders</a></li><li><a href="global.html#copyCartToOrder">copyCartToOrder</a></li><li><a href="global.html#Countries">Countries</a></li><li><a href="global.html#createCountryCollection">createCountryCollection</a></li><li><a href="global.html#createRefund">createRefund</a></li><li><a href="global.html#DEFAULT_FILTER_NAME">DEFAULT_FILTER_NAME</a></li><li><a href="global.html#DEFAULT_LAYOUT">DEFAULT_LAYOUT</a></li><li><a href="global.html#DiscountCodes">DiscountCodes</a></li><li><a href="global.html#DiscountCodesPackageConfig">DiscountCodesPackageConfig</a></li><li><a href="global.html#DiscountRates">DiscountRates</a></li><li><a href="global.html#DiscountRatesPackageConfig">DiscountRatesPackageConfig</a></li><li><a href="global.html#Discounts">Discounts</a></li><li><a href="global.html#DiscountsPackageConfig">DiscountsPackageConfig</a></li><li><a href="global.html#displayEmail">displayEmail</a></li><li><a href="global.html#displayName">displayName</a></li><li><a href="global.html#doesUserExist">doesUserExist</a></li><li><a href="global.html#doRightJoinNoIntersection">doRightJoinNoIntersection</a></li><li><a href="global.html#EditButton">EditButton</a></li><li><a href="global.html#EmailTemplates">EmailTemplates</a></li><li><a href="global.html#exampleSubmit">exampleSubmit</a></li><li><a href="global.html#expressCheckoutSettingsValid">expressCheckoutSettingsValid</a></li><li><a href="global.html#filterShippingStatus">filterShippingStatus</a></li><li><a href="global.html#filterWorkflowStatus">filterWorkflowStatus</a></li><li><a href="global.html#findProductMedia">findProductMedia</a></li><li><a href="global.html#fulfillmentNumber">fulfillmentNumber</a></li><li><a href="global.html#GeoCoder">GeoCoder</a></li><li><a href="global.html#getAbsoluteUrl">getAbsoluteUrl</a></li><li><a href="global.html#getAuthData">getAuthData</a></li><li><a href="global.html#getBillingInfo">getBillingInfo</a></li><li><a href="global.html#getCardType">getCardType</a></li><li><a href="global.html#getCartItem">getCartItem</a></li><li><a href="global.html#getCurrentShop">getCurrentShop</a></li><li><a href="global.html#getCurrentShopCursor">getCurrentShopCursor</a></li><li><a href="global.html#getCurrentTag">getCurrentTag</a></li><li><a href="global.html#getGuestLoginState">getGuestLoginState</a></li><li><a href="global.html#getInvitableGroups">getInvitableGroups</a></li><li><a href="global.html#getMailConfig">getMailConfig</a></li><li><a href="global.html#getMailUrl">getMailUrl</a></li><li><a href="global.html#getMarketplaceSettings">getMarketplaceSettings</a></li><li><a href="global.html#getMarketplaceSettingsFromPackages">getMarketplaceSettingsFromPackages</a></li><li><a href="global.html#getPackageSettingsWithOptions">getPackageSettingsWithOptions</a></li><li><a href="global.html#getPublishedOrRevision">getPublishedOrRevision</a></li><li><a href="global.html#getRegistryDomain">getRegistryDomain</a></li><li><a href="global.html#getRegistryRouteName">getRegistryRouteName</a></li><li><a href="global.html#getRouteName">getRouteName</a></li><li><a href="global.html#getSchemas">getSchemas</a></li><li><a href="global.html#getSellerShop">getSellerShop</a></li><li><a href="global.html#getSellerShopId">getSellerShopId</a></li><li><a href="global.html#getShippingInfo">getShippingInfo</a></li><li><a href="global.html#getShippingRates">getShippingRates</a></li><li><a href="global.html#getShopId">getShopId</a></li><li><a href="global.html#getShopName">getShopName</a></li><li><a href="global.html#getShopPrefix">getShopPrefix</a></li><li><a href="global.html#getShopsWithRoles">getShopsWithRoles</a></li><li><a href="global.html#getSiblings">getSiblings</a></li><li><a href="global.html#getSlug">getSlug</a></li><li><a href="global.html#getstaleCarts">getstaleCarts</a></li><li><a href="global.html#getSubject">getSubject</a></li><li><a href="global.html#getTargetAccount">getTargetAccount</a></li><li><a href="global.html#getTaxSettings">getTaxSettings</a></li><li><a href="global.html#getTemplate">getTemplate</a></li><li><a href="global.html#getTemplateFile">getTemplateFile</a></li><li><a href="global.html#getTopVariants">getTopVariants</a></li><li><a href="global.html#getUrl">getUrl</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#getVariantParent">getVariantParent</a></li><li><a href="global.html#getVariants">getVariants</a></li><li><a href="global.html#GroupsTableButton">GroupsTableButton</a></li><li><a href="global.html#Handle">Handle</a></li><li><a href="global.html#handleEmailSubmit">handleEmailSubmit</a></li><li><a href="global.html#handleFieldChange">handleFieldChange</a></li><li><a href="global.html#handleOpenShortcut">handleOpenShortcut</a></li><li><a href="global.html#handleShopSelectChange">handleShopSelectChange</a></li><li><a href="global.html#handleShowDashboard">handleShowDashboard</a></li><li><a href="global.html#handleShowPackage">handleShowPackage</a></li><li><a href="global.html#hasAdminAccess">hasAdminAccess</a></li><li><a href="global.html#Hook">Hook</a></li><li><a href="global.html#Hooks">Hooks</a></li><li><a href="global.html#isAdmin">isAdmin</a></li><li><a href="global.html#isCompleted">isCompleted</a></li><li><a href="global.html#isConfigured">isConfigured</a></li><li><a href="global.html#isCustomValue">isCustomValue</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isOwnerOfProfile">isOwnerOfProfile</a></li><li><a href="global.html#isPackageEnabled">isPackageEnabled</a></li><li><a href="global.html#isPending">isPending</a></li><li><a href="global.html#isShopGuest">isShopGuest</a></li><li><a href="global.html#isShopMember">isShopMember</a></li><li><a href="global.html#Jobs">Jobs</a></li><li><a href="global.html#label">label</a></li><li><a href="global.html#listRefunds">listRefunds</a></li><li><a href="global.html#loadCoreTranslations">loadCoreTranslations</a></li><li><a href="global.html#loadMoreProducts">loadMoreProducts</a></li><li><a href="global.html#loadSettings">loadSettings</a></li><li><a href="global.html#loadTranslation">loadTranslation</a></li><li><a href="global.html#loadTranslations">loadTranslations</a></li><li><a href="global.html#Logs">Logs</a></li><li><a href="global.html#Media">Media</a></li><li><a href="global.html#members">members</a></li><li><a href="global.html#mergeDeep">mergeDeep</a></li><li><a href="global.html#MetaData">MetaData</a></li><li><a href="global.html#metaField">metaField</a></li><li><a href="global.html#methods">methods</a></li><li><a href="global.html#normalizeAddresses">normalizeAddresses</a></li><li><a href="global.html#normalizeMode">normalizeMode</a></li><li><a href="global.html#normalizeStatus">normalizeStatus</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#Notifications">Notifications</a></li><li><a href="global.html#onCalculateStripeApplicationFee">onCalculateStripeApplicationFee</a></li><li><a href="global.html#order">order</a></li><li><a href="global.html#ORDER_LIST_FILTERS_PREFERENCE_NAME">ORDER_LIST_FILTERS_PREFERENCE_NAME</a></li><li><a href="global.html#ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME">ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME</a></li><li><a href="global.html#orderCreditMethod">orderCreditMethod</a></li><li><a href="global.html#orderFulfillmentData">orderFulfillmentData</a></li><li><a href="global.html#ordersInventoryAdjust">ordersInventoryAdjust</a></li><li><a href="global.html#ordersInventoryAdjustByShop">ordersInventoryAdjustByShop</a></li><li><a href="global.html#orderToSalesInvoice">orderToSalesInvoice</a></li><li><a href="global.html#PACKAGE_NAME">PACKAGE_NAME</a></li><li><a href="global.html#parseError">parseError</a></li><li><a href="global.html#parseRefundReponse">parseRefundReponse</a></li><li><a href="global.html#paymentCapture">paymentCapture</a></li><li><a href="global.html#paymentSubmit">paymentSubmit</a></li><li><a href="global.html#pkgPermissions">pkgPermissions</a></li><li><a href="global.html#productVariant">productVariant</a></li><li><a href="global.html#randomProcessor">randomProcessor</a></li><li><a href="global.html#Reaction">Reaction</a></li><li><a href="global.html#ReactionAvatar">ReactionAvatar</a></li><li><a href="global.html#ReactionLayout">ReactionLayout</a></li><li><a href="global.html#ReactionProduct">ReactionProduct</a></li><li><a href="global.html#registerInventory">registerInventory</a></li><li><a href="global.html#registerSchema">registerSchema</a></li><li><a href="global.html#registry">registry</a></li><li><a href="global.html#removeMedia">removeMedia</a></li><li><a href="global.html#resetRegisteredTemplates">resetRegisteredTemplates</a></li><li><a href="global.html#SellerShop">SellerShop</a></li><li><a href="global.html#send">send</a></li><li><a href="global.html#sendResetPasswordEmail">sendResetPasswordEmail</a></li><li><a href="global.html#sendUpdatedVerificationEmail">sendUpdatedVerificationEmail</a></li><li><a href="global.html#sendVerificationEmail">sendVerificationEmail</a></li><li><a href="global.html#ServerSessions">ServerSessions</a></li><li><a href="global.html#services">services</a></li><li><a href="global.html#shippingStates">shippingStates</a></li><li><a href="global.html#shippingStatus">shippingStatus</a></li><li><a href="global.html#ShopOrderSummary">ShopOrderSummary</a></li><li><a href="global.html#Shops">Shops</a></li><li><a href="global.html#showAvalaraTaxSettings">showAvalaraTaxSettings</a></li><li><a href="global.html#showMerchantSignup">showMerchantSignup</a></li><li><a href="global.html#shown">shown</a></li><li><a href="global.html#showVariant">showVariant</a></li><li><a href="global.html#Sms">Sms</a></li><li><a href="global.html#stripeCaptureCharge">stripeCaptureCharge</a></li><li><a href="global.html#TagHelpers">TagHelpers</a></li><li><a href="global.html#TaxCloudPackageConfig">TaxCloudPackageConfig</a></li><li><a href="global.html#TaxCodes">TaxCodes</a></li><li><a href="global.html#TaxEntityCodes">TaxEntityCodes</a></li><li><a href="global.html#Taxes">Taxes</a></li><li><a href="global.html#TaxJarPackageConfig">TaxJarPackageConfig</a></li><li><a href="global.html#TaxPackageConfig">TaxPackageConfig</a></li><li><a href="global.html#TaxRates">TaxRates</a></li><li><a href="global.html#Templates">Templates</a></li><li><a href="global.html#Themes">Themes</a></li><li><a href="global.html#thisApp">thisApp</a></li><li><a href="global.html#toCamelCase">toCamelCase</a></li><li><a href="global.html#toggleSession">toggleSession</a></li><li><a href="global.html#ToolbarGroup">ToolbarGroup</a></li><li><a href="global.html#ToolbarText">ToolbarText</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#translateRegistry">translateRegistry</a></li><li><a href="global.html#Translations">Translations</a></li><li><a href="global.html#UpdateEmail">UpdateEmail</a></li><li><a href="global.html#updateInventoryPolicyIfChildVariants">updateInventoryPolicyIfChildVariants</a></li><li><a href="global.html#updateMediaPriorities">updateMediaPriorities</a></li><li><a href="global.html#user">user</a></li><li><a href="global.html#userHasPassword">userHasPassword</a></li><li><a href="global.html#userOrders">userOrders</a></li><li><a href="global.html#valueForField">valueForField</a></li><li><a href="global.html#verifyConfig">verifyConfig</a></li><li><a href="global.html#VisibilityButton">VisibilityButton</a></li><li><a href="global.html#workflowStatus">workflowStatus</a></li><li><a href="global.html#writeJsonToBody">writeJsonToBody</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">server/api/core/core.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import url from "url";
+import packageJson from "/package.json";
+import { merge, uniqWith } from "lodash";
+import _ from "lodash";
+import { Meteor } from "meteor/meteor";
+import { check, Match } from "meteor/check";
+import { Random } from "meteor/random";
+import { Accounts } from "meteor/accounts-base";
+import { Roles } from "meteor/alanning:roles";
+import { EJSON } from "meteor/ejson";
+import * as Collections from "/lib/collections";
+import { Hooks, Logger } from "/server/api";
+import ProcessJobs from "/server/jobs";
+import { registerTemplate } from "./templates";
+import { sendVerificationEmail } from "./accounts";
+import { getMailUrl } from "./email/config";
+
+// Unpack the named Collections we use.
+const { Jobs, Packages, Shops, Groups } = Collections;
+
+export default {
+
+  init() {
+    // make sure the default shop has been created before going further
+    while (!this.getShopId()) {
+      Logger.warn("No shopId, waiting one second...");
+      Meteor._sleepForMs(1000);
+    }
+
+    // run onCoreInit hooks
+    Hooks.Events.run("onCoreInit");
+
+    // start job server
+    Jobs.startJobServer(() => {
+      Logger.info("JobServer started");
+      ProcessJobs();
+      Hooks.Events.run("onJobServerStart");
+    });
+    if (process.env.VERBOSE_JOBS) {
+      Jobs.setLogStream(process.stdout);
+    }
+
+    this.loadPackages();
+    // process imports from packages and any hooked imports
+    this.Import.flush();
+    this.createDefaultGroups();
+    // timing is important, packages are rqd for initial permissions configuration.
+    if (!Meteor.isAppTest) {
+      this.createDefaultAdminUser();
+    }
+    this.setAppVersion();
+    // hook after init finished
+    Hooks.Events.run("afterCoreInit");
+
+    Logger.debug("Reaction.init() has run");
+
+    return true;
+  },
+
+  Packages: {},
+
+  registerPackage(packageInfo) {
+    const registeredPackage = this.Packages[packageInfo.name] = packageInfo;
+    return registeredPackage;
+  },
+  defaultCustomerRoles: [ "guest", "account/profile", "product", "tag", "index", "cart/checkout", "cart/completed"],
+  defaultVisitorRoles: ["anonymous", "guest", "product", "tag", "index", "cart/checkout", "cart/completed"],
+  createDefaultGroups(options = {}) {
+    const self = this;
+    const { shopId } = options;
+    const allGroups = Groups.find({}).fetch();
+    const query = {};
+
+    if (shopId) {
+      query._id = shopId;
+    }
+
+    const shops = Shops.find(query).fetch();
+
+    /* Get all defined roles from the DB minus "anonymous" because that gets removed from a user on register
+     * if it's not removed, it causes mismatch between roles in user (i.e Meteor.user().roles[shopId]) vs that in
+     * the user's group (Group.find(usergroup).permissions) */
+    let ownerRoles = Roles
+      .getAllRoles().fetch()
+      .map(role => role.name)
+      .filter(role => role !== "anonymous"); // see comment above
+
+    // Join all other roles with package roles for owner. Owner should have all roles
+    // this is needed because of default roles defined in the app that are not in Roles.getAllRoles
+    ownerRoles = ownerRoles.concat(this.defaultCustomerRoles);
+    ownerRoles = _.uniq(ownerRoles);
+
+    // we're making a Shop Manager default group that have all roles minue the owner role
+    const shopManagerRoles = ownerRoles.filter(role => role !== "owner");
+    const roles = {
+      "shop manager": shopManagerRoles,
+      "customer": this.defaultCustomerRoles,
+      "guest": this.defaultVisitorRoles,
+      "owner": ownerRoles
+    };
+
+    if (shops &amp;&amp; shops.length) {
+      shops.forEach(shop => createGroupsForShop(shop));
+    }
+    function createGroupsForShop(shop) {
+      Object.keys(roles).forEach(groupKeys => {
+        const groupExists = allGroups.find(grp => grp.slug === groupKeys &amp;&amp; grp.shopId === shop._id);
+        if (!groupExists) { // create group only if it doesn't exist before
+          // get roles from the default groups of the primary shop; we try to use this first before using default roles
+          const primaryShopGroup = allGroups.find(grp => grp.slug === groupKeys &amp;&amp; grp.shopId === self.getPrimaryShopId());
+          Logger.debug(`creating group ${groupKeys} for shop ${shop.name}`);
+          Groups.insert({
+            name: groupKeys,
+            slug: groupKeys,
+            permissions: primaryShopGroup &amp;&amp; primaryShopGroup.permissions || roles[groupKeys],
+            shopId: shop._id
+          });
+        }
+      });
+    }
+  },
+  /**
+   * canInviteToGroup
+   * @summary checks if the user making the request is allowed to make invitation to that group
+   * @param {Object} options -
+   * @param {Object} options.group - group to invite to
+   * @param {Object} options.user - user object  making the invite (Meteor.user())
+   * @return {Boolean} -
+   */
+  canInviteToGroup(options) {
+    const { group } = options;
+    let { user } = options;
+    if (!user) {
+      user = Meteor.user();
+    }
+    const userPermissions = user.roles[group.shopId];
+    const groupPermissions = group.permissions;
+
+    // granting invitation right for user with `owner` role in a shop
+    if (this.hasPermission(["owner"], Meteor.userId(), group.shopId)) {
+      return true;
+    }
+
+    // checks that userPermissions includes all elements from groupPermissions
+    // we are not using Reaction.hasPermission here because it returns true if the user has at least one
+    return _.difference(groupPermissions, userPermissions).length === 0;
+  },
+  /**
+   * registerTemplate
+   * registers Templates into the Templates Collection
+   * @return {function} Registers template
+   */
+  registerTemplate: registerTemplate,
+
+  /**
+   * hasPermission - server
+   * server permissions checks
+   * hasPermission exists on both the server and the client.
+   * @param {String | Array} checkPermissions -String or Array of permissions if empty, defaults to "admin, owner"
+   * @param {String} userId - userId, defaults to Meteor.userId()
+   * @param {String} checkGroup group - default to shopId
+   * @return {Boolean} Boolean - true if has permission
+   */
+  hasPermission(checkPermissions, userId = Meteor.userId(), checkGroup = this.getShopId()) {
+    // check(checkPermissions, Match.OneOf(String, Array)); check(userId, String); check(checkGroup,
+    // Match.Optional(String));
+    let permissions;
+    // default group to the shop or global if shop isn't defined for some reason.
+    let group;
+    if (checkGroup !== undefined &amp;&amp; typeof checkGroup === "string") {
+      group = checkGroup;
+    } else {
+      group = this.getShopId() || Roles.GLOBAL_GROUP;
+    }
+
+    // permissions can be either a string or an array we'll force it into an array and use that
+    if (checkPermissions === undefined) {
+      permissions = ["owner"];
+    } else if (typeof checkPermissions === "string") {
+      permissions = [checkPermissions];
+    } else {
+      permissions = checkPermissions;
+    }
+
+    // if the user has admin, owner permissions we'll always check if those roles are enough
+    permissions.push("owner");
+    permissions = _.uniq(permissions);
+
+    // return if user has permissions in the group
+    return Roles.userIsInRole(userId, permissions, group);
+  },
+
+  hasOwnerAccess() {
+    return this.hasPermission(["owner"]);
+  },
+
+  hasAdminAccess() {
+    return this.hasPermission(["owner", "admin"]);
+  },
+
+  hasDashboardAccess() {
+    return this.hasPermission(["owner", "admin", "dashboard"]);
+  },
+
+  /**
+   * Finds all shops that a user has a given set of roles for
+   * @method getShopsWithRoles
+   * @param  {array} roles an array of roles to check. Will return a shopId if the user has _any_ of the roles
+   * @param  {string} [userId=Meteor.userId()] Optional userId, defaults to Meteor.userId()
+   *                                           Must pass this.userId from publications to avoid error!
+   * @return {array} Array of shopIds that the user has at least one of the given set of roles for
+   */
+  getShopsWithRoles(roles, userId = Meteor.userId()) {
+    // Owner permission for a shop superceeds grantable permissions, so we always check for owner permissions as well
+    roles.push("owner");
+
+    // Reducer that returns a unique list of shopIds that results from calling getGroupsForUser for each role
+    return roles.reduce((shopIds, role) => {
+      // getGroupsForUser will return a list of shops for which this user has the supplied role for
+      const shopIdsUserHasRoleFor = Roles.getGroupsForUser(userId, role);
+
+      // If we have new shopIds found, add them to the list
+      if (Array.isArray(shopIdsUserHasRoleFor) &amp;&amp; shopIdsUserHasRoleFor.length > 0) {
+        // Create unique array from existing shopIds array and the shops
+        return [...new Set([...shopIds, ...shopIdsUserHasRoleFor])];
+      }
+
+      // IF we don't have any shopIds returned, keep our existing list
+      return shopIds;
+    }, []);
+  },
+
+  getSellerShopId() {
+    return Roles.getGroupsForUser(this.userId, "admin");
+  },
+
+  configureMailUrl() {
+    // maintained for legacy support
+    Logger.warn("Reaction.configureMailUrl() is deprecated. Please use Reaction.Email.getMailUrl() instead");
+    return getMailUrl();
+  },
+
+  getPrimaryShop() {
+    const primaryShop = Shops.findOne({
+      shopType: "primary"
+    });
+
+    return primaryShop;
+  },
+
+  // primaryShopId is the first created shop. In a marketplace setting it's
+  // the shop that controls the marketplace and can see all other shops.
+  getPrimaryShopId() {
+    const primaryShop = this.getPrimaryShop();
+    if (primaryShop) {
+      return primaryShop._id;
+    }
+  },
+
+  getPrimaryShopName() {
+    const primaryShop = this.getPrimaryShop();
+    if (primaryShop) {
+      return primaryShop.name;
+    }
+    // If we can't find the primaryShop return an empty string
+    return "";
+  },
+
+  // Primary Shop should probably not have a prefix (or should it be /shop?)
+  getPrimaryShopPrefix() {
+    return "/" + this.getSlug(this.getPrimaryShopName().toLowerCase());
+  },
+
+  getPrimaryShopSettings() {
+    const settings = Packages.findOne({
+      name: "core",
+      shopId: this.getPrimaryShopId()
+    }) || {};
+    return settings.settings || {};
+  },
+
+  getPrimaryShopCurrency() {
+    const primaryShop = this.getPrimaryShop();
+
+    if (primaryShop &amp;&amp; primaryShop.currency) {
+      return primaryShop.currency;
+    }
+
+    return "USD";
+  },
+
+  /**
+   * **DEPRECATED** This method has been deprecated in favor of using getShopId
+   * and getPrimaryShopId. To be removed.
+   * @deprecated
+   * @method getCurrentShopCursor
+   * @return {Cursor} cursor of shops that match the current domain
+   */
+  getCurrentShopCursor() {
+    const domain = this.getDomain();
+    const cursor = Shops.find({
+      domains: domain
+    });
+    if (!cursor.count()) {
+      Logger.debug(domain, "Add a domain entry to shops for ");
+    }
+    return cursor;
+  },
+
+  /**
+   * **DEPRECATED** This method has been deprecated in favor of using getShopId
+   * and getPrimaryShopId. To be removed.
+   * @deprecated
+   * @method getCurrentShop
+   * @return {Object} returns the first shop object from the shop cursor
+   */
+  getCurrentShop() {
+    const currentShopCursor = this.getCurrentShopCursor();
+    // also, we could check in such a way: `currentShopCursor instanceof Object` but not instanceof something.Cursor
+    if (typeof currentShopCursor === "object") {
+      return currentShopCursor.fetch()[0];
+    }
+    return null;
+  },
+
+  getShopId(userId) {
+    check(userId, Match.Maybe(String));
+    const activeUserId = Meteor.call("reaction/getUserId");
+    if (activeUserId || userId) {
+      const activeShopId = this.getUserPreferences({
+        userId: activeUserId || userId,
+        packageName: "reaction",
+        preference: "activeShopId"
+      });
+      if (activeShopId) {
+        return activeShopId;
+      }
+    }
+
+    // TODO: This should intelligently find the correct default shop
+    // Probably whatever the main shop is or the marketplace
+    const domain = this.getDomain();
+    const shop = Shops.find({
+      domains: domain
+    }, {
+      limit: 1,
+      fields: {
+        _id: 1
+      }
+    }).fetch()[0];
+    return shop &amp;&amp; shop._id;
+  },
+
+  getDomain() {
+    return url.parse(Meteor.absoluteUrl()).hostname;
+  },
+
+  getShopName() {
+    const shopId = this.getShopId();
+    let shop;
+    if (shopId) {
+      shop = Shops.findOne({
+        _id: shopId
+      }, {
+        fields: {
+          name: 1
+        }
+      });
+    } else {
+      const domain = this.getDomain();
+      shop = Shops.findOne({
+        domains: domain
+      }, {
+        fields: {
+          name: 1
+        }
+      });
+    }
+    if (shop &amp;&amp; shop.name) {
+      return shop.name;
+    }
+    // If we can't find the shop or shop name return an empty string
+    // so that string methods that rely on getShopName don't error
+    return "";
+  },
+
+  getShopPrefix() {
+    const shopName = this.getShopName();
+    const lowerCaseShopName = shopName.toLowerCase();
+    const slug = this.getSlug(lowerCaseShopName);
+    return `/${slug}`;
+  },
+
+  getShopEmail() {
+    const shop = Shops.find({
+      _id: this.getShopId()
+    }, {
+      limit: 1,
+      fields: {
+        emails: 1
+      }
+    }).fetch()[0];
+    return shop &amp;&amp; shop.emails &amp;&amp; shop.emails[0].address;
+  },
+
+  getShopSettings(name = "core") {
+    const settings = Packages.findOne({ name: name, shopId: this.getShopId() }) || {};
+    return settings.settings || {};
+  },
+
+  getShopCurrency() {
+    const shop = Shops.findOne({
+      _id: this.getShopId()
+    });
+
+    return shop &amp;&amp; shop.currency || "USD";
+  },
+
+  // TODO: Marketplace - should each shop set their own default language or
+  // should the Marketplace set a language that's picked up by all shops?
+  getShopLanguage() {
+    const { language } = Shops.findOne({
+      _id: this.getShopId()
+    }, {
+      fields: {
+        language: 1
+      } }
+    );
+    return language;
+  },
+
+  getPackageSettings(name) {
+    return Packages.findOne({ name: name, shopId: this.getShopId() }) || null;
+  },
+
+  /**
+   * Takes options in the form of a query object. Returns a package that matches.
+   * @method getPackageSettingsWithOptions
+   * @param  {object} options Options object, forms the query for Packages.findOne
+   * @return {object} Returns the first package found with the provided options
+   */
+  getPackageSettingsWithOptions(options) {
+    const query = options;
+    return Packages.findOne(query);
+  },
+
+  /**
+   * getMarketplaceSettings finds the enabled `reaction-marketplace` package for
+   * the primary shop and returns the settings
+   * @method getMarketplaceSettings
+   * @return {Object} The marketplace settings from the primary shop or undefined
+   */
+  getMarketplaceSettings() {
+    const marketplace = Packages.findOne({
+      name: "reaction-marketplace",
+      shopId: this.getPrimaryShopId(),
+      enabled: true
+    });
+
+    if (marketplace &amp;&amp; marketplace.settings) {
+      return marketplace.settings;
+    }
+    return {};
+  },
+
+  // options:  {packageName, preference, defaultValue}
+  getUserPreferences(options) {
+    const { userId, packageName, preference, defaultValue } = options;
+
+    if (!userId) {
+      return undefined;
+    }
+
+    const user = Meteor.users.findOne({ _id: userId });
+
+    if (user) {
+      const profile = user.profile;
+      if (profile &amp;&amp; profile.preferences &amp;&amp; profile.preferences[packageName] &amp;&amp; profile.preferences[packageName][preference]) {
+        return profile.preferences[packageName][preference];
+      }
+    }
+    return defaultValue || undefined;
+  },
+
+  /**
+   *  insertPackagesForShop
+   *  insert Reaction packages into Packages collection registry for a new shop
+   *  Assigns owner roles for new packages
+   *  Imports layouts from packages
+   *  @param {String} shopId - the shopId to create packages for
+   *  @return {String} returns insert result
+   */
+  insertPackagesForShop(shopId) {
+    const layouts = [];
+    if (!shopId) {
+      return [];
+    }
+
+    // Check to see what packages should be enabled
+    const shop = Shops.findOne({ _id: shopId });
+    const marketplaceSettings = this.getMarketplaceSettings();
+    let enabledPackages;
+
+    // Unless we have marketplace settings and an enabledPackagesByShopTypes Array
+    // we will skip this
+    if (marketplaceSettings &amp;&amp;
+        marketplaceSettings.shops &amp;&amp;
+        Array.isArray(marketplaceSettings.shops.enabledPackagesByShopTypes)) {
+      // Find the correct packages list for this shopType
+      const matchingShopType = marketplaceSettings.shops.enabledPackagesByShopTypes.find(
+        EnabledPackagesByShopType => EnabledPackagesByShopType.shopType === shop.shopType);
+      if (matchingShopType) {
+        enabledPackages = matchingShopType.enabledPackages;
+      }
+    }
+
+    const packages = this.Packages;
+    // for each shop, we're loading packages in a unique registry
+    // Object.keys(pkgConfigs).forEach((pkgName) => {
+    for (const packageName in packages) {
+      // Guard to prvent unexpected `for in` behavior
+      if ({}.hasOwnProperty.call(packages, packageName)) {
+        const config = packages[packageName];
+        this.assignOwnerRoles(shopId, packageName, config.registry);
+
+        const pkg = Object.assign({}, config, {
+          shopId: shopId
+        });
+
+        // populate array of layouts that don't already exist (?!)
+        if (pkg.layout) {
+          // filter out layout templates
+          for (const template of pkg.layout) {
+            if (template &amp;&amp; template.layout) {
+              layouts.push(template);
+            }
+          }
+        }
+
+        if (enabledPackages &amp;&amp; Array.isArray(enabledPackages)) {
+          if (enabledPackages.indexOf(pkg.name) === -1) {
+            pkg.enabled = false;
+          } else {
+            // Enable "soft switch" for package.
+            if (pkg.settings &amp;&amp; pkg.settings[packageName]) {
+              pkg.settings[packageName].enabled = true;
+            }
+          }
+        }
+        Packages.insert(pkg);
+        Logger.debug(`Initializing ${shopId} ${packageName}`);
+      }
+    }
+
+    // helper for removing layout duplicates
+    const uniqLayouts = uniqWith(layouts, _.isEqual);
+    Shops.update({ _id: shopId }, { $set: { layout: uniqLayouts } });
+  },
+
+  getAppVersion() {
+    return Shops.findOne().appVersion;
+  },
+
+  /**
+   * createDefaultAdminUser
+   * @summary Method that creates default admin user
+   * Settings load precendence:
+   *  1. environment variables
+   *  2. settings in meteor.settings
+   * @returns {String} return userId
+   */
+  createDefaultAdminUser() {
+    const shopId = this.getPrimaryShopId();
+
+    // if an admin user has already been created, we'll exit
+    if (Roles.getUsersInRole("owner", shopId).count() !== 0) {
+      Logger.debug("Not creating default admin user, already exists");
+      return ""; // this default admin has already been created for this shop.
+    }
+
+    // run hooks on options object before creating user (the options object must be returned from all callbacks)
+    let options = {};
+    options = Hooks.Events.run("beforeCreateDefaultAdminUser", options);
+
+    // If $REACTION_SECURE_DEFAULT_ADMIN is set to "true" on first run,
+    // a random email/password will be generated instead of using the
+    // default email and password (email: admin@localhost pw: r3@cti0n)
+    // and the new admin user will need to verify their email to log in.
+    // If a random email and password are generated, the console will be
+    // the only place to retrieve them.
+    // If the admin email/password is provided via environment or Meteor settings,
+    // the $REACTION_SECURE_DEFAULT_ADMIN will only enforce the email validation part.
+    const isSecureSetup = process.env.REACTION_SECURE_DEFAULT_ADMIN === "true";
+
+    // generate default values to use if none are supplied
+    const defaultEmail = isSecureSetup ? `${Random.id(8).toLowerCase()}@localhost` : "admin@localhost";
+    const defaultPassword = isSecureSetup ? Random.secret(8) : "r3@cti0n";
+    const defaultUsername = "admin";
+    const defaultName = "Admin";
+
+    // Process environment variables and Meteor settings for initial user config.
+    // If ENV variables are set, they always override Meteor settings (settings.json).
+    // This is to allow for testing environments where we don't want to use users configured in a settings file.
+    const env = process.env;
+    let configureEnv = false;
+
+    if (env.REACTION_EMAIL &amp;&amp; env.REACTION_AUTH) {
+      configureEnv = true;
+      Logger.info("Using environment variables to create admin user");
+    }
+
+    // defaults use either env or generated values
+    options.email = env.REACTION_EMAIL || defaultEmail;
+    options.password = env.REACTION_AUTH || defaultPassword;
+    options.username = env.REACTION_USER_NAME || defaultUsername;
+    options.name = env.REACTION_USER || defaultName;
+
+    // or use `meteor --settings`
+    if (Meteor.settings &amp;&amp; !configureEnv) {
+      if (Meteor.settings.reaction) {
+        options.email = Meteor.settings.reaction.REACTION_EMAIL || defaultEmail;
+        options.password = Meteor.settings.reaction.REACTION_AUTH || defaultPassword;
+        options.username = Meteor.settings.reaction.REACTION_USER || defaultUsername;
+        options.name = Meteor.settings.reaction.REACTION_USER_NAME || defaultName;
+        Logger.info("Using meteor --settings to create admin user");
+      }
+    }
+
+    // set the default shop email to the default admin email
+    Shops.update(shopId, {
+      $addToSet: {
+        emails: {
+          address: options.email,
+          verified: true
+        }
+      }
+    });
+
+    // get the current shop
+    const shop = Shops.findOne(shopId);
+
+    // add the current domain to the shop if it doesn't already exist
+    if (!shop.domains.includes(this.getDomain())) {
+      // set the default shop email to the default admin email
+      Shops.update(shopId, {
+        $addToSet: {
+          domains: this.getDomain()
+        }
+      });
+    }
+
+    //
+    // create the new admin user
+    //
+    let accountId;
+    // we're checking again to see if this user was created but not specifically for this shop.
+    if (Meteor.users.find({ "emails.address": options.email }).count() === 0) {
+      accountId = Accounts.createUser(options);
+    } else {
+      // this should only occur when existing admin creates a new shop
+      accountId = Meteor.users.findOne({ "emails.address": options.email })._id;
+    }
+
+    // update the user's name if it was provided
+    // (since Accounts.createUser() doesn't allow that field and strips it out)
+    Meteor.users.update(accountId, {
+      $set: {
+        name: options.name
+      }
+    });
+
+    // unless strict security is enabled, mark the admin's email as validated
+    if (!isSecureSetup) {
+      Meteor.users.update({
+        "_id": accountId,
+        "emails.address": options.email
+      }, {
+        $set: {
+          "emails.$.verified": true
+        }
+      });
+    } else {
+      // send verification email to admin
+      sendVerificationEmail(accountId);
+    }
+
+    // Set default owner roles
+    const defaultAdminRoles = ["owner", "admin", "guest", "account/profile"];
+    // Join other roles with defaultAdminRoles for owner.
+    // this is needed as owner should not just have "owner" but all other defined roles
+    let ownerRoles = defaultAdminRoles.concat(this.defaultCustomerRoles);
+    ownerRoles = _.uniq(ownerRoles);
+
+    // we don't use accounts/addUserPermissions here because we may not yet have permissions
+    Roles.setUserRoles(accountId, ownerRoles, shopId);
+    // // the reaction owner has permissions to all sites by default
+    Roles.setUserRoles(accountId, ownerRoles, Roles.GLOBAL_GROUP);
+    // initialize package permissions we don't need to do any further permission configuration it is taken care of in the
+    // assignOwnerRoles
+    const packages = Packages.find().fetch();
+    for (const pkg of packages) {
+      this.assignOwnerRoles(shopId, pkg.name, pkg.registry);
+    }
+
+    // notify user that the default admin was created by
+    // printing the account info to the console
+    Logger.warn(`\n *********************************
+        \n  IMPORTANT! DEFAULT ADMIN INFO
+        \n  EMAIL/LOGIN: ${options.email}
+        \n  PASSWORD: ${options.password}
+        \n ********************************* \n\n`);
+
+    // run hooks on new user object
+    const user = Meteor.users.findOne(accountId);
+    Hooks.Events.run("afterCreateDefaultAdminUser", user);
+
+    return accountId;
+  },
+
+  /**
+   *  loadPackages
+   *  insert Reaction packages into registry
+   *  we check to see if the number of packages have changed against current data
+   *  if there is a change, we'll either insert or upsert package registry
+   *  into the Packages collection
+   *  import is processed on hook in init()
+   *  @return {String} returns insert result
+   */
+  loadPackages() {
+    const packages = Packages.find().fetch();
+
+    let registryFixtureData;
+
+    if (process.env.REACTION_REGISTRY) {
+      // check the environment for the registry fixture data first
+      registryFixtureData = process.env.REACTION_REGISTRY;
+      Logger.info("Loaded REACTION_REGISTRY environment variable for registry fixture import");
+    } else {
+      // or attempt to load reaction.json fixture data
+      try {
+        registryFixtureData = Assets.getText("settings/reaction.json");
+        Logger.info("Loaded \"/private/settings/reaction.json\" for registry fixture import");
+      } catch (error) {
+        Logger.warn("Skipped loading settings from reaction.json.");
+        Logger.debug(error, "loadSettings reaction.json not loaded.");
+      }
+    }
+
+    if (!!registryFixtureData) {
+      const validatedJson = EJSON.parse(registryFixtureData);
+
+      if (!Array.isArray(validatedJson[0])) {
+        Logger.warn("Registry fixture data is not an array. Failed to load.");
+      } else {
+        registryFixtureData = validatedJson;
+      }
+    }
+
+    const layouts = [];
+    // for each shop, we're loading packages in a unique registry
+    _.each(this.Packages, (config, pkgName) => {
+      return Shops.find().forEach((shop) => {
+        const shopId = shop._id;
+        if (!shopId) return [];
+
+        // existing registry will be upserted with changes, perhaps we should add:
+        this.assignOwnerRoles(shopId, pkgName, config.registry);
+
+        // Settings from the package registry.js
+        const settingsFromPackage = {
+          name: pkgName,
+          icon: config.icon,
+          enabled: !!config.autoEnable,
+          settings: config.settings,
+          registry: config.registry,
+          layout: config.layout
+        };
+
+        // Setting from a fixture file, most likely reaction.json
+        let settingsFromFixture;
+        if (registryFixtureData) {
+          settingsFromFixture = _.find(registryFixtureData[0], (packageSetting) => {
+            return config.name === packageSetting.name;
+          });
+        }
+
+        // Setting already imported into the packages collection
+        const settingsFromDB = _.find(packages, (ps) => {
+          return (config.name === ps.name &amp;&amp; shopId === ps.shopId);
+        });
+
+        const combinedSettings = merge({}, settingsFromPackage, settingsFromFixture || {}, settingsFromDB || {});
+
+        if (combinedSettings.registry) {
+          combinedSettings.registry = combinedSettings.registry.map((entry) => {
+            if (entry.provides &amp;&amp; !Array.isArray(entry.provides)) {
+              entry.provides = [entry.provides];
+              Logger.warn(`Plugin ${combinedSettings.name} is using a deprecated version of the provides property for` +
+                          ` the ${entry.name || entry.route} registry entry. Since v1.5.0 registry provides accepts` +
+                          " an array of strings.");
+            }
+            return entry;
+          });
+        }
+
+        // populate array of layouts that don't already exist in Shops
+        if (combinedSettings.layout) {
+          // filter out layout Templates
+          for (const pkg of combinedSettings.layout) {
+            if (pkg.layout) {
+              layouts.push(pkg);
+            }
+          }
+        }
+        // Import package data
+        this.Import.package(combinedSettings, shopId);
+        return Logger.debug(`Initializing ${shop.name} ${pkgName}`);
+      }); // end shops
+    });
+
+    // helper for removing layout duplicates
+    const uniqLayouts = uniqWith(layouts, _.isEqual);
+    // import layouts into Shops
+    Shops.find().forEach((shop) => {
+      this.Import.layout(uniqLayouts, shop._id);
+    });
+
+    //
+    // package cleanup
+    //
+    Shops.find().forEach((shop) => {
+      return Packages.find().forEach((pkg) => {
+        // delete registry entries for packages that have been removed
+        if (!_.has(this.Packages, pkg.name)) {
+          Logger.debug(`Removing ${pkg.name}`);
+          return Packages.remove({ shopId: shop._id, name: pkg.name });
+        }
+        return false;
+      });
+    });
+  },
+  setAppVersion() {
+    const version = packageJson.version;
+    Logger.info(`Reaction Version: ${version}`);
+    Shops.update({}, { $set: { appVersion: version } }, { multi: true });
+  },
+
+  // TODO: Remove collectionSchema method in favor of simpl-schema
+  /**
+   * Method for getting all schemas attached to a given collection
+   * @deprecated by simpl-schema
+   * @private
+   * @method collectionSchema
+   * @param  {string} collection The mongo collection to get schemas for
+   * @param  {Object} [selector] Optional selector for multi schema collections
+   * @return {Object} Returns a simpleSchema that is a combination of all schemas
+   *                  that have been attached to the collection or false if
+   *                  the collection or schema could not be found
+   */
+  collectionSchema(collection, selector) {
+    let selectorErrMsg = "";
+    if (selector) {
+      selectorErrMsg = `and selector ${selector}`;
+    }
+    const errMsg = `Reaction.collectionSchema could not find schemas for ${collection} collection ${selectorErrMsg}`;
+
+    if (!Collections[collection] || !Collections[collection]._c2) {
+      Logger.warn(errMsg);
+      // Return false so we don't pass a check that uses a non-existant schema
+      return false;
+    }
+
+    const c2 = Collections[collection]._c2;
+
+    // if we have `_simpleSchemas` (plural), then this is a selector based schema
+    if (c2._simpleSchemas) {
+      const selectorKeys = Object.keys(selector);
+      const selectorSchema = c2._simpleSchemas.find((schema) => {
+        // Make sure that every key:value in our selector matches the key:value in the schema selector
+        return selectorKeys.every((key) => selector[key] === schema.selector[key]);
+      });
+
+      if (!selectorSchema) {
+        Logger.warn(errMsg);
+        // Return false so we don't pass a check that uses a non-existant schema
+        return false;
+      }
+
+      // return a copy of the selector schema we found
+      return selectorSchema.schema;
+    }
+
+    return c2._simpleSchema;
+  }
+};
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

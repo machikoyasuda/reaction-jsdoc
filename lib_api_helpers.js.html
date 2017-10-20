@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>lib/api/helpers.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="FS.Store.GridFS.html">GridFS</a></li><li><a href="Products.html">Products</a><ul class='methods'><li data-type='method'><a href="Products.html#render">render</a></li><li data-type='method'><a href="Products.html#renderLoadMoreProductsButton">renderLoadMoreProductsButton</a></li><li data-type='method'><a href="Products.html#renderNotFound">renderNotFound</a></li><li data-type='method'><a href="Products.html#renderProductGrid">renderProductGrid</a></li><li data-type='method'><a href="Products.html#renderSpinner">renderSpinner</a></li></ul></li><li><a href="ReactiveAggregate.html">ReactiveAggregate</a></li><li><a href="Router.html">Router</a><ul class='members'><li data-type='member'><a href="Router.html#._routes">_routes</a></li><li data-type='member'><a href="Router.html#.triggers">triggers</a></li><li data-type='member'><a href="Router.html#_initialized">_initialized</a></li><li data-type='member'><a href="Router.html#activeClassName">activeClassName</a></li><li data-type='member'><a href="Router.html#history">history</a></li><li data-type='member'><a href="Router.html#Hooks">Hooks</a></li><li data-type='member'><a href="Router.html#routes">routes</a></li></ul><ul class='methods'><li data-type='method'><a href="Router.html#.current">current</a></li><li data-type='method'><a href="Router.html#.getParam">getParam</a></li><li data-type='method'><a href="Router.html#.getQueryParam">getQueryParam</a></li><li data-type='method'><a href="Router.html#.getRouteName">getRouteName</a></li><li data-type='method'><a href="Router.html#.go">go</a></li><li data-type='method'><a href="Router.html#.initPackageRoutes">initPackageRoutes</a></li><li data-type='method'><a href="Router.html#.isActiveClassName">isActiveClassName</a></li><li data-type='method'><a href="Router.html#.pathFor">pathFor</a></li><li data-type='method'><a href="Router.html#.ready">ready</a></li><li data-type='method'><a href="Router.html#.reload">reload</a></li><li data-type='method'><a href="Router.html#.replace">replace</a></li><li data-type='method'><a href="Router.html#.setCurrentRoute">setCurrentRoute</a></li><li data-type='method'><a href="Router.html#.setQueryParams">setQueryParams</a></li><li data-type='method'><a href="Router.html#.triggerRouterReady">triggerRouterReady</a></li><li data-type='method'><a href="Router.html#.watchPathChange">watchPathChange</a></li></ul></li><li><a href="Validation.html">Validation</a><ul class='methods'><li data-type='method'><a href="Validation.html#validate">validate</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AddEmail.html">AddEmail</a><ul class='methods'><li data-type='method'><a href="module-AddEmail.html#~handleFieldChange()">handleFieldChange()</a></li><li data-type='method'><a href="module-AddEmail.html#~handleSubmit()">handleSubmit()</a></li></ul></li><li><a href="module-cartOrderTransform.html">cartOrderTransform</a><ul class='methods'><li data-type='method'><a href="module-cartOrderTransform.html#~cartCount">cartCount</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartDiscounts">cartDiscounts</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartShipping">cartShipping</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartSubtotal">cartSubtotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartTaxes">cartTaxes</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartTotal">cartTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getCount">getCount</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getDiscounts">getDiscounts</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getDiscountsByShop">getDiscountsByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getItemsByShop">getItemsByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getPaymentMethods">getPaymentMethods</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShippingTotal">getShippingTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShippingTotalByShop">getShippingTotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShopSummary">getShopSummary</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getSubTotal">getSubTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getSubtotalByShop">getSubtotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTaxesByShop">getTaxesByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTaxTotal">getTaxTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTotal">getTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTotalByShop">getTotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getUniquePaymentMethods">getUniquePaymentMethods</a></li></ul></li><li><a href="module-components.html">components</a><ul class='members'><li data-type='member'><a href="module-components.html#.getHOCs">getHOCs</a></li><li data-type='member'><a href="module-components.html#.getRawComponent">getRawComponent</a></li></ul><ul class='methods'><li data-type='method'><a href="module-components.html#.composeWithTracker">composeWithTracker</a></li><li data-type='method'><a href="module-components.html#.copyHOCs">copyHOCs</a></li><li data-type='method'><a href="module-components.html#.getComponent">getComponent</a></li><li data-type='method'><a href="module-components.html#.loadRegisteredComponents">loadRegisteredComponents</a></li><li data-type='method'><a href="module-components.html#.registerComponent">registerComponent</a></li><li data-type='method'><a href="module-components.html#.registerHOC">registerHOC</a></li><li data-type='method'><a href="module-components.html#.replaceComponent">replaceComponent</a></li><li data-type='method'><a href="module-components.html#.withCurrentAccount">withCurrentAccount</a></li><li data-type='method'><a href="module-components.html#.withCurrentUser">withCurrentUser</a></li><li data-type='method'><a href="module-components.html#.withIsAdmin">withIsAdmin</a></li><li data-type='method'><a href="module-components.html#.withIsOwner">withIsOwner</a></li><li data-type='method'><a href="module-components.html#.withPermissions">withPermissions</a></li><li data-type='method'><a href="module-components.html#~getTrackerLoader">getTrackerLoader</a></li></ul></li><li><a href="module-connectors-shopify.html">connectors-shopify</a><ul class='methods'><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/api/products/count">connectors/shopify/api/products/count</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/import/products">connectors/shopify/import/products</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/orders/created">connectors/shopify/sync/orders/created</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/setup">connectors/shopify/sync/setup</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/teardown">connectors/shopify/sync/teardown</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/create">connectors/shopify/webhooks/create</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/delete">connectors/shopify/webhooks/delete</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/deleteAll">connectors/shopify/webhooks/deleteAll</a></li></ul></li><li><a href="module-Invoice.html">Invoice</a><ul class='methods'><li data-type='method'><a href="module-Invoice.html#~formatDate()">formatDate()</a></li><li data-type='method'><a href="module-Invoice.html#~handleClick()">handleClick()</a></li><li data-type='method'><a href="module-Invoice.html#~renderConditionalDisplay()">renderConditionalDisplay()</a></li><li data-type='method'><a href="module-Invoice.html#~renderDiscountForm()">renderDiscountForm()</a></li><li data-type='method'><a href="module-Invoice.html#~renderInvoice()">renderInvoice()</a></li><li data-type='method'><a href="module-Invoice.html#~renderRefundsInfo()">renderRefundsInfo()</a></li><li data-type='method'><a href="module-Invoice.html#~renderTotal()">renderTotal()</a></li></ul></li><li><a href="module-InvoiceActions.html">InvoiceActions</a></li><li><a href="module-LineItems.html">LineItems</a></li><li><a href="module-OrderSearch.html">OrderSearch</a><ul class='methods'><li data-type='method'><a href="module-OrderSearch.html#~handleChange()">handleChange()</a></li><li data-type='method'><a href="module-OrderSearch.html#~handleClear()">handleClear()</a></li></ul></li><li><a href="module-ReactionAlerts.html">ReactionAlerts</a><ul class='methods'><li data-type='method'><a href="module-ReactionAlerts.html#~alert">alert</a></li></ul></li><li><a href="module-SortableTable.html">SortableTable</a></li><li><a href="module-Translations.html">Translations</a></li></ul><h3>Namespaces</h3><ul><li><a href="FS.TempStore.html">TempStore</a><ul class='methods'><li data-type='method'><a href="FS.TempStore.html#.createReadStream">createReadStream</a></li><li data-type='method'><a href="FS.TempStore.html#.createWriteStream">createWriteStream</a></li><li data-type='method'><a href="FS.TempStore.html#.exists">exists</a></li><li data-type='method'><a href="FS.TempStore.html#.listParts">listParts</a></li><li data-type='method'><a href="FS.TempStore.html#.removeAll">removeAll</a></li><li data-type='method'><a href="FS.TempStore.html#.removeFile">removeFile</a></li></ul></li><li><a href="Hooks.Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Hooks.Events.html#.add">add</a></li><li data-type='method'><a href="Hooks.Events.html#.remove">remove</a></li><li data-type='method'><a href="Hooks.Events.html#.run">run</a></li><li data-type='method'><a href="Hooks.Events.html#.runAsync">runAsync</a></li></ul></li><li><a href="i18n.html">i18n</a><ul class='methods'><li data-type='method'><a href="i18n.html#.currencySymbol">currencySymbol</a></li><li data-type='method'><a href="i18n.html#.formatNumber">formatNumber</a></li><li data-type='method'><a href="i18n.html#.formatPrice">formatPrice</a></li><li data-type='method'><a href="i18n.html#.formatPriceString">formatPriceString</a></li><li data-type='method'><a href="i18n.html#.getBrowserLanguage">getBrowserLanguage</a></li><li data-type='method'><a href="i18n.html#.getLabelsFor">getLabelsFor</a></li><li data-type='method'><a href="i18n.html#.getMessagesFor">getMessagesFor</a></li><li data-type='method'><a href="i18n.html#.i18n">i18n</a></li></ul></li><li><a href="Meteor_Accounts.html">Meteor/Accounts</a><ul class='methods'><li data-type='method'><a href="Meteor_Accounts.html#.addressBookAdd">addressBookAdd</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addressBookRemove">addressBookRemove</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addressBookUpdate">addressBookUpdate</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addUserPermissions">addUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.createFallbackLoginToken">createFallbackLoginToken</a></li><li data-type='method'><a href="Meteor_Accounts.html#.inviteShopMember">inviteShopMember</a></li><li data-type='method'><a href="Meteor_Accounts.html#.inviteShopOwner">inviteShopOwner</a></li><li data-type='method'><a href="Meteor_Accounts.html#.removeEmailAddress">removeEmailAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.removeUserPermissions">removeUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.sendResetPasswordEmail">sendResetPasswordEmail</a></li><li data-type='method'><a href="Meteor_Accounts.html#.sendWelcomeEmail">sendWelcomeEmail</a></li><li data-type='method'><a href="Meteor_Accounts.html#.setUserPermissions">setUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.syncUsersAndAccounts">syncUsersAndAccounts</a></li><li data-type='method'><a href="Meteor_Accounts.html#.updateEmailAddress">updateEmailAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.updateServiceConfiguration">updateServiceConfiguration</a></li><li data-type='method'><a href="Meteor_Accounts.html#.validateAddress">validateAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.verifyAccount">verifyAccount</a></li></ul></li><li><a href="Meteor_Accounts_Validation.html">Meteor/Accounts/Validation</a><ul class='methods'><li data-type='method'><a href="Meteor_Accounts_Validation.html#.email">email</a></li><li data-type='method'><a href="Meteor_Accounts_Validation.html#.password">password</a></li><li data-type='method'><a href="Meteor_Accounts_Validation.html#.username">username</a></li></ul></li><li><a href="Meteor_Cart.html">Meteor/Cart</a><ul class='methods'><li data-type='method'><a href="Meteor_Cart.html#.cart/addToCart">cart/addToCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/createCart">cart/createCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/mergeCart">cart/mergeCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/removeFromCart">cart/removeFromCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/resetShipmentMethod">cart/resetShipmentMethod</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setAnonymousUserEmail">cart/setAnonymousUserEmail</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setPaymentAddress">cart/setPaymentAddress</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setShipmentAddress">cart/setShipmentAddress</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setShipmentMethod">cart/setShipmentMethod</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setUserCurrency">cart/setUserCurrency</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/submitPayment">cart/submitPayment</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/unsetAddresses">cart/unsetAddresses</a></li></ul></li><li><a href="Meteor_Email.html">Meteor/Email</a><ul class='methods'><li data-type='method'><a href="Meteor_Email.html#.retryFailed">retryFailed</a></li><li data-type='method'><a href="Meteor_Email.html#.saveSettings">saveSettings</a></li><li data-type='method'><a href="Meteor_Email.html#.verifySettings">verifySettings</a></li></ul></li><li><a href="Meteor_Group.html">Meteor/Group</a><ul class='methods'><li data-type='method'><a href="Meteor_Group.html#.group/addUser">group/addUser</a></li><li data-type='method'><a href="Meteor_Group.html#.group/createGroup">group/createGroup</a></li><li data-type='method'><a href="Meteor_Group.html#.group/removeUser">group/removeUser</a></li><li data-type='method'><a href="Meteor_Group.html#.group/updateGroup">group/updateGroup</a></li></ul></li><li><a href="Meteor_i18n.html">Meteor/i18n</a><ul class='methods'><li data-type='method'><a href="Meteor_i18n.html#.addTranslation">addTranslation</a></li><li data-type='method'><a href="Meteor_i18n.html#.flushTranslations">flushTranslations</a></li></ul></li><li><a href="Meteor_Inventory.html">Meteor/Inventory</a><ul class='methods'><li data-type='method'><a href="Meteor_Inventory.html#.backorder">backorder</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearReserve">clearReserve</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearReserve">clearReserve</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearStatus">clearStatus</a></li><li data-type='method'><a href="Meteor_Inventory.html#.lowStock">lowStock</a></li><li data-type='method'><a href="Meteor_Inventory.html#.remove">remove</a></li><li data-type='method'><a href="Meteor_Inventory.html#.return">return</a></li><li data-type='method'><a href="Meteor_Inventory.html#.returnToStock">returnToStock</a></li><li data-type='method'><a href="Meteor_Inventory.html#.setStatus">setStatus</a></li><li data-type='method'><a href="Meteor_Inventory.html#.shipped">shipped</a></li><li data-type='method'><a href="Meteor_Inventory.html#.sold">sold</a></li></ul></li><li><a href="Meteor_Notification.html">Meteor/Notification</a><ul class='methods'><li data-type='method'><a href="Meteor_Notification.html#.delete">delete</a></li><li data-type='method'><a href="Meteor_Notification.html#.markOneAsRead">markOneAsRead</a></li><li data-type='method'><a href="Meteor_Notification.html#.send">send</a></li></ul></li><li><a href="Meteor_Product.html">Meteor/Product</a><ul class='methods'><li data-type='method'><a href="Meteor_Product.html#.archiveProduct">archiveProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.cloneProduct">cloneProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.cloneVariant">cloneVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.createProduct">createProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.createVariant">createVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.deleteVariant">deleteVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.publishProduct">publishProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.removeMetaFields">removeMetaFields</a></li><li data-type='method'><a href="Meteor_Product.html#.removeProductTag">removeProductTag</a></li><li data-type='method'><a href="Meteor_Product.html#.setHandle">setHandle</a></li><li data-type='method'><a href="Meteor_Product.html#.setHandleTag">setHandleTag</a></li><li data-type='method'><a href="Meteor_Product.html#.toggleVisibility">toggleVisibility</a></li><li data-type='method'><a href="Meteor_Product.html#.updateMetaFields">updateMetaFields</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductField">updateProductField</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductPosition">updateProductPosition</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductTags">updateProductTags</a></li><li data-type='method'><a href="Meteor_Product.html#.updateVariant">updateVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.updateVariantsPosition">updateVariantsPosition</a></li></ul></li><li><a href="Meteor_Reaction.html">Meteor/Reaction</a><ul class='methods'><li data-type='method'><a href="Meteor_Reaction.html#.getUserId">getUserId</a></li></ul></li><li><a href="Meteor_Shop.html">Meteor/Shop</a><ul class='methods'><li data-type='method'><a href="Meteor_Shop.html#.changeLayout">changeLayout</a></li><li data-type='method'><a href="Meteor_Shop.html#.createShop">createShop</a></li><li data-type='method'><a href="Meteor_Shop.html#.createTag">createTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.fetchCurrencyRate">fetchCurrencyRate</a></li><li data-type='method'><a href="Meteor_Shop.html#.flushCurrencyRate">flushCurrencyRate</a></li><li data-type='method'><a href="Meteor_Shop.html#.getCurrencyRates">getCurrencyRates</a></li><li data-type='method'><a href="Meteor_Shop.html#.getLocale">getLocale</a></li><li data-type='method'><a href="Meteor_Shop.html#.getWorkflow">getWorkflow</a></li><li data-type='method'><a href="Meteor_Shop.html#.hideHeaderTag">hideHeaderTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.locateAddress">locateAddress</a></li><li data-type='method'><a href="Meteor_Shop.html#.removeHeaderTag">removeHeaderTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.togglePackage">togglePackage</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateBrandAsset">updateBrandAsset</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateCurrencyConfiguration">updateCurrencyConfiguration</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateHeaderTags">updateHeaderTags</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateLanguageConfiguration">updateLanguageConfiguration</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateShopExternalServices">updateShopExternalServices</a></li></ul></li><li><a href="Meteor_SMS.html">Meteor/SMS</a><ul class='methods'><li data-type='method'><a href="Meteor_SMS.html#.saveSettings">saveSettings</a></li><li data-type='method'><a href="Meteor_SMS.html#.send">send</a></li></ul></li><li><a href="Meteor_Workflow.html">Meteor/Workflow</a><ul class='methods'><li data-type='method'><a href="Meteor_Workflow.html#.coreOrderWorkflow/coreOrderCompleted">coreOrderWorkflow/coreOrderCompleted</a></li><li data-type='method'><a href="Meteor_Workflow.html#.coreOrderWorkflow/coreOrderProcessing">coreOrderWorkflow/coreOrderProcessing</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pullOrderWorkflow">pullOrderWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushCartWorkflow">pushCartWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushItemWorkflow">pushItemWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushOrderWorkflow">pushOrderWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.revertCartWorkflow">revertCartWorkflow</a></li></ul></li><li><a href="schemas.html">schemas</a><ul class='members'><li data-type='member'><a href="schemas.html#.Accounts">Accounts</a></li><li data-type='member'><a href="schemas.html#.Address">Address</a></li><li data-type='member'><a href="schemas.html#.AnalyticsEvents">AnalyticsEvents</a></li><li data-type='member'><a href="schemas.html#.Assets">Assets</a></li><li data-type='member'><a href="schemas.html#.BrandAsset">BrandAsset</a></li><li data-type='member'><a href="schemas.html#.Cart">Cart</a></li><li data-type='member'><a href="schemas.html#.CartItem">CartItem</a></li><li data-type='member'><a href="schemas.html#.CartItems">CartItems</a></li><li data-type='member'><a href="schemas.html#.CorePackageConfig">CorePackageConfig</a></li><li data-type='member'><a href="schemas.html#.Currency">Currency</a></li><li data-type='member'><a href="schemas.html#.Currency">Currency</a></li><li data-type='member'><a href="schemas.html#.CustomEmailSettings">CustomEmailSettings</a></li><li data-type='member'><a href="schemas.html#.Document">Document</a></li><li data-type='member'><a href="schemas.html#.Email">Email</a></li><li data-type='member'><a href="schemas.html#.Emails">Emails</a></li><li data-type='member'><a href="schemas.html#.EventforEventLog">Event for EventLog</a></li><li data-type='member'><a href="schemas.html#.Group">Group</a></li><li data-type='member'><a href="schemas.html#.History">History</a></li><li data-type='member'><a href="schemas.html#.Inventory">Inventory</a></li><li data-type='member'><a href="schemas.html#.Invoice">Invoice</a></li><li data-type='member'><a href="schemas.html#.Languages">Languages</a></li><li data-type='member'><a href="schemas.html#.LayoutStructure">LayoutStructure</a></li><li data-type='member'><a href="schemas.html#.Locale">Locale</a></li><li data-type='member'><a href="schemas.html#.Logs">Logs</a></li><li data-type='member'><a href="schemas.html#.MerchantShop">MerchantShop</a></li><li data-type='member'><a href="schemas.html#.Metafield">Metafield</a></li><li data-type='member'><a href="schemas.html#.Notes">Notes</a></li><li data-type='member'><a href="schemas.html#.Notification">Notification</a></li><li data-type='member'><a href="schemas.html#.OrderSchema">Order Schema</a></li><li data-type='member'><a href="schemas.html#.OrderItems">OrderItems</a></li><li data-type='member'><a href="schemas.html#.OrderTransactionSchema">OrderTransaction Schema</a></li><li data-type='member'><a href="schemas.html#.PackageConfig">PackageConfig</a></li><li data-type='member'><a href="schemas.html#.Payment">Payment</a></li><li data-type='member'><a href="schemas.html#.Payment">Payment</a></li><li data-type='member'><a href="schemas.html#.PaymentItem">PaymentItem</a></li><li data-type='member'><a href="schemas.html#.PaymentMethod">PaymentMethod</a></li><li data-type='member'><a href="schemas.html#.Permissions">Permissions</a></li><li data-type='member'><a href="schemas.html#.PriceRange">PriceRange</a></li><li data-type='member'><a href="schemas.html#.Product">Product</a></li><li data-type='member'><a href="schemas.html#.ProductPosition">ProductPosition</a></li><li data-type='member'><a href="schemas.html#.ProductVariant">ProductVariant</a></li><li data-type='member'><a href="schemas.html#.Profile">Profile</a></li><li data-type='member'><a href="schemas.html#.ReactionAnalyticsPackageConfig">ReactionAnalyticsPackageConfig</a></li><li data-type='member'><a href="schemas.html#.ReactLayout">ReactLayout</a></li><li data-type='member'><a href="schemas.html#.Registry">Registry</a></li><li data-type='member'><a href="schemas.html#.Revisions">Revisions</a></li><li data-type='member'><a href="schemas.html#.sharedFields">sharedFields</a></li><li data-type='member'><a href="schemas.html#.Shipment">Shipment</a></li><li data-type='member'><a href="schemas.html#.ShipmentItem">ShipmentItem</a></li><li data-type='member'><a href="schemas.html#.ShipmentQuote">ShipmentQuote</a></li><li data-type='member'><a href="schemas.html#.ShipmentQuotesQueryStatusUsed">ShipmentQuotesQueryStatusUsed</a></li><li data-type='member'><a href="schemas.html#.Shipping">Shipping</a></li><li data-type='member'><a href="schemas.html#.ShippingMethod">ShippingMethod</a></li><li data-type='member'><a href="schemas.html#.ShippingPackage">ShippingPackage</a></li><li data-type='member'><a href="schemas.html#.ShippingParcel">ShippingParcel</a></li><li data-type='member'><a href="schemas.html#.ShippingProvider">ShippingProvider</a></li><li data-type='member'><a href="schemas.html#.ShippoShipment">ShippoShipment</a></li><li data-type='member'><a href="schemas.html#.ShippoShippingMethod">ShippoShippingMethod</a></li><li data-type='member'><a href="schemas.html#.ShippoShippingProviderSchema">ShippoShippingProvider Schema</a></li><li data-type='member'><a href="schemas.html#.Shop">Shop</a></li><li data-type='member'><a href="schemas.html#.ShopTheme">ShopTheme</a></li><li data-type='member'><a href="schemas.html#.Sms">Sms</a></li><li data-type='member'><a href="schemas.html#.SocialPackageConfig">SocialPackageConfig</a></li><li data-type='member'><a href="schemas.html#.SocialProvider">SocialProvider</a></li><li data-type='member'><a href="schemas.html#.Tag">Tag</a></li><li data-type='member'><a href="schemas.html#.TaxSettings">TaxSettings</a></li><li data-type='member'><a href="schemas.html#.Template">Template</a></li><li data-type='member'><a href="schemas.html#.Themes">Themes</a></li><li data-type='member'><a href="schemas.html#.Translation">Translation</a></li><li data-type='member'><a href="schemas.html#.VariantMedia">VariantMedia</a></li><li data-type='member'><a href="schemas.html#.Workflow">Workflow</a></li></ul><ul class='methods'><li data-type='method'><a href="schemas.html#.schemaIdAutoValue">schemaIdAutoValue</a></li><li data-type='method'><a href="schemas.html#.shopDefaultCountry">shopDefaultCountry</a></li><li data-type='method'><a href="schemas.html#.shopIdAutoValue">shopIdAutoValue</a></li><li data-type='method'><a href="schemas.html#.shopIdAutoValueForCart">shopIdAutoValueForCart</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#%2522changeinput.checkbox-switch.connector-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.connector-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput.checkbox-switch.shipping-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.shipping-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput%255Bname=enabled%255D%2522">"change input[name=enabled]"</a></li><li><a href="global.html#%2522click.js-paypal-express-checkout%2522">"click .js-paypal-express-checkout"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=cancelOrder%255D%2522">"click [data-event-action=cancelOrder]"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=showSecret%255D%2522">"click [data-event-action=showSecret]"</a></li><li><a href="global.html#%2522example/payment/capture%2522">"example/payment/capture"</a></li><li><a href="global.html#%2522example/refund/create%2522">"example/refund/create"</a></li><li><a href="global.html#%2522example/refund/list%2522">"example/refund/list"</a></li><li><a href="global.html#%2522submitform%2522">"submit form"</a></li><li><a href="global.html#%2522taxcloud/getTaxCodes%2522">"taxcloud/getTaxCodes"</a></li><li><a href="global.html#addBodyClasses">addBodyClasses</a></li><li><a href="global.html#addRolesToGroups">addRolesToGroups</a></li><li><a href="global.html#addTag">addTag</a></li><li><a href="global.html#approvePayment">approvePayment</a></li><li><a href="global.html#assignOwnerRoles">assignOwnerRoles</a></li><li><a href="global.html#AuthNetPackageConfig">AuthNetPackageConfig</a></li><li><a href="global.html#avaGet">avaGet</a></li><li><a href="global.html#AvalaraPackageConfig">AvalaraPackageConfig</a></li><li><a href="global.html#avaPost">avaPost</a></li><li><a href="global.html#baseOrder">baseOrder</a></li><li><a href="global.html#BraintreePackageConfig">BraintreePackageConfig</a></li><li><a href="global.html#capturePayments">capturePayments</a></li><li><a href="global.html#cardProps">cardProps</a></li><li><a href="global.html#cartShipmentMethods">cartShipmentMethods</a></li><li><a href="global.html#cartShippingQuotes">cartShippingQuotes</a></li><li><a href="global.html#cartToSalesOrder">cartToSalesOrder</a></li><li><a href="global.html#checkConfiguration">checkConfiguration</a></li><li><a href="global.html#checked">checked</a></li><li><a href="global.html#checkout">checkout</a></li><li><a href="global.html#cleanupAvalaraJobs">cleanupAvalaraJobs</a></li><li><a href="global.html#collectDropSource">collectDropSource</a></li><li><a href="global.html#compileHandlebarsTemplate">compileHandlebarsTemplate</a></li><li><a href="global.html#CompletedOrder">CompletedOrder</a></li><li><a href="global.html#CompletedOrderItem">CompletedOrderItem</a></li><li><a href="global.html#CompletedOrderPaymentMethod">CompletedOrderPaymentMethod</a></li><li><a href="global.html#CompletedOrderSummary">CompletedOrderSummary</a></li><li><a href="global.html#CompletedShopOrders">CompletedShopOrders</a></li><li><a href="global.html#copyCartToOrder">copyCartToOrder</a></li><li><a href="global.html#Countries">Countries</a></li><li><a href="global.html#createCountryCollection">createCountryCollection</a></li><li><a href="global.html#createRefund">createRefund</a></li><li><a href="global.html#DEFAULT_FILTER_NAME">DEFAULT_FILTER_NAME</a></li><li><a href="global.html#DEFAULT_LAYOUT">DEFAULT_LAYOUT</a></li><li><a href="global.html#DiscountCodes">DiscountCodes</a></li><li><a href="global.html#DiscountCodesPackageConfig">DiscountCodesPackageConfig</a></li><li><a href="global.html#DiscountRates">DiscountRates</a></li><li><a href="global.html#DiscountRatesPackageConfig">DiscountRatesPackageConfig</a></li><li><a href="global.html#Discounts">Discounts</a></li><li><a href="global.html#DiscountsPackageConfig">DiscountsPackageConfig</a></li><li><a href="global.html#displayEmail">displayEmail</a></li><li><a href="global.html#displayName">displayName</a></li><li><a href="global.html#doesUserExist">doesUserExist</a></li><li><a href="global.html#doRightJoinNoIntersection">doRightJoinNoIntersection</a></li><li><a href="global.html#EditButton">EditButton</a></li><li><a href="global.html#EmailTemplates">EmailTemplates</a></li><li><a href="global.html#exampleSubmit">exampleSubmit</a></li><li><a href="global.html#expressCheckoutSettingsValid">expressCheckoutSettingsValid</a></li><li><a href="global.html#filterShippingStatus">filterShippingStatus</a></li><li><a href="global.html#filterWorkflowStatus">filterWorkflowStatus</a></li><li><a href="global.html#findProductMedia">findProductMedia</a></li><li><a href="global.html#fulfillmentNumber">fulfillmentNumber</a></li><li><a href="global.html#GeoCoder">GeoCoder</a></li><li><a href="global.html#getAbsoluteUrl">getAbsoluteUrl</a></li><li><a href="global.html#getAuthData">getAuthData</a></li><li><a href="global.html#getBillingInfo">getBillingInfo</a></li><li><a href="global.html#getCardType">getCardType</a></li><li><a href="global.html#getCartItem">getCartItem</a></li><li><a href="global.html#getCurrentShop">getCurrentShop</a></li><li><a href="global.html#getCurrentShopCursor">getCurrentShopCursor</a></li><li><a href="global.html#getCurrentTag">getCurrentTag</a></li><li><a href="global.html#getGuestLoginState">getGuestLoginState</a></li><li><a href="global.html#getInvitableGroups">getInvitableGroups</a></li><li><a href="global.html#getMailConfig">getMailConfig</a></li><li><a href="global.html#getMailUrl">getMailUrl</a></li><li><a href="global.html#getMarketplaceSettings">getMarketplaceSettings</a></li><li><a href="global.html#getMarketplaceSettingsFromPackages">getMarketplaceSettingsFromPackages</a></li><li><a href="global.html#getPackageSettingsWithOptions">getPackageSettingsWithOptions</a></li><li><a href="global.html#getPublishedOrRevision">getPublishedOrRevision</a></li><li><a href="global.html#getRegistryDomain">getRegistryDomain</a></li><li><a href="global.html#getRegistryRouteName">getRegistryRouteName</a></li><li><a href="global.html#getRouteName">getRouteName</a></li><li><a href="global.html#getSchemas">getSchemas</a></li><li><a href="global.html#getSellerShop">getSellerShop</a></li><li><a href="global.html#getSellerShopId">getSellerShopId</a></li><li><a href="global.html#getShippingInfo">getShippingInfo</a></li><li><a href="global.html#getShippingRates">getShippingRates</a></li><li><a href="global.html#getShopId">getShopId</a></li><li><a href="global.html#getShopName">getShopName</a></li><li><a href="global.html#getShopPrefix">getShopPrefix</a></li><li><a href="global.html#getShopsWithRoles">getShopsWithRoles</a></li><li><a href="global.html#getSiblings">getSiblings</a></li><li><a href="global.html#getSlug">getSlug</a></li><li><a href="global.html#getstaleCarts">getstaleCarts</a></li><li><a href="global.html#getSubject">getSubject</a></li><li><a href="global.html#getTargetAccount">getTargetAccount</a></li><li><a href="global.html#getTaxSettings">getTaxSettings</a></li><li><a href="global.html#getTemplate">getTemplate</a></li><li><a href="global.html#getTemplateFile">getTemplateFile</a></li><li><a href="global.html#getTopVariants">getTopVariants</a></li><li><a href="global.html#getUrl">getUrl</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#getVariantParent">getVariantParent</a></li><li><a href="global.html#getVariants">getVariants</a></li><li><a href="global.html#GroupsTableButton">GroupsTableButton</a></li><li><a href="global.html#Handle">Handle</a></li><li><a href="global.html#handleEmailSubmit">handleEmailSubmit</a></li><li><a href="global.html#handleFieldChange">handleFieldChange</a></li><li><a href="global.html#handleOpenShortcut">handleOpenShortcut</a></li><li><a href="global.html#handleShopSelectChange">handleShopSelectChange</a></li><li><a href="global.html#handleShowDashboard">handleShowDashboard</a></li><li><a href="global.html#handleShowPackage">handleShowPackage</a></li><li><a href="global.html#hasAdminAccess">hasAdminAccess</a></li><li><a href="global.html#Hook">Hook</a></li><li><a href="global.html#Hooks">Hooks</a></li><li><a href="global.html#isAdmin">isAdmin</a></li><li><a href="global.html#isCompleted">isCompleted</a></li><li><a href="global.html#isConfigured">isConfigured</a></li><li><a href="global.html#isCustomValue">isCustomValue</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isOwnerOfProfile">isOwnerOfProfile</a></li><li><a href="global.html#isPackageEnabled">isPackageEnabled</a></li><li><a href="global.html#isPending">isPending</a></li><li><a href="global.html#isShopGuest">isShopGuest</a></li><li><a href="global.html#isShopMember">isShopMember</a></li><li><a href="global.html#Jobs">Jobs</a></li><li><a href="global.html#label">label</a></li><li><a href="global.html#listRefunds">listRefunds</a></li><li><a href="global.html#loadCoreTranslations">loadCoreTranslations</a></li><li><a href="global.html#loadMoreProducts">loadMoreProducts</a></li><li><a href="global.html#loadSettings">loadSettings</a></li><li><a href="global.html#loadTranslation">loadTranslation</a></li><li><a href="global.html#loadTranslations">loadTranslations</a></li><li><a href="global.html#Logs">Logs</a></li><li><a href="global.html#Media">Media</a></li><li><a href="global.html#members">members</a></li><li><a href="global.html#mergeDeep">mergeDeep</a></li><li><a href="global.html#MetaData">MetaData</a></li><li><a href="global.html#metaField">metaField</a></li><li><a href="global.html#methods">methods</a></li><li><a href="global.html#normalizeAddresses">normalizeAddresses</a></li><li><a href="global.html#normalizeMode">normalizeMode</a></li><li><a href="global.html#normalizeStatus">normalizeStatus</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#Notifications">Notifications</a></li><li><a href="global.html#onCalculateStripeApplicationFee">onCalculateStripeApplicationFee</a></li><li><a href="global.html#order">order</a></li><li><a href="global.html#ORDER_LIST_FILTERS_PREFERENCE_NAME">ORDER_LIST_FILTERS_PREFERENCE_NAME</a></li><li><a href="global.html#ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME">ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME</a></li><li><a href="global.html#orderCreditMethod">orderCreditMethod</a></li><li><a href="global.html#orderFulfillmentData">orderFulfillmentData</a></li><li><a href="global.html#ordersInventoryAdjust">ordersInventoryAdjust</a></li><li><a href="global.html#ordersInventoryAdjustByShop">ordersInventoryAdjustByShop</a></li><li><a href="global.html#orderToSalesInvoice">orderToSalesInvoice</a></li><li><a href="global.html#PACKAGE_NAME">PACKAGE_NAME</a></li><li><a href="global.html#parseError">parseError</a></li><li><a href="global.html#parseRefundReponse">parseRefundReponse</a></li><li><a href="global.html#paymentCapture">paymentCapture</a></li><li><a href="global.html#paymentSubmit">paymentSubmit</a></li><li><a href="global.html#pkgPermissions">pkgPermissions</a></li><li><a href="global.html#productVariant">productVariant</a></li><li><a href="global.html#randomProcessor">randomProcessor</a></li><li><a href="global.html#Reaction">Reaction</a></li><li><a href="global.html#ReactionAvatar">ReactionAvatar</a></li><li><a href="global.html#ReactionLayout">ReactionLayout</a></li><li><a href="global.html#ReactionProduct">ReactionProduct</a></li><li><a href="global.html#registerInventory">registerInventory</a></li><li><a href="global.html#registerSchema">registerSchema</a></li><li><a href="global.html#registry">registry</a></li><li><a href="global.html#removeMedia">removeMedia</a></li><li><a href="global.html#resetRegisteredTemplates">resetRegisteredTemplates</a></li><li><a href="global.html#SellerShop">SellerShop</a></li><li><a href="global.html#send">send</a></li><li><a href="global.html#sendResetPasswordEmail">sendResetPasswordEmail</a></li><li><a href="global.html#sendUpdatedVerificationEmail">sendUpdatedVerificationEmail</a></li><li><a href="global.html#sendVerificationEmail">sendVerificationEmail</a></li><li><a href="global.html#ServerSessions">ServerSessions</a></li><li><a href="global.html#services">services</a></li><li><a href="global.html#shippingStates">shippingStates</a></li><li><a href="global.html#shippingStatus">shippingStatus</a></li><li><a href="global.html#ShopOrderSummary">ShopOrderSummary</a></li><li><a href="global.html#Shops">Shops</a></li><li><a href="global.html#showAvalaraTaxSettings">showAvalaraTaxSettings</a></li><li><a href="global.html#showMerchantSignup">showMerchantSignup</a></li><li><a href="global.html#shown">shown</a></li><li><a href="global.html#showVariant">showVariant</a></li><li><a href="global.html#Sms">Sms</a></li><li><a href="global.html#stripeCaptureCharge">stripeCaptureCharge</a></li><li><a href="global.html#TagHelpers">TagHelpers</a></li><li><a href="global.html#TaxCloudPackageConfig">TaxCloudPackageConfig</a></li><li><a href="global.html#TaxCodes">TaxCodes</a></li><li><a href="global.html#TaxEntityCodes">TaxEntityCodes</a></li><li><a href="global.html#Taxes">Taxes</a></li><li><a href="global.html#TaxJarPackageConfig">TaxJarPackageConfig</a></li><li><a href="global.html#TaxPackageConfig">TaxPackageConfig</a></li><li><a href="global.html#TaxRates">TaxRates</a></li><li><a href="global.html#Templates">Templates</a></li><li><a href="global.html#Themes">Themes</a></li><li><a href="global.html#thisApp">thisApp</a></li><li><a href="global.html#toCamelCase">toCamelCase</a></li><li><a href="global.html#toggleSession">toggleSession</a></li><li><a href="global.html#ToolbarGroup">ToolbarGroup</a></li><li><a href="global.html#ToolbarText">ToolbarText</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#translateRegistry">translateRegistry</a></li><li><a href="global.html#Translations">Translations</a></li><li><a href="global.html#UpdateEmail">UpdateEmail</a></li><li><a href="global.html#updateInventoryPolicyIfChildVariants">updateInventoryPolicyIfChildVariants</a></li><li><a href="global.html#updateMediaPriorities">updateMediaPriorities</a></li><li><a href="global.html#user">user</a></li><li><a href="global.html#userHasPassword">userHasPassword</a></li><li><a href="global.html#userOrders">userOrders</a></li><li><a href="global.html#valueForField">valueForField</a></li><li><a href="global.html#verifyConfig">verifyConfig</a></li><li><a href="global.html#VisibilityButton">VisibilityButton</a></li><li><a href="global.html#workflowStatus">workflowStatus</a></li><li><a href="global.html#writeJsonToBody">writeJsonToBody</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lib/api/helpers.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import url from "url";
+import { slugify } from "transliteration";
+import { Meteor } from "meteor/meteor";
+import { Router } from "/imports/plugins/core/router/lib";
+import { Shops } from "/lib/collections";
+
+
+let Core;
+if (Meteor.isClient) {
+  Core = require("/client/api");
+} else {
+  Core = require("/server/api");
+}
+
+/**
+ * getShopId
+ * @return {String} returns current shopId
+ */
+export function getShopId() {
+  return Core.Reaction.getShopId();
+}
+
+export function getPrimaryShopId() {
+  return Core.Reaction.getPrimaryShopId();
+}
+
+
+/**
+ * getShopName
+ * @return {String} returns current shop name
+ */
+export function getShopName() {
+  const shopId = getShopId();
+  let shop;
+  if (shopId) {
+    shop = Shops.findOne({
+      _id: shopId
+    });
+    return shop &amp;&amp; shop.name || "";
+  }
+
+  const domain = url.parse(Meteor.absoluteUrl()).hostname;
+
+  shop = Shops.find({ domains: { $in: [domain] } }, {
+    limit: 1
+  }).fetch()[0];
+
+  return !!shop ? shop.name : "";
+}
+
+/**
+ * getShopPrefix
+ * @param {String} leading - Default "/", prefix, the prefix with a leading shash
+ * @return {String} returns shop url prefix
+ */
+export function getShopPrefix(leading = "/") {
+  const shopId = getShopId();
+
+  if (shopId) {
+    const shop = Shops.findOne({
+      _id: shopId
+    }, {
+      fields: {
+        _id: 1,
+        name: 1,
+        shopType: 1
+      }
+    });
+
+    const settings = Core.Reaction.getMarketplaceSettings();
+    const slug = leading + getSlug(shop.slug || getShopName().toLowerCase());
+
+    if (shop.shopType === "primary") {
+      // If naked routes is turned off, use the shop slug for our primary shop routes
+      if (settings &amp;&amp; settings.marketplaceNakedRoutes === false) {
+        return slug;
+      }
+
+      return "";
+    }
+
+    // If this is not the primary shop, use the shop slug in routes for this shop
+    // TODO: "/shop" should be configurable in marketplace settings
+    return "/shop" + slug;
+  }
+
+  return "";
+}
+
+/**
+ * getAbsoluteUrl
+ * @param {String} path - path to append to absolute Url, path should be prefixed with / if necessary
+ * @return {String} returns absolute url (shop prefix + path)
+ */
+export function getAbsoluteUrl(path) {
+  const prefix = getShopPrefix("");
+  if (prefix) {
+    const absUrl = Meteor.absoluteUrl(`${prefix}/${path}`);
+    return absUrl;
+  }
+  const absUrl = Meteor.absoluteUrl(`${path}`);
+  return absUrl;
+}
+
+/**
+ * getCurrentTag
+ * @return {String} returns current tag
+ */
+export function getCurrentTag() {
+  if (Router.getRouteName() === "tag") {
+    return Router.current().params.slug;
+  }
+  return null;
+}
+
+
+/**
+ * getSlug - return a slugified string using "slugify" from transliteration
+ * https://www.npmjs.com/package/transliteration
+ * @param  {String} slugString - string to slugify
+ * @return {String} slugified string
+ */
+export function getSlug(slugString) {
+  return slugString ? slugify(slugString) : "";
+}
+
+/**
+ * toCamelCase helper for i18n
+ * @summary special toCamelCase for converting a string to camelCase for use with i18n keys
+ * @param {String} needscamels String to be camel cased.
+ * @return {String} camelCased string
+ */
+export function toCamelCase(needscamels) {
+  let s;
+  s = needscamels.replace(/([^a-zA-Z0-9_\- ])|^[_0-9]+/g, "").trim().toLowerCase();
+  s = s.replace(/([ -]+)([a-zA-Z0-9])/g, function (a, b, c) {
+    return c.toUpperCase();
+  });
+  s = s.replace(/([0-9]+)([a-zA-Z])/g, function (a, b, c) {
+    return b + c.toUpperCase();
+  });
+  return s;
+}
+
+/**
+ * translateRegistry
+ * @summary adds i18n strings to registry object
+ * @param {Object} registry registry object
+ * @param {Object} [app] complete package object
+ * @return {Object} with updated registry
+ */
+export function translateRegistry(registry, app) {
+  let registryLabel = "";
+  let i18nKey = "";
+  // first we check the default place for a label
+  if (registry.label) {
+    registryLabel = toCamelCase(registry.label);
+    i18nKey = `admin.${registry.provides}.${registryLabel}`;
+    // and if we don"t find it, we are trying to look at first
+    // registry entry
+  } else if (app &amp;&amp; app.registry &amp;&amp; app.registry.length &amp;&amp;
+    app.registry[0].label) {
+    registryLabel = toCamelCase(app.registry[0].label);
+    i18nKey = `admin.${app.registry[0].provides}.${registryLabel}`;
+  }
+  registry.i18nKeyLabel = `${i18nKey}Label`;
+  registry.i18nKeyDescription = `${i18nKey}Description`;
+  registry.i18nKeyPlaceholder = `${i18nKey}Placeholder`;
+  registry.i18nKeyTooltip = `${i18nKey}Tooltip`;
+  registry.i18nKeyTitle = `${i18nKey}Title`;
+  // return registry object with added i18n keys
+  return registry;
+}
+
+/**
+ * Simple is object check.
+ * @param {Object} item item to check if is an object
+ * @returns {boolean} return true if object
+ */
+export function isObject(item) {
+  return (item &amp;&amp; typeof item === "object" &amp;&amp; !Array.isArray(item) &amp;&amp; item !== null);
+}
+
+/**
+ * Helper for Deep merge two objects.
+ * @param {Object} target deep merge into this object
+ * @param {Object} source merge this object
+ * @returns {Object} return deep merged object
+ */
+export function mergeDeep(target, source) {
+  if (isObject(target) &amp;&amp; isObject(source)) {
+    Object.keys(source).forEach(key => {
+      if (isObject(source[key])) {
+        if (!target[key]) Object.assign(target, { [key]: {} });
+        mergeDeep(target[key], source[key]);
+      } else {
+        Object.assign(target, { [key]: source[key] });
+      }
+    });
+  }
+  return target;
+}
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

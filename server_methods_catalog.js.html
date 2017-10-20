@@ -1,0 +1,1526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>server/methods/catalog.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="FS.Store.GridFS.html">GridFS</a></li><li><a href="Products.html">Products</a><ul class='methods'><li data-type='method'><a href="Products.html#render">render</a></li><li data-type='method'><a href="Products.html#renderLoadMoreProductsButton">renderLoadMoreProductsButton</a></li><li data-type='method'><a href="Products.html#renderNotFound">renderNotFound</a></li><li data-type='method'><a href="Products.html#renderProductGrid">renderProductGrid</a></li><li data-type='method'><a href="Products.html#renderSpinner">renderSpinner</a></li></ul></li><li><a href="ReactiveAggregate.html">ReactiveAggregate</a></li><li><a href="Router.html">Router</a><ul class='members'><li data-type='member'><a href="Router.html#._routes">_routes</a></li><li data-type='member'><a href="Router.html#.triggers">triggers</a></li><li data-type='member'><a href="Router.html#_initialized">_initialized</a></li><li data-type='member'><a href="Router.html#activeClassName">activeClassName</a></li><li data-type='member'><a href="Router.html#history">history</a></li><li data-type='member'><a href="Router.html#Hooks">Hooks</a></li><li data-type='member'><a href="Router.html#routes">routes</a></li></ul><ul class='methods'><li data-type='method'><a href="Router.html#.current">current</a></li><li data-type='method'><a href="Router.html#.getParam">getParam</a></li><li data-type='method'><a href="Router.html#.getQueryParam">getQueryParam</a></li><li data-type='method'><a href="Router.html#.getRouteName">getRouteName</a></li><li data-type='method'><a href="Router.html#.go">go</a></li><li data-type='method'><a href="Router.html#.initPackageRoutes">initPackageRoutes</a></li><li data-type='method'><a href="Router.html#.isActiveClassName">isActiveClassName</a></li><li data-type='method'><a href="Router.html#.pathFor">pathFor</a></li><li data-type='method'><a href="Router.html#.ready">ready</a></li><li data-type='method'><a href="Router.html#.reload">reload</a></li><li data-type='method'><a href="Router.html#.replace">replace</a></li><li data-type='method'><a href="Router.html#.setCurrentRoute">setCurrentRoute</a></li><li data-type='method'><a href="Router.html#.setQueryParams">setQueryParams</a></li><li data-type='method'><a href="Router.html#.triggerRouterReady">triggerRouterReady</a></li><li data-type='method'><a href="Router.html#.watchPathChange">watchPathChange</a></li></ul></li><li><a href="Validation.html">Validation</a><ul class='methods'><li data-type='method'><a href="Validation.html#validate">validate</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AddEmail.html">AddEmail</a><ul class='methods'><li data-type='method'><a href="module-AddEmail.html#~handleFieldChange()">handleFieldChange()</a></li><li data-type='method'><a href="module-AddEmail.html#~handleSubmit()">handleSubmit()</a></li></ul></li><li><a href="module-cartOrderTransform.html">cartOrderTransform</a><ul class='methods'><li data-type='method'><a href="module-cartOrderTransform.html#~cartCount">cartCount</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartDiscounts">cartDiscounts</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartShipping">cartShipping</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartSubtotal">cartSubtotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartTaxes">cartTaxes</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~cartTotal">cartTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getCount">getCount</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getDiscounts">getDiscounts</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getDiscountsByShop">getDiscountsByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getItemsByShop">getItemsByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getPaymentMethods">getPaymentMethods</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShippingTotal">getShippingTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShippingTotalByShop">getShippingTotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getShopSummary">getShopSummary</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getSubTotal">getSubTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getSubtotalByShop">getSubtotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTaxesByShop">getTaxesByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTaxTotal">getTaxTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTotal">getTotal</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getTotalByShop">getTotalByShop</a></li><li data-type='method'><a href="module-cartOrderTransform.html#~getUniquePaymentMethods">getUniquePaymentMethods</a></li></ul></li><li><a href="module-components.html">components</a><ul class='members'><li data-type='member'><a href="module-components.html#.getHOCs">getHOCs</a></li><li data-type='member'><a href="module-components.html#.getRawComponent">getRawComponent</a></li></ul><ul class='methods'><li data-type='method'><a href="module-components.html#.composeWithTracker">composeWithTracker</a></li><li data-type='method'><a href="module-components.html#.copyHOCs">copyHOCs</a></li><li data-type='method'><a href="module-components.html#.getComponent">getComponent</a></li><li data-type='method'><a href="module-components.html#.loadRegisteredComponents">loadRegisteredComponents</a></li><li data-type='method'><a href="module-components.html#.registerComponent">registerComponent</a></li><li data-type='method'><a href="module-components.html#.registerHOC">registerHOC</a></li><li data-type='method'><a href="module-components.html#.replaceComponent">replaceComponent</a></li><li data-type='method'><a href="module-components.html#.withCurrentAccount">withCurrentAccount</a></li><li data-type='method'><a href="module-components.html#.withCurrentUser">withCurrentUser</a></li><li data-type='method'><a href="module-components.html#.withIsAdmin">withIsAdmin</a></li><li data-type='method'><a href="module-components.html#.withIsOwner">withIsOwner</a></li><li data-type='method'><a href="module-components.html#.withPermissions">withPermissions</a></li><li data-type='method'><a href="module-components.html#~getTrackerLoader">getTrackerLoader</a></li></ul></li><li><a href="module-connectors-shopify.html">connectors-shopify</a><ul class='methods'><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/api/products/count">connectors/shopify/api/products/count</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/import/products">connectors/shopify/import/products</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/orders/created">connectors/shopify/sync/orders/created</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/setup">connectors/shopify/sync/setup</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/teardown">connectors/shopify/sync/teardown</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/create">connectors/shopify/webhooks/create</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/delete">connectors/shopify/webhooks/delete</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/deleteAll">connectors/shopify/webhooks/deleteAll</a></li></ul></li><li><a href="module-Invoice.html">Invoice</a><ul class='methods'><li data-type='method'><a href="module-Invoice.html#~formatDate()">formatDate()</a></li><li data-type='method'><a href="module-Invoice.html#~handleClick()">handleClick()</a></li><li data-type='method'><a href="module-Invoice.html#~renderConditionalDisplay()">renderConditionalDisplay()</a></li><li data-type='method'><a href="module-Invoice.html#~renderDiscountForm()">renderDiscountForm()</a></li><li data-type='method'><a href="module-Invoice.html#~renderInvoice()">renderInvoice()</a></li><li data-type='method'><a href="module-Invoice.html#~renderRefundsInfo()">renderRefundsInfo()</a></li><li data-type='method'><a href="module-Invoice.html#~renderTotal()">renderTotal()</a></li></ul></li><li><a href="module-InvoiceActions.html">InvoiceActions</a></li><li><a href="module-LineItems.html">LineItems</a></li><li><a href="module-OrderSearch.html">OrderSearch</a><ul class='methods'><li data-type='method'><a href="module-OrderSearch.html#~handleChange()">handleChange()</a></li><li data-type='method'><a href="module-OrderSearch.html#~handleClear()">handleClear()</a></li></ul></li><li><a href="module-ReactionAlerts.html">ReactionAlerts</a><ul class='methods'><li data-type='method'><a href="module-ReactionAlerts.html#~alert">alert</a></li></ul></li><li><a href="module-SortableTable.html">SortableTable</a></li><li><a href="module-Translations.html">Translations</a></li></ul><h3>Namespaces</h3><ul><li><a href="FS.TempStore.html">TempStore</a><ul class='methods'><li data-type='method'><a href="FS.TempStore.html#.createReadStream">createReadStream</a></li><li data-type='method'><a href="FS.TempStore.html#.createWriteStream">createWriteStream</a></li><li data-type='method'><a href="FS.TempStore.html#.exists">exists</a></li><li data-type='method'><a href="FS.TempStore.html#.listParts">listParts</a></li><li data-type='method'><a href="FS.TempStore.html#.removeAll">removeAll</a></li><li data-type='method'><a href="FS.TempStore.html#.removeFile">removeFile</a></li></ul></li><li><a href="Hooks.Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Hooks.Events.html#.add">add</a></li><li data-type='method'><a href="Hooks.Events.html#.remove">remove</a></li><li data-type='method'><a href="Hooks.Events.html#.run">run</a></li><li data-type='method'><a href="Hooks.Events.html#.runAsync">runAsync</a></li></ul></li><li><a href="i18n.html">i18n</a><ul class='methods'><li data-type='method'><a href="i18n.html#.currencySymbol">currencySymbol</a></li><li data-type='method'><a href="i18n.html#.formatNumber">formatNumber</a></li><li data-type='method'><a href="i18n.html#.formatPrice">formatPrice</a></li><li data-type='method'><a href="i18n.html#.formatPriceString">formatPriceString</a></li><li data-type='method'><a href="i18n.html#.getBrowserLanguage">getBrowserLanguage</a></li><li data-type='method'><a href="i18n.html#.getLabelsFor">getLabelsFor</a></li><li data-type='method'><a href="i18n.html#.getMessagesFor">getMessagesFor</a></li><li data-type='method'><a href="i18n.html#.i18n">i18n</a></li></ul></li><li><a href="Meteor_Accounts.html">Meteor/Accounts</a><ul class='methods'><li data-type='method'><a href="Meteor_Accounts.html#.addressBookAdd">addressBookAdd</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addressBookRemove">addressBookRemove</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addressBookUpdate">addressBookUpdate</a></li><li data-type='method'><a href="Meteor_Accounts.html#.addUserPermissions">addUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.createFallbackLoginToken">createFallbackLoginToken</a></li><li data-type='method'><a href="Meteor_Accounts.html#.inviteShopMember">inviteShopMember</a></li><li data-type='method'><a href="Meteor_Accounts.html#.inviteShopOwner">inviteShopOwner</a></li><li data-type='method'><a href="Meteor_Accounts.html#.removeEmailAddress">removeEmailAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.removeUserPermissions">removeUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.sendResetPasswordEmail">sendResetPasswordEmail</a></li><li data-type='method'><a href="Meteor_Accounts.html#.sendWelcomeEmail">sendWelcomeEmail</a></li><li data-type='method'><a href="Meteor_Accounts.html#.setUserPermissions">setUserPermissions</a></li><li data-type='method'><a href="Meteor_Accounts.html#.syncUsersAndAccounts">syncUsersAndAccounts</a></li><li data-type='method'><a href="Meteor_Accounts.html#.updateEmailAddress">updateEmailAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.updateServiceConfiguration">updateServiceConfiguration</a></li><li data-type='method'><a href="Meteor_Accounts.html#.validateAddress">validateAddress</a></li><li data-type='method'><a href="Meteor_Accounts.html#.verifyAccount">verifyAccount</a></li></ul></li><li><a href="Meteor_Accounts_Validation.html">Meteor/Accounts/Validation</a><ul class='methods'><li data-type='method'><a href="Meteor_Accounts_Validation.html#.email">email</a></li><li data-type='method'><a href="Meteor_Accounts_Validation.html#.password">password</a></li><li data-type='method'><a href="Meteor_Accounts_Validation.html#.username">username</a></li></ul></li><li><a href="Meteor_Cart.html">Meteor/Cart</a><ul class='methods'><li data-type='method'><a href="Meteor_Cart.html#.cart/addToCart">cart/addToCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/createCart">cart/createCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/mergeCart">cart/mergeCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/removeFromCart">cart/removeFromCart</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/resetShipmentMethod">cart/resetShipmentMethod</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setAnonymousUserEmail">cart/setAnonymousUserEmail</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setPaymentAddress">cart/setPaymentAddress</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setShipmentAddress">cart/setShipmentAddress</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setShipmentMethod">cart/setShipmentMethod</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/setUserCurrency">cart/setUserCurrency</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/submitPayment">cart/submitPayment</a></li><li data-type='method'><a href="Meteor_Cart.html#.cart/unsetAddresses">cart/unsetAddresses</a></li></ul></li><li><a href="Meteor_Email.html">Meteor/Email</a><ul class='methods'><li data-type='method'><a href="Meteor_Email.html#.retryFailed">retryFailed</a></li><li data-type='method'><a href="Meteor_Email.html#.saveSettings">saveSettings</a></li><li data-type='method'><a href="Meteor_Email.html#.verifySettings">verifySettings</a></li></ul></li><li><a href="Meteor_Group.html">Meteor/Group</a><ul class='methods'><li data-type='method'><a href="Meteor_Group.html#.group/addUser">group/addUser</a></li><li data-type='method'><a href="Meteor_Group.html#.group/createGroup">group/createGroup</a></li><li data-type='method'><a href="Meteor_Group.html#.group/removeUser">group/removeUser</a></li><li data-type='method'><a href="Meteor_Group.html#.group/updateGroup">group/updateGroup</a></li></ul></li><li><a href="Meteor_i18n.html">Meteor/i18n</a><ul class='methods'><li data-type='method'><a href="Meteor_i18n.html#.addTranslation">addTranslation</a></li><li data-type='method'><a href="Meteor_i18n.html#.flushTranslations">flushTranslations</a></li></ul></li><li><a href="Meteor_Inventory.html">Meteor/Inventory</a><ul class='methods'><li data-type='method'><a href="Meteor_Inventory.html#.backorder">backorder</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearReserve">clearReserve</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearReserve">clearReserve</a></li><li data-type='method'><a href="Meteor_Inventory.html#.clearStatus">clearStatus</a></li><li data-type='method'><a href="Meteor_Inventory.html#.lowStock">lowStock</a></li><li data-type='method'><a href="Meteor_Inventory.html#.remove">remove</a></li><li data-type='method'><a href="Meteor_Inventory.html#.return">return</a></li><li data-type='method'><a href="Meteor_Inventory.html#.returnToStock">returnToStock</a></li><li data-type='method'><a href="Meteor_Inventory.html#.setStatus">setStatus</a></li><li data-type='method'><a href="Meteor_Inventory.html#.shipped">shipped</a></li><li data-type='method'><a href="Meteor_Inventory.html#.sold">sold</a></li></ul></li><li><a href="Meteor_Notification.html">Meteor/Notification</a><ul class='methods'><li data-type='method'><a href="Meteor_Notification.html#.delete">delete</a></li><li data-type='method'><a href="Meteor_Notification.html#.markOneAsRead">markOneAsRead</a></li><li data-type='method'><a href="Meteor_Notification.html#.send">send</a></li></ul></li><li><a href="Meteor_Product.html">Meteor/Product</a><ul class='methods'><li data-type='method'><a href="Meteor_Product.html#.archiveProduct">archiveProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.cloneProduct">cloneProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.cloneVariant">cloneVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.createProduct">createProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.createVariant">createVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.deleteVariant">deleteVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.publishProduct">publishProduct</a></li><li data-type='method'><a href="Meteor_Product.html#.removeMetaFields">removeMetaFields</a></li><li data-type='method'><a href="Meteor_Product.html#.removeProductTag">removeProductTag</a></li><li data-type='method'><a href="Meteor_Product.html#.setHandle">setHandle</a></li><li data-type='method'><a href="Meteor_Product.html#.setHandleTag">setHandleTag</a></li><li data-type='method'><a href="Meteor_Product.html#.toggleVisibility">toggleVisibility</a></li><li data-type='method'><a href="Meteor_Product.html#.updateMetaFields">updateMetaFields</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductField">updateProductField</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductPosition">updateProductPosition</a></li><li data-type='method'><a href="Meteor_Product.html#.updateProductTags">updateProductTags</a></li><li data-type='method'><a href="Meteor_Product.html#.updateVariant">updateVariant</a></li><li data-type='method'><a href="Meteor_Product.html#.updateVariantsPosition">updateVariantsPosition</a></li></ul></li><li><a href="Meteor_Reaction.html">Meteor/Reaction</a><ul class='methods'><li data-type='method'><a href="Meteor_Reaction.html#.getUserId">getUserId</a></li></ul></li><li><a href="Meteor_Shop.html">Meteor/Shop</a><ul class='methods'><li data-type='method'><a href="Meteor_Shop.html#.changeLayout">changeLayout</a></li><li data-type='method'><a href="Meteor_Shop.html#.createShop">createShop</a></li><li data-type='method'><a href="Meteor_Shop.html#.createTag">createTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.fetchCurrencyRate">fetchCurrencyRate</a></li><li data-type='method'><a href="Meteor_Shop.html#.flushCurrencyRate">flushCurrencyRate</a></li><li data-type='method'><a href="Meteor_Shop.html#.getCurrencyRates">getCurrencyRates</a></li><li data-type='method'><a href="Meteor_Shop.html#.getLocale">getLocale</a></li><li data-type='method'><a href="Meteor_Shop.html#.getWorkflow">getWorkflow</a></li><li data-type='method'><a href="Meteor_Shop.html#.hideHeaderTag">hideHeaderTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.locateAddress">locateAddress</a></li><li data-type='method'><a href="Meteor_Shop.html#.removeHeaderTag">removeHeaderTag</a></li><li data-type='method'><a href="Meteor_Shop.html#.togglePackage">togglePackage</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateBrandAsset">updateBrandAsset</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateCurrencyConfiguration">updateCurrencyConfiguration</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateHeaderTags">updateHeaderTags</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateLanguageConfiguration">updateLanguageConfiguration</a></li><li data-type='method'><a href="Meteor_Shop.html#.updateShopExternalServices">updateShopExternalServices</a></li></ul></li><li><a href="Meteor_SMS.html">Meteor/SMS</a><ul class='methods'><li data-type='method'><a href="Meteor_SMS.html#.saveSettings">saveSettings</a></li><li data-type='method'><a href="Meteor_SMS.html#.send">send</a></li></ul></li><li><a href="Meteor_Workflow.html">Meteor/Workflow</a><ul class='methods'><li data-type='method'><a href="Meteor_Workflow.html#.coreOrderWorkflow/coreOrderCompleted">coreOrderWorkflow/coreOrderCompleted</a></li><li data-type='method'><a href="Meteor_Workflow.html#.coreOrderWorkflow/coreOrderProcessing">coreOrderWorkflow/coreOrderProcessing</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pullOrderWorkflow">pullOrderWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushCartWorkflow">pushCartWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushItemWorkflow">pushItemWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.pushOrderWorkflow">pushOrderWorkflow</a></li><li data-type='method'><a href="Meteor_Workflow.html#.revertCartWorkflow">revertCartWorkflow</a></li></ul></li><li><a href="schemas.html">schemas</a><ul class='members'><li data-type='member'><a href="schemas.html#.Accounts">Accounts</a></li><li data-type='member'><a href="schemas.html#.Address">Address</a></li><li data-type='member'><a href="schemas.html#.AnalyticsEvents">AnalyticsEvents</a></li><li data-type='member'><a href="schemas.html#.Assets">Assets</a></li><li data-type='member'><a href="schemas.html#.BrandAsset">BrandAsset</a></li><li data-type='member'><a href="schemas.html#.Cart">Cart</a></li><li data-type='member'><a href="schemas.html#.CartItem">CartItem</a></li><li data-type='member'><a href="schemas.html#.CartItems">CartItems</a></li><li data-type='member'><a href="schemas.html#.CorePackageConfig">CorePackageConfig</a></li><li data-type='member'><a href="schemas.html#.Currency">Currency</a></li><li data-type='member'><a href="schemas.html#.Currency">Currency</a></li><li data-type='member'><a href="schemas.html#.CustomEmailSettings">CustomEmailSettings</a></li><li data-type='member'><a href="schemas.html#.Document">Document</a></li><li data-type='member'><a href="schemas.html#.Email">Email</a></li><li data-type='member'><a href="schemas.html#.Emails">Emails</a></li><li data-type='member'><a href="schemas.html#.EventforEventLog">Event for EventLog</a></li><li data-type='member'><a href="schemas.html#.Group">Group</a></li><li data-type='member'><a href="schemas.html#.History">History</a></li><li data-type='member'><a href="schemas.html#.Inventory">Inventory</a></li><li data-type='member'><a href="schemas.html#.Invoice">Invoice</a></li><li data-type='member'><a href="schemas.html#.Languages">Languages</a></li><li data-type='member'><a href="schemas.html#.LayoutStructure">LayoutStructure</a></li><li data-type='member'><a href="schemas.html#.Locale">Locale</a></li><li data-type='member'><a href="schemas.html#.Logs">Logs</a></li><li data-type='member'><a href="schemas.html#.MerchantShop">MerchantShop</a></li><li data-type='member'><a href="schemas.html#.Metafield">Metafield</a></li><li data-type='member'><a href="schemas.html#.Notes">Notes</a></li><li data-type='member'><a href="schemas.html#.Notification">Notification</a></li><li data-type='member'><a href="schemas.html#.OrderSchema">Order Schema</a></li><li data-type='member'><a href="schemas.html#.OrderItems">OrderItems</a></li><li data-type='member'><a href="schemas.html#.OrderTransactionSchema">OrderTransaction Schema</a></li><li data-type='member'><a href="schemas.html#.PackageConfig">PackageConfig</a></li><li data-type='member'><a href="schemas.html#.Payment">Payment</a></li><li data-type='member'><a href="schemas.html#.Payment">Payment</a></li><li data-type='member'><a href="schemas.html#.PaymentItem">PaymentItem</a></li><li data-type='member'><a href="schemas.html#.PaymentMethod">PaymentMethod</a></li><li data-type='member'><a href="schemas.html#.Permissions">Permissions</a></li><li data-type='member'><a href="schemas.html#.PriceRange">PriceRange</a></li><li data-type='member'><a href="schemas.html#.Product">Product</a></li><li data-type='member'><a href="schemas.html#.ProductPosition">ProductPosition</a></li><li data-type='member'><a href="schemas.html#.ProductVariant">ProductVariant</a></li><li data-type='member'><a href="schemas.html#.Profile">Profile</a></li><li data-type='member'><a href="schemas.html#.ReactionAnalyticsPackageConfig">ReactionAnalyticsPackageConfig</a></li><li data-type='member'><a href="schemas.html#.ReactLayout">ReactLayout</a></li><li data-type='member'><a href="schemas.html#.Registry">Registry</a></li><li data-type='member'><a href="schemas.html#.Revisions">Revisions</a></li><li data-type='member'><a href="schemas.html#.sharedFields">sharedFields</a></li><li data-type='member'><a href="schemas.html#.Shipment">Shipment</a></li><li data-type='member'><a href="schemas.html#.ShipmentItem">ShipmentItem</a></li><li data-type='member'><a href="schemas.html#.ShipmentQuote">ShipmentQuote</a></li><li data-type='member'><a href="schemas.html#.ShipmentQuotesQueryStatusUsed">ShipmentQuotesQueryStatusUsed</a></li><li data-type='member'><a href="schemas.html#.Shipping">Shipping</a></li><li data-type='member'><a href="schemas.html#.ShippingMethod">ShippingMethod</a></li><li data-type='member'><a href="schemas.html#.ShippingPackage">ShippingPackage</a></li><li data-type='member'><a href="schemas.html#.ShippingParcel">ShippingParcel</a></li><li data-type='member'><a href="schemas.html#.ShippingProvider">ShippingProvider</a></li><li data-type='member'><a href="schemas.html#.ShippoShipment">ShippoShipment</a></li><li data-type='member'><a href="schemas.html#.ShippoShippingMethod">ShippoShippingMethod</a></li><li data-type='member'><a href="schemas.html#.ShippoShippingProviderSchema">ShippoShippingProvider Schema</a></li><li data-type='member'><a href="schemas.html#.Shop">Shop</a></li><li data-type='member'><a href="schemas.html#.ShopTheme">ShopTheme</a></li><li data-type='member'><a href="schemas.html#.Sms">Sms</a></li><li data-type='member'><a href="schemas.html#.SocialPackageConfig">SocialPackageConfig</a></li><li data-type='member'><a href="schemas.html#.SocialProvider">SocialProvider</a></li><li data-type='member'><a href="schemas.html#.Tag">Tag</a></li><li data-type='member'><a href="schemas.html#.TaxSettings">TaxSettings</a></li><li data-type='member'><a href="schemas.html#.Template">Template</a></li><li data-type='member'><a href="schemas.html#.Themes">Themes</a></li><li data-type='member'><a href="schemas.html#.Translation">Translation</a></li><li data-type='member'><a href="schemas.html#.VariantMedia">VariantMedia</a></li><li data-type='member'><a href="schemas.html#.Workflow">Workflow</a></li></ul><ul class='methods'><li data-type='method'><a href="schemas.html#.schemaIdAutoValue">schemaIdAutoValue</a></li><li data-type='method'><a href="schemas.html#.shopDefaultCountry">shopDefaultCountry</a></li><li data-type='method'><a href="schemas.html#.shopIdAutoValue">shopIdAutoValue</a></li><li data-type='method'><a href="schemas.html#.shopIdAutoValueForCart">shopIdAutoValueForCart</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#%2522changeinput.checkbox-switch.connector-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.connector-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput.checkbox-switch.shipping-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.shipping-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput%255Bname=enabled%255D%2522">"change input[name=enabled]"</a></li><li><a href="global.html#%2522click.js-paypal-express-checkout%2522">"click .js-paypal-express-checkout"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=cancelOrder%255D%2522">"click [data-event-action=cancelOrder]"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=showSecret%255D%2522">"click [data-event-action=showSecret]"</a></li><li><a href="global.html#%2522example/payment/capture%2522">"example/payment/capture"</a></li><li><a href="global.html#%2522example/refund/create%2522">"example/refund/create"</a></li><li><a href="global.html#%2522example/refund/list%2522">"example/refund/list"</a></li><li><a href="global.html#%2522submitform%2522">"submit form"</a></li><li><a href="global.html#%2522taxcloud/getTaxCodes%2522">"taxcloud/getTaxCodes"</a></li><li><a href="global.html#addBodyClasses">addBodyClasses</a></li><li><a href="global.html#addRolesToGroups">addRolesToGroups</a></li><li><a href="global.html#addTag">addTag</a></li><li><a href="global.html#approvePayment">approvePayment</a></li><li><a href="global.html#assignOwnerRoles">assignOwnerRoles</a></li><li><a href="global.html#AuthNetPackageConfig">AuthNetPackageConfig</a></li><li><a href="global.html#avaGet">avaGet</a></li><li><a href="global.html#AvalaraPackageConfig">AvalaraPackageConfig</a></li><li><a href="global.html#avaPost">avaPost</a></li><li><a href="global.html#baseOrder">baseOrder</a></li><li><a href="global.html#BraintreePackageConfig">BraintreePackageConfig</a></li><li><a href="global.html#capturePayments">capturePayments</a></li><li><a href="global.html#cardProps">cardProps</a></li><li><a href="global.html#cartShipmentMethods">cartShipmentMethods</a></li><li><a href="global.html#cartShippingQuotes">cartShippingQuotes</a></li><li><a href="global.html#cartToSalesOrder">cartToSalesOrder</a></li><li><a href="global.html#checkConfiguration">checkConfiguration</a></li><li><a href="global.html#checked">checked</a></li><li><a href="global.html#checkout">checkout</a></li><li><a href="global.html#cleanupAvalaraJobs">cleanupAvalaraJobs</a></li><li><a href="global.html#collectDropSource">collectDropSource</a></li><li><a href="global.html#compileHandlebarsTemplate">compileHandlebarsTemplate</a></li><li><a href="global.html#CompletedOrder">CompletedOrder</a></li><li><a href="global.html#CompletedOrderItem">CompletedOrderItem</a></li><li><a href="global.html#CompletedOrderPaymentMethod">CompletedOrderPaymentMethod</a></li><li><a href="global.html#CompletedOrderSummary">CompletedOrderSummary</a></li><li><a href="global.html#CompletedShopOrders">CompletedShopOrders</a></li><li><a href="global.html#copyCartToOrder">copyCartToOrder</a></li><li><a href="global.html#Countries">Countries</a></li><li><a href="global.html#createCountryCollection">createCountryCollection</a></li><li><a href="global.html#createRefund">createRefund</a></li><li><a href="global.html#DEFAULT_FILTER_NAME">DEFAULT_FILTER_NAME</a></li><li><a href="global.html#DEFAULT_LAYOUT">DEFAULT_LAYOUT</a></li><li><a href="global.html#DiscountCodes">DiscountCodes</a></li><li><a href="global.html#DiscountCodesPackageConfig">DiscountCodesPackageConfig</a></li><li><a href="global.html#DiscountRates">DiscountRates</a></li><li><a href="global.html#DiscountRatesPackageConfig">DiscountRatesPackageConfig</a></li><li><a href="global.html#Discounts">Discounts</a></li><li><a href="global.html#DiscountsPackageConfig">DiscountsPackageConfig</a></li><li><a href="global.html#displayEmail">displayEmail</a></li><li><a href="global.html#displayName">displayName</a></li><li><a href="global.html#doesUserExist">doesUserExist</a></li><li><a href="global.html#doRightJoinNoIntersection">doRightJoinNoIntersection</a></li><li><a href="global.html#EditButton">EditButton</a></li><li><a href="global.html#EmailTemplates">EmailTemplates</a></li><li><a href="global.html#exampleSubmit">exampleSubmit</a></li><li><a href="global.html#expressCheckoutSettingsValid">expressCheckoutSettingsValid</a></li><li><a href="global.html#filterShippingStatus">filterShippingStatus</a></li><li><a href="global.html#filterWorkflowStatus">filterWorkflowStatus</a></li><li><a href="global.html#findProductMedia">findProductMedia</a></li><li><a href="global.html#fulfillmentNumber">fulfillmentNumber</a></li><li><a href="global.html#GeoCoder">GeoCoder</a></li><li><a href="global.html#getAbsoluteUrl">getAbsoluteUrl</a></li><li><a href="global.html#getAuthData">getAuthData</a></li><li><a href="global.html#getBillingInfo">getBillingInfo</a></li><li><a href="global.html#getCardType">getCardType</a></li><li><a href="global.html#getCartItem">getCartItem</a></li><li><a href="global.html#getCurrentShop">getCurrentShop</a></li><li><a href="global.html#getCurrentShopCursor">getCurrentShopCursor</a></li><li><a href="global.html#getCurrentTag">getCurrentTag</a></li><li><a href="global.html#getGuestLoginState">getGuestLoginState</a></li><li><a href="global.html#getInvitableGroups">getInvitableGroups</a></li><li><a href="global.html#getMailConfig">getMailConfig</a></li><li><a href="global.html#getMailUrl">getMailUrl</a></li><li><a href="global.html#getMarketplaceSettings">getMarketplaceSettings</a></li><li><a href="global.html#getMarketplaceSettingsFromPackages">getMarketplaceSettingsFromPackages</a></li><li><a href="global.html#getPackageSettingsWithOptions">getPackageSettingsWithOptions</a></li><li><a href="global.html#getPublishedOrRevision">getPublishedOrRevision</a></li><li><a href="global.html#getRegistryDomain">getRegistryDomain</a></li><li><a href="global.html#getRegistryRouteName">getRegistryRouteName</a></li><li><a href="global.html#getRouteName">getRouteName</a></li><li><a href="global.html#getSchemas">getSchemas</a></li><li><a href="global.html#getSellerShop">getSellerShop</a></li><li><a href="global.html#getSellerShopId">getSellerShopId</a></li><li><a href="global.html#getShippingInfo">getShippingInfo</a></li><li><a href="global.html#getShippingRates">getShippingRates</a></li><li><a href="global.html#getShopId">getShopId</a></li><li><a href="global.html#getShopName">getShopName</a></li><li><a href="global.html#getShopPrefix">getShopPrefix</a></li><li><a href="global.html#getShopsWithRoles">getShopsWithRoles</a></li><li><a href="global.html#getSiblings">getSiblings</a></li><li><a href="global.html#getSlug">getSlug</a></li><li><a href="global.html#getstaleCarts">getstaleCarts</a></li><li><a href="global.html#getSubject">getSubject</a></li><li><a href="global.html#getTargetAccount">getTargetAccount</a></li><li><a href="global.html#getTaxSettings">getTaxSettings</a></li><li><a href="global.html#getTemplate">getTemplate</a></li><li><a href="global.html#getTemplateFile">getTemplateFile</a></li><li><a href="global.html#getTopVariants">getTopVariants</a></li><li><a href="global.html#getUrl">getUrl</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#getVariantParent">getVariantParent</a></li><li><a href="global.html#getVariants">getVariants</a></li><li><a href="global.html#GroupsTableButton">GroupsTableButton</a></li><li><a href="global.html#Handle">Handle</a></li><li><a href="global.html#handleEmailSubmit">handleEmailSubmit</a></li><li><a href="global.html#handleFieldChange">handleFieldChange</a></li><li><a href="global.html#handleOpenShortcut">handleOpenShortcut</a></li><li><a href="global.html#handleShopSelectChange">handleShopSelectChange</a></li><li><a href="global.html#handleShowDashboard">handleShowDashboard</a></li><li><a href="global.html#handleShowPackage">handleShowPackage</a></li><li><a href="global.html#hasAdminAccess">hasAdminAccess</a></li><li><a href="global.html#Hook">Hook</a></li><li><a href="global.html#Hooks">Hooks</a></li><li><a href="global.html#isAdmin">isAdmin</a></li><li><a href="global.html#isCompleted">isCompleted</a></li><li><a href="global.html#isConfigured">isConfigured</a></li><li><a href="global.html#isCustomValue">isCustomValue</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isOwnerOfProfile">isOwnerOfProfile</a></li><li><a href="global.html#isPackageEnabled">isPackageEnabled</a></li><li><a href="global.html#isPending">isPending</a></li><li><a href="global.html#isShopGuest">isShopGuest</a></li><li><a href="global.html#isShopMember">isShopMember</a></li><li><a href="global.html#Jobs">Jobs</a></li><li><a href="global.html#label">label</a></li><li><a href="global.html#listRefunds">listRefunds</a></li><li><a href="global.html#loadCoreTranslations">loadCoreTranslations</a></li><li><a href="global.html#loadMoreProducts">loadMoreProducts</a></li><li><a href="global.html#loadSettings">loadSettings</a></li><li><a href="global.html#loadTranslation">loadTranslation</a></li><li><a href="global.html#loadTranslations">loadTranslations</a></li><li><a href="global.html#Logs">Logs</a></li><li><a href="global.html#Media">Media</a></li><li><a href="global.html#members">members</a></li><li><a href="global.html#mergeDeep">mergeDeep</a></li><li><a href="global.html#MetaData">MetaData</a></li><li><a href="global.html#metaField">metaField</a></li><li><a href="global.html#methods">methods</a></li><li><a href="global.html#normalizeAddresses">normalizeAddresses</a></li><li><a href="global.html#normalizeMode">normalizeMode</a></li><li><a href="global.html#normalizeStatus">normalizeStatus</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#Notifications">Notifications</a></li><li><a href="global.html#onCalculateStripeApplicationFee">onCalculateStripeApplicationFee</a></li><li><a href="global.html#order">order</a></li><li><a href="global.html#ORDER_LIST_FILTERS_PREFERENCE_NAME">ORDER_LIST_FILTERS_PREFERENCE_NAME</a></li><li><a href="global.html#ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME">ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME</a></li><li><a href="global.html#orderCreditMethod">orderCreditMethod</a></li><li><a href="global.html#orderFulfillmentData">orderFulfillmentData</a></li><li><a href="global.html#ordersInventoryAdjust">ordersInventoryAdjust</a></li><li><a href="global.html#ordersInventoryAdjustByShop">ordersInventoryAdjustByShop</a></li><li><a href="global.html#orderToSalesInvoice">orderToSalesInvoice</a></li><li><a href="global.html#PACKAGE_NAME">PACKAGE_NAME</a></li><li><a href="global.html#parseError">parseError</a></li><li><a href="global.html#parseRefundReponse">parseRefundReponse</a></li><li><a href="global.html#paymentCapture">paymentCapture</a></li><li><a href="global.html#paymentSubmit">paymentSubmit</a></li><li><a href="global.html#pkgPermissions">pkgPermissions</a></li><li><a href="global.html#productVariant">productVariant</a></li><li><a href="global.html#randomProcessor">randomProcessor</a></li><li><a href="global.html#Reaction">Reaction</a></li><li><a href="global.html#ReactionAvatar">ReactionAvatar</a></li><li><a href="global.html#ReactionLayout">ReactionLayout</a></li><li><a href="global.html#ReactionProduct">ReactionProduct</a></li><li><a href="global.html#registerInventory">registerInventory</a></li><li><a href="global.html#registerSchema">registerSchema</a></li><li><a href="global.html#registry">registry</a></li><li><a href="global.html#removeMedia">removeMedia</a></li><li><a href="global.html#resetRegisteredTemplates">resetRegisteredTemplates</a></li><li><a href="global.html#SellerShop">SellerShop</a></li><li><a href="global.html#send">send</a></li><li><a href="global.html#sendResetPasswordEmail">sendResetPasswordEmail</a></li><li><a href="global.html#sendUpdatedVerificationEmail">sendUpdatedVerificationEmail</a></li><li><a href="global.html#sendVerificationEmail">sendVerificationEmail</a></li><li><a href="global.html#ServerSessions">ServerSessions</a></li><li><a href="global.html#services">services</a></li><li><a href="global.html#shippingStates">shippingStates</a></li><li><a href="global.html#shippingStatus">shippingStatus</a></li><li><a href="global.html#ShopOrderSummary">ShopOrderSummary</a></li><li><a href="global.html#Shops">Shops</a></li><li><a href="global.html#showAvalaraTaxSettings">showAvalaraTaxSettings</a></li><li><a href="global.html#showMerchantSignup">showMerchantSignup</a></li><li><a href="global.html#shown">shown</a></li><li><a href="global.html#showVariant">showVariant</a></li><li><a href="global.html#Sms">Sms</a></li><li><a href="global.html#stripeCaptureCharge">stripeCaptureCharge</a></li><li><a href="global.html#TagHelpers">TagHelpers</a></li><li><a href="global.html#TaxCloudPackageConfig">TaxCloudPackageConfig</a></li><li><a href="global.html#TaxCodes">TaxCodes</a></li><li><a href="global.html#TaxEntityCodes">TaxEntityCodes</a></li><li><a href="global.html#Taxes">Taxes</a></li><li><a href="global.html#TaxJarPackageConfig">TaxJarPackageConfig</a></li><li><a href="global.html#TaxPackageConfig">TaxPackageConfig</a></li><li><a href="global.html#TaxRates">TaxRates</a></li><li><a href="global.html#Templates">Templates</a></li><li><a href="global.html#Themes">Themes</a></li><li><a href="global.html#thisApp">thisApp</a></li><li><a href="global.html#toCamelCase">toCamelCase</a></li><li><a href="global.html#toggleSession">toggleSession</a></li><li><a href="global.html#ToolbarGroup">ToolbarGroup</a></li><li><a href="global.html#ToolbarText">ToolbarText</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#translateRegistry">translateRegistry</a></li><li><a href="global.html#Translations">Translations</a></li><li><a href="global.html#UpdateEmail">UpdateEmail</a></li><li><a href="global.html#updateInventoryPolicyIfChildVariants">updateInventoryPolicyIfChildVariants</a></li><li><a href="global.html#updateMediaPriorities">updateMediaPriorities</a></li><li><a href="global.html#user">user</a></li><li><a href="global.html#userHasPassword">userHasPassword</a></li><li><a href="global.html#userOrders">userOrders</a></li><li><a href="global.html#valueForField">valueForField</a></li><li><a href="global.html#verifyConfig">verifyConfig</a></li><li><a href="global.html#VisibilityButton">VisibilityButton</a></li><li><a href="global.html#workflowStatus">workflowStatus</a></li><li><a href="global.html#writeJsonToBody">writeJsonToBody</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">server/methods/catalog.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import _ from  "lodash";
+import { check, Match } from "meteor/check";
+import { Random } from "meteor/random";
+import { EJSON } from "meteor/ejson";
+import { Meteor } from "meteor/meteor";
+import { copyFile, ReactionProduct } from "/lib/api";
+import { ProductRevision as Catalog } from "/imports/plugins/core/revisions/server/hooks";
+import { Media, Products, Revisions, Tags } from "/lib/collections";
+import { Logger, Reaction } from "/server/api";
+
+/* eslint new-cap: 0 */
+/* eslint no-loop-func: 0 */
+/* eslint quotes: 0 */
+
+/**
+ * @file Meteor methods for Product
+ *
+ *
+ * @namespace Meteor/Product
+*/
+
+/**
+ * updateVariantProductField
+ * @private
+ * @summary updates the variant
+ * @param {Array} variants - the array of variants
+ * @param {String} field - the field to update
+ * @param {String} value - the value to add
+ * @return {Array} - return an array
+ */
+function updateVariantProductField(variants, field, value) {
+  return variants.map(variant => {
+    Meteor.call("products/updateProductField", variant._id, field, value);
+  });
+}
+
+/**
+ * @array toDenormalize
+ * @private
+ * @summary contains a list of fields, which should be denormalized
+ * @type {string[]}
+ */
+const toDenormalize = [
+  "price",
+  "inventoryQuantity",
+  "lowInventoryWarningThreshold",
+  "inventoryPolicy",
+  "inventoryManagement"
+];
+
+/**
+ * @function createTitle
+ * @private
+ * @description Recursive method which trying to find a new `title`, given the
+ * existing copies
+ * @param {String} newTitle - product `title`
+ * @param {String} productId - current product `_id`
+ * @return {String} title - modified `title`
+ */
+function createTitle(newTitle, productId) {
+  // exception product._id needed for cases then double triggering happens
+  let title = newTitle || "";
+  const titleCount = Products.find({
+    title: title,
+    _id: {
+      $nin: [productId]
+    }
+  }).count();
+  // current product "copy" number
+  let titleNumberSuffix = 0;
+  // product handle prefix
+  let titleString = title;
+  // copySuffix "-copy-number" suffix of product
+  const copySuffix = titleString.match(/-copy-\d+$/) || titleString.match(/-copy$/);
+  // if product is a duplicate, we should take the copy number, and cut
+  // the handle
+  if (copySuffix) {
+    // we can have two cases here: copy-number and just -copy. If there is
+    // no numbers in copySuffix then we should put 1 in handleNumberSuffix
+    titleNumberSuffix = +String(copySuffix).match(/\d+$/) || 1;
+    // removing last numbers and last "-" if it presents
+    titleString = title.replace(/\d+$/, '').replace(/-$/, '');
+  }
+
+  // if we have more than one product with the same handle, we should mark
+  // it as "copy" or increment our product handle if it contain numbers.
+  if (titleCount > 0) {
+    // if we have product with name like "product4", we should take care
+    // about its uniqueness
+    if (titleNumberSuffix > 0) {
+      title = `${titleString}-${titleNumberSuffix + titleCount}`;
+    } else {
+      // first copy will be "...-copy", second: "...-copy-2"
+      title = `${titleString}-copy${ titleCount > 1 ? "-" + titleCount : ""}`;
+    }
+  }
+
+  // we should check again if there are any new matches with DB
+  if (Products.find({
+    title: title
+  }).count() !== 0) {
+    title = createTitle(title, productId);
+  }
+  return title;
+}
+
+/**
+ * @function createHandle
+ * @private
+ * @description Recursive method which trying to find a new `handle`, given the
+ * existing copies
+ * @param {String} productHandle - product `handle`
+ * @param {String} productId - current product `_id`
+ * @return {String} handle - modified `handle`
+ */
+function createHandle(productHandle, productId) {
+  let handle = productHandle || "";
+  // exception product._id needed for cases then double triggering happens
+  const handleCount = Products.find({
+    handle: handle,
+    _id: {
+      $nin: [productId]
+    }
+  }).count();
+  // current product "copy" number
+  let handleNumberSuffix = 0;
+  // product handle prefix
+  let handleString = handle;
+  // copySuffix "-copy-number" suffix of product
+  const copySuffix = handleString.match(/-copy-\d+$/) || handleString.match(/-copy$/);
+
+  // if product is a duplicate, we should take the copy number, and cut
+  // the handle
+  if (copySuffix) {
+    // we can have two cases here: copy-number and just -copy. If there is
+    // no numbers in copySuffix then we should put 1 in handleNumberSuffix
+    handleNumberSuffix = +String(copySuffix).match(/\d+$/) || 1;
+    // removing last numbers and last "-" if it presents
+    handleString = handle.replace(/\d+$/, '').replace(/-$/, '');
+  }
+
+  // if we have more than one product with the same handle, we should mark
+  // it as "copy" or increment our product handle if it contain numbers.
+  if (handleCount > 0) {
+    // if we have product with name like "product4", we should take care
+    // about its uniqueness
+    if (handleNumberSuffix > 0) {
+      handle = `${handleString}-${handleNumberSuffix + handleCount}`;
+    } else {
+      // first copy will be "...-copy", second: "...-copy-2"
+      handle = `${handleString}-copy${ handleCount > 1
+        ? '-' + handleCount : ''}`;
+    }
+  }
+
+  // we should check again if there are any new matches with DB
+  if (Products.find({
+    handle: handle
+  }).count() !== 0) {
+    handle = createHandle(handle, productId);
+  }
+
+  return handle;
+}
+
+/**
+ * @function copyMedia
+ * @private
+ * @description copy images links to cloned variant from original
+ * @param {String} newId - [cloned|original] product _id
+ * @param {String} variantOldId - old variant _id
+ * @param {String} variantNewId - - cloned variant _id
+ * @return {Number} Media#update result
+ */
+function copyMedia(newId, variantOldId, variantNewId) {
+  Media.find({
+    "metadata.variantId": variantOldId
+  }).forEach(function (fileObj) {
+    // Copy File and insert directly, bypasing revision control
+    copyFile(fileObj, {
+      productId: newId,
+      variantId: variantNewId
+    });
+  });
+}
+
+/**
+ * @function denormalize
+ * @private
+ * @description With flattened model we do not want to get variant docs in
+ * `products` publication, but we need some data from variants to display price,
+ * quantity, etc. That's why we are denormalizing these properties into product
+ * doc. Also, this way should have a speed benefit comparing the way where we
+ * could dynamically build denormalization inside `products` publication.
+ * @summary update product denormalized properties if variant was updated or
+ * removed
+ * @param {String} id - product _id
+ * @param {String} field - type of field. Could be:
+ * "price",
+ * "inventoryQuantity",
+ * "inventoryManagement",
+ * "inventoryPolicy",
+ * "lowInventoryWarningThreshold"
+ * @since 0.11.0
+ * @return {Number} - number of successful update operations. Should be "1".
+ */
+function denormalize(id, field) {
+  const doc = Products.findOne(id);
+  let variants;
+  if (doc.type === "simple") {
+    variants = Catalog.getTopVariants(id);
+  } else if (doc.type === "variant" &amp;&amp; doc.ancestors.length === 1) {
+    variants = Catalog.getVariants(id);
+  }
+  const update = {};
+
+  switch (field) {
+    case "inventoryPolicy":
+    case "inventoryQuantity":
+    case "inventoryManagement":
+      Object.assign(update, {
+        isSoldOut: isSoldOut(variants),
+        isLowQuantity: isLowQuantity(variants),
+        isBackorder: isBackorder(variants)
+      });
+      break;
+    case "lowInventoryWarningThreshold":
+      Object.assign(update, {
+        isLowQuantity: isLowQuantity(variants)
+      });
+      break;
+    default: // "price" is object with range, min, max
+      const priceObject = Catalog.getProductPriceRange(id);
+      Object.assign(update, {
+        price: priceObject
+      });
+  }
+  Products.update(id, {
+    $set: update
+  }, {
+    selector: {
+      type: "simple"
+    }
+  });
+}
+
+/**
+ * isSoldOut
+ * @private
+ * @summary We are stop accepting new orders if product marked as `isSoldOut`.
+ * @param {Array} variants - Array with top-level variants
+ * @return {Boolean} true if summary product quantity is zero.
+ */
+function isSoldOut(variants) {
+  return variants.every(variant => {
+    if (variant.inventoryManagement &amp;&amp; variant.inventoryPolicy) {
+      return Catalog.getVariantQuantity(variant) &lt;= 0;
+    }
+    return false;
+  });
+}
+
+/**
+ * isLowQuantity
+ * @private
+ * @summary If at least one of the variants is less than the threshold, then function returns `true`
+ * @param {Array} variants - array of child variants
+ * @return {boolean} low quantity or not
+ */
+function isLowQuantity(variants) {
+  return variants.some(variant => {
+    const quantity = Catalog.getVariantQuantity(variant);
+    // we need to keep an eye on `inventoryPolicy` too and qty > 0
+    if (variant.inventoryManagement &amp;&amp; variant.inventoryPolicy &amp;&amp; quantity) {
+      return quantity &lt;= variant.lowInventoryWarningThreshold;
+    }
+    // TODO: need to test this function with real data
+    return false;
+  });
+}
+
+/**
+ * isBackorder
+ * @private
+ * @description Is products variants is still available to be ordered after summary variants quantity is zero
+ * @param {Array} variants - array with variant objects
+ * @return {boolean} is backorder allowed or not for a product
+ */
+function isBackorder(variants) {
+  return variants.every(variant => {
+    return !variant.inventoryPolicy &amp;&amp; variant.inventoryManagement &amp;&amp;
+      variant.inventoryQuantity === 0;
+  });
+}
+
+/**
+ * flushQuantity
+ * @private
+ * @summary if variant `inventoryQuantity` not zero, function update it to
+ * zero. This needed in case then option with it's own `inventoryQuantity`
+ * creates to top-level variant. In that case top-level variant should display
+ * sum of his options `inventoryQuantity` fields.
+ * @param {String} id - variant _id
+ * @return {Number} - collection update results
+ */
+function flushQuantity(id) {
+  const variant = Products.findOne(id);
+  // if variant already have descendants, quantity should be 0, and we don't
+  // need to do all next actions
+  if (variant.inventoryQuantity === 0) {
+    return 1; // let them think that we have one successful operation here
+  }
+
+  return Products.update({
+    _id: id
+  }, {
+    $set: {
+      inventoryQuantity: 0
+    }
+  }, {
+    selector: {
+      type: "variant"
+    }
+  });
+}
+
+Meteor.methods({
+  /**
+   * @name cloneVariant
+   * @memberof Meteor/Product
+   * @method
+   * @summary clones a product variant into a new variant
+   * @description the method copies variants, but will also create and clone
+   * child variants (options)
+   * @param {String} productId - the productId we're whose variant we're
+   * cloning
+   * @param {String} variantId - the variantId that we're cloning
+   * @todo rewrite @description
+   * @return {Array} - list with cloned variants _ids
+   */
+  "products/cloneVariant": function (productId, variantId) {
+    check(productId, String);
+    check(variantId, String);
+
+    // Check first if Variant exists and then if user has the right to clone it
+    const variant = Products.findOne(variantId);
+    if (!variant) {
+      throw new Meteor.Error("Variant not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, variant.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    // Verify that this variant and any ancestors are not deleted.
+    // Child variants cannot be added if a parent product or product revision
+    // is marked as `{ isDeleted: true }`
+    if (ReactionProduct.isAncestorDeleted(variant, true)) {
+      throw new Meteor.Error("Unable to create product variant");
+    }
+
+    const variants = Products.find({
+      $or: [{
+        _id: variantId
+      }, {
+        ancestors: {
+          $in: [variantId]
+        },
+        isDeleted: false
+      }],
+      type: "variant"
+    }).fetch();
+    // exit if we're trying to clone a ghost
+    if (variants.length === 0) {
+      return;
+    }
+    const variantNewId = Random.id(); // for the parent variant
+    // we need to make sure that top level variant will be cloned first, his
+    // descendants later.
+    // we could use this way in future: http://stackoverflow.com/questions/
+    // 9040161/mongo-order-by-length-of-array, by now following are allowed
+    // @link https://lodash.com/docs#sortBy
+    const sortedVariants = _.sortBy(variants, doc => doc.ancestors.length);
+
+    return sortedVariants.map(sortedVariant => {
+      const oldId = sortedVariant._id;
+      let type = "child";
+      const clone = {};
+      if (variantId === sortedVariant._id) {
+        type = "parent";
+        Object.assign(clone, sortedVariant, {
+          _id: variantNewId,
+          title: `${sortedVariant.title} - copy`,
+          optionTitle: `${sortedVariant.optionTitle} - copy`,
+          price: `${sortedVariant.price}` ?
+            `${sortedVariant.price}` :
+            `${variant.price}`,
+          compareAtPrice: `${sortedVariant.compareAtPrice}` ?
+            `${sortedVariant.compareAtPrice}` :
+            `${variant.compareAtPrice}`
+        });
+      } else {
+        const parentIndex = sortedVariant.ancestors.indexOf(variantId);
+        const ancestorsClone = sortedVariant.ancestors.slice(0);
+        // if variantId exists in ancestors, we override it by new _id
+        !!~parentIndex &amp;&amp; ancestorsClone.splice(parentIndex, 1, variantNewId);
+        Object.assign(clone, variant, {
+          _id: Random.id(),
+          ancestors: ancestorsClone,
+          title: `${sortedVariant.title}`,
+          optionTitle: `${sortedVariant.optionTitle}`,
+          price: `${sortedVariant.price}` ?
+            `${sortedVariant.price}` :
+            `${variant.price}`,
+          compareAtPrice: `${sortedVariant.compareAtPrice}` ?
+            `${sortedVariant.compareAtPrice}` :
+            `${variant.compareAtPrice}`,
+          height: `${sortedVariant.height}`,
+          width: `${sortedVariant.width}`,
+          weight: `${sortedVariant.weight}`,
+          length: `${sortedVariant.length}`
+        });
+      }
+      delete clone.updatedAt;
+      delete clone.createdAt;
+      delete clone.inventoryQuantity;
+      delete clone.lowInventoryWarningThreshold;
+
+      copyMedia(productId, oldId, clone._id);
+      return Products.insert(clone, {
+        validate: false
+      }, (error, result) => {
+        if (result) {
+          if (type === "child") {
+            Logger.debug(
+              `products/cloneVariant: created sub child clone: ${
+                clone._id} from ${variantId}`
+            );
+          } else {
+            Logger.debug(
+              `products/cloneVariant: created clone: ${
+                clone._id} from ${variantId}`
+            );
+          }
+        }
+        if (error) {
+          Logger.error(
+            `products/cloneVariant: cloning of ${variantId} was failed: ${error}`
+          );
+        }
+      });
+    });
+  },
+
+  /**
+   * @name createVariant
+   * @memberof Meteor/Product
+   * @method
+   * @summary initializes empty variant template
+   * @param {String} parentId - the product _id or top level variant _id where
+   * we create variant
+   * @param {Object} [newVariant] - variant object
+   * @return {String} new variantId
+   */
+  "products/createVariant": function (parentId, newVariant) {
+    check(parentId, String);
+    check(newVariant, Match.Optional(Object));
+
+    // Check first if Product exists and then if user has the rights
+    const product = Products.findOne(parentId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    const newVariantId = Random.id();
+    // get parent ancestors to build new ancestors array
+    const { ancestors } = product;
+
+    // Verify that the parent variant and any ancestors are not deleted.
+    // Child variants cannot be added if a parent product or product revision
+    // is marked as `{ isDeleted: true }`
+    if (ReactionProduct.isAncestorDeleted(product, true)) {
+      throw new Meteor.Error("Unable to create product variant");
+    }
+
+    Array.isArray(ancestors) &amp;&amp; ancestors.push(parentId);
+    const assembledVariant = Object.assign(newVariant || {}, {
+      _id: newVariantId,
+      ancestors: ancestors,
+      type: "variant"
+    });
+
+    if (!newVariant) {
+      Object.assign(assembledVariant, {
+        title: product.title + " - Untitled option",
+        price: 0.00
+      });
+    }
+
+    // if we are inserting child variant to top-level variant, we need to remove
+    // all top-level's variant inventory records and flush it's quantity,
+    // because it will be hold sum of all it descendants quantities.
+    if (ancestors.length === 2) {
+      flushQuantity(parentId);
+    }
+
+    Products.insert(assembledVariant,
+      (error, result) => {
+        if (result) {
+          Logger.debug(
+            `products/createVariant: created variant: ${
+              newVariantId} for ${parentId}`
+          );
+        }
+      }
+    );
+
+    return newVariantId;
+  },
+
+  /**
+   * @name updateVariant
+   * @memberof Meteor/Product
+   * @method
+   * @summary update individual variant with new values, merges into original
+   * only need to supply updated information. Currently used for a one use case
+   * - to manage top-level variant autoform.
+   * @param {Object} variant - current variant object
+   * @todo some use cases of this method was moved to "products/
+   * updateProductField", but it still used
+   * @return {Number} returns update result
+   */
+  "products/updateVariant": function (variant) {
+    check(variant, Object);
+
+    // Check first if Variant exists and then if user has the right to clone it
+    const currentVariant = Products.findOne(variant._id);
+    if (!currentVariant) {
+      throw new Meteor.Error("Variant not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, currentVariant.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    // update variants
+    if (typeof currentVariant === "object") {
+      const newVariant = Object.assign({}, currentVariant, variant);
+
+      return Products.update({
+        _id: variant._id
+      }, {
+        $set: newVariant // newVariant already contain `type` property, so we
+        // do not need to pass it explicitly
+      }, {
+        validate: false
+      }, (error, result) => {
+        if (result) {
+          const productId = currentVariant.ancestors[0];
+          // we need manually check is these fields were updated?
+          // we can't stop after successful denormalization, because we have a
+          // case when several fields could be changed in top-level variant
+          // before form will be submitted.
+          toDenormalize.forEach(field => {
+            if (currentVariant[field] !== variant[field]) {
+              denormalize(productId, field);
+            }
+          });
+        }
+      });
+    }
+  },
+
+  /**
+   * @name deleteVariant
+   * @memberof Meteor/Product
+   * @method
+   * @summary delete variant, which should also delete child variants
+   * @param {String} variantId - variantId to delete
+   * @returns {Boolean} returns update results: `true` - if at least one variant
+   * was removed or `false` if nothing was removed
+   */
+  "products/deleteVariant": function (variantId) {
+    check(variantId, String);
+
+    // Check first if Variant exists and then if user has the right to delete it
+    const variant = Products.findOne(variantId);
+    if (!variant) {
+      throw new Meteor.Error("Variant not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, variant.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    const selector = {
+      // Don't "archive" variants that are already marked deleted.
+      isDeleted: {
+        $in: [false, undefined]
+      },
+      $or: [{
+        _id: variantId
+      }, {
+        ancestors: {
+          $in: [variantId]
+        }
+      }]
+    };
+    const toDelete = Products.find(selector).fetch();
+    // out if nothing to delete
+    if (!Array.isArray(toDelete) || toDelete.length === 0) return false;
+
+    const deleted = Products.remove(selector);
+
+    // after variant were removed from product, we need to recalculate all
+    // denormalized fields
+    const productId = toDelete[0].ancestors[0];
+    toDenormalize.forEach(field => denormalize(productId, field));
+
+    return typeof deleted === "number" &amp;&amp; deleted > 0;
+  },
+
+  /**
+   * @name cloneProduct
+   * @memberof Meteor/Product
+   * @method
+   * @summary clone a whole product, defaulting visibility, etc
+   * in the future we are going to do an inheritance product
+   * that maintains relationships with the cloned product tree
+   * @param {Array} productOrArray - products array to clone
+   * @returns {Array} returns insert results
+   */
+  "products/cloneProduct": function (productOrArray) {
+    check(productOrArray, Match.OneOf(Array, Object));
+
+    // REVIEW: This check may be unnecessary now - checks that user has permission to clone
+    // for active shop
+    if (!Reaction.hasPermission("createProduct")) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    if (Array.isArray(productOrArray)) {
+      // Reduce to unique shops found among producs in this array
+      const shopIds = productOrArray.map(prod => prod.shopId);
+      const uniqueShopIds = [...new Set(shopIds)];
+
+      // For each unique shopId check to make sure that user has permission to clone
+      uniqueShopIds.forEach((shopId) => {
+        if (!Reaction.hasPermission("createProduct", this.userId, shopId)) {
+          throw new Meteor.Error(403,
+            "Access Denied");
+        }
+      });
+    } else {
+      // Single product was passed in - ensure that user has permission to clone
+      if (!Reaction.hasPermission("createProduct", this.userId, productOrArray.shopId)) {
+        throw new Meteor.Error(403,
+          "Access Denied");
+      }
+    }
+
+    let result;
+    let products;
+    const results = [];
+    const pool = []; // pool of id pairs: { oldId, newId }
+
+    function getIds(id) {
+      return pool.filter(function (pair) {
+        return pair.oldId === this.id;
+      }, {
+        id: id
+      });
+    }
+
+    function setId(ids) {
+      return pool.push(ids);
+    }
+
+    function buildAncestors(ancestors) {
+      const newAncestors = [];
+      ancestors.map(oldId => {
+        const pair = getIds(oldId);
+        // TODO do we always have newId on this step?
+        newAncestors.push(pair[0].newId);
+      });
+      return newAncestors;
+    }
+
+    if (!Array.isArray(productOrArray)) {
+      products = [productOrArray];
+    } else {
+      products = productOrArray;
+    }
+
+    for (const product of products) {
+      // cloning product
+      const productNewId = Random.id();
+      setId({
+        oldId: product._id,
+        newId: productNewId
+      });
+
+      const newProduct = Object.assign({}, product, {
+        _id: productNewId
+        // ancestors: product.ancestors.push(product._id)
+      });
+      delete newProduct.updatedAt;
+      delete newProduct.createdAt;
+      delete newProduct.publishedAt;
+      delete newProduct.positions;
+      delete newProduct.handle;
+      newProduct.isVisible = false;
+      if (newProduct.title) {
+        // todo test this
+        newProduct.title = createTitle(newProduct.title, newProduct._id);
+        newProduct.handle = createHandle(
+          Reaction.getSlug(newProduct.title),
+          newProduct._id
+        );
+      }
+      result = Products.insert(newProduct, {
+        validate: false
+      });
+      results.push(result);
+
+      // cloning variants
+      const variants = Products.find({
+        ancestors: {
+          $in: [product._id]
+        },
+        type: "variant"
+      }).fetch();
+      // why we are using `_.sortBy` described in `products/cloneVariant`
+      const sortedVariants = _.sortBy(variants, doc => doc.ancestors.length);
+      for (const variant of sortedVariants) {
+        const variantNewId = Random.id();
+        setId({
+          oldId: variant._id,
+          newId: variantNewId
+        });
+        const ancestors = buildAncestors(variant.ancestors);
+        const newVariant = Object.assign({}, variant, {
+          _id: variantNewId,
+          ancestors: ancestors
+        });
+        delete newVariant.updatedAt;
+        delete newVariant.createdAt;
+        delete newVariant.publishedAt; // TODO can variant have this param?
+
+        result = Products.insert(
+          newVariant, {
+            validate: false
+          }
+        );
+        copyMedia(productNewId, variant._id, variantNewId);
+        results.push(result);
+      }
+    }
+    return results;
+  },
+
+  /**
+   * @name createProduct
+   * @memberof Meteor/Product
+   * @method
+   * @summary when we create a new product, we create it with an empty variant.
+   * all products have a variant with pricing and details
+   * @param {Object} [product] - optional product object
+   * @return {String} return insert result
+   */
+  "products/createProduct": function (product) {
+    check(product, Match.Optional(Object));
+
+    // Ensure user has createProduct permission for active shop
+    if (!Reaction.hasPermission("createProduct")) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    // also if a product is provided, check first that the user doesn't mock a shop with no permissions to it
+    if (product) {
+      if (!product.shopId || !Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+        throw new Meteor.Error("Product should have a valid shopId");
+      }
+      return Products.insert(product);
+    }
+
+    return Products.insert({
+      type: "simple" // needed for multi-schema
+    }, {
+      validate: false
+    }, (error, result) => {
+      // additionally, we want to create a variant to a new product
+      if (result) {
+        Products.insert({
+          ancestors: [result],
+          price: 0.00,
+          title: "",
+          type: "variant" // needed for multi-schema
+        });
+      }
+    });
+  },
+
+  /**
+   * @name archiveProduct
+   * @memberof Meteor/Product
+   * @method
+   * @summary archive a product and unlink it from all media
+   * @param {String} productId - productId to delete
+   * @returns {Number} returns number of removed products
+   */
+  "products/archiveProduct": function (productId) {
+    check(productId, Match.OneOf(Array, String));
+
+    let extractedProductId;
+    if (Array.isArray(productId)) {
+      extractedProductId = productId[0];
+    }
+
+    // Check first if Product exists and then if user has the right to delete it
+    const product = Products.findOne(extractedProductId || productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    let productIds;
+
+    if (!Array.isArray(productId)) {
+      productIds = [productId];
+    } else {
+      productIds = productId;
+    }
+    const productsWithVariants = Products.find({
+      // Don't "archive" products that are already marked deleted.
+      isDeleted: {
+        $in: [false, undefined]
+      },
+      $or: [{
+        _id: {
+          $in: productIds
+        }
+      }, {
+        ancestors: {
+          $in: productIds
+        }
+      }]
+    }, {
+      fields: {
+        type: 1
+      }
+    }).fetch();
+
+    const ids = [];
+    productsWithVariants.map(doc => {
+      ids.push(doc._id);
+    });
+
+    Products.remove({
+      _id: {
+        $in: ids
+      }
+    });
+
+    const numRemoved = Revisions.find({
+      "documentId": {
+        $in: ids
+      },
+      "documentData.isDeleted": true
+    }).count();
+
+    if (numRemoved > 0) {
+      // we can get removes results only in async way
+      Media.update({
+        "metadata.productId": {
+          $in: ids
+        },
+        "metadata.variantId": {
+          $in: ids
+        }
+      }, {
+        $set: {
+          "metadata.isDeleted": true
+        }
+      });
+      return numRemoved;
+    }
+    throw new Meteor.Error("Something went wrong, nothing was deleted");
+  },
+
+  /**
+   * @name updateProductField
+   * @memberof Meteor/Product
+   * @method
+   * @summary update single product or variant field
+   * @param {String} _id - product._id or variant._id to update
+   * @param {String} field - key to update
+   * @param {*} value - update property value
+   * @todo rename it to something like "products/updateField" to  reflect
+   * @todo we need to know which type of entity field belongs. For that we could
+   * do something like: const type = Products.findOne(_id).type or transmit type
+   * as param if it possible
+   * latest changes. its used for products and variants
+   * @return {Number} returns update result
+   */
+  "products/updateProductField": function (_id, field, value) {
+    check(_id, String);
+    check(field, String);
+    check(value, Match.OneOf(String, Object, Array, Boolean, Number));
+
+    // Must have createProduct permission for active shop
+    if (!Reaction.hasPermission("createProduct")) {
+      throw new Meteor.Error(403, "Access Denied");
+    }
+
+    // Check first if Product exists and then if user has the right to alter it
+    const doc = Products.findOne(_id);
+    if (!doc) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, doc.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    const type = doc.type;
+    let update;
+    // handle booleans with correct typing
+    if (value === "false" || value === "true") {
+      const booleanValue = (value === "true" || value === true);
+      update = EJSON.parse("{\"" + field + "\":" + booleanValue + "}");
+    } else {
+      if (field === "handle") {
+        update = {
+          [field]: createHandle(value, _id) // handle should be unique
+        };
+      } else if (field === "title" &amp;&amp; doc.handle === doc._id) { // update handle once title is set
+        const handle = createHandle(Reaction.getSlug(value), _id);
+        update = {
+          [field]: value,
+          handle
+        };
+      } else {
+        const stringValue = EJSON.stringify(value);
+        update = EJSON.parse("{\"" + field + "\":" + stringValue + "}");
+      }
+    }
+
+
+    // we need to use sync mode here, to return correct error and result to UI
+    let result;
+
+    try {
+      result = Products.update(_id, {
+        $set: update
+      }, {
+        selector: {
+          type: type
+        }
+      });
+    } catch (e) {
+      throw new Meteor.Error(e.message);
+    }
+
+    // If we get a result from the product update,
+    // meaning the update went past revision control,
+    // denormalize and attach results to top-level product
+    if (result === 1) {
+      if (type === "variant" &amp;&amp; ~toDenormalize.indexOf(field)) {
+        denormalize(doc.ancestors[0], field);
+      }
+    }
+    return result;
+  },
+
+  /**
+   * @name updateProductTags
+   * @memberof Meteor/Product
+   * @method
+   * @summary method to insert or update tag with hierarchy
+   * @param {String} productId - productId
+   * @param {String} tagName - tagName
+   * @param {String} tagId - tagId
+   * @return {Number} return result
+   */
+  "products/updateProductTags": function (productId, tagName, tagId) {
+    check(productId, String);
+    check(tagName, String);
+    check(tagId, Match.OneOf(String, null));
+
+    // Check first if Product exists and then if user has the right to alter it
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    this.unblock();
+
+    const newTag = {
+      slug: Reaction.getSlug(tagName),
+      name: tagName
+    };
+
+    const existingTag = Tags.findOne({
+      slug: Reaction.getSlug(tagName)
+    });
+
+    if (existingTag) {
+      const productCount = Products.find({
+        _id: productId,
+        hashtags: {
+          $in: [existingTag._id]
+        }
+      }).count();
+      if (productCount > 0) {
+        throw new Meteor.Error("Existing Tag, Update Denied");
+      }
+      return Products.update(productId, {
+        $push: {
+          hashtags: existingTag._id
+        }
+      }, {
+        selector: {
+          type: "simple"
+        }
+      });
+    } else if (tagId) {
+      return Tags.update(tagId, {
+        $set: newTag
+      });
+    }
+
+    const newTagId = Meteor.call("shop/createTag", tagName, false);
+
+    // if result is an Error object, we return it immediately
+    if (typeof newTagId !== "string") {
+      return newTagId;
+    }
+
+    return Products.update(productId, {
+      $push: {
+        hashtags: newTagId
+      }
+    }, {
+      selector: {
+        type: "simple"
+      }
+    });
+  },
+
+  /**
+   * @name removeProductTag
+   * @memberof Meteor/Product
+   * @method
+   * @summary method to remove tag from product
+   * @param {String} productId - productId
+   * @param {String} tagId - tagId
+   * @return {String} return update result
+   */
+  "products/removeProductTag": function (productId, tagId) {
+    check(productId, String);
+    check(tagId, String);
+
+    // Check first if Product exists and then if user has the right to alter it
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    Products.update(productId, {
+      $pull: {
+        hashtags: tagId
+      }
+    }, {
+      selector: {
+        type: "simple"
+      }
+    });
+  },
+
+  /**
+   * @name setHandle
+   * @memberof Meteor/Product
+   * @method
+   * @summary copy of "products/setHandleTag", but without tag
+   * @param {String} productId - productId
+   * @returns {String} handle - product handle
+   */
+  "products/setHandle": function (productId) {
+    check(productId, String);
+
+    // Check first if Product exists and then if user has the right to alter it
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    let handle = Reaction.getSlug(product.title);
+    handle = createHandle(handle, product._id);
+    Products.update(product._id, {
+      $set: {
+        handle: handle,
+        type: "simple"
+      }
+    });
+
+    return handle;
+  },
+
+  /**
+   * @name setHandleTag
+   * @memberof Meteor/Product
+   * @method
+   * @summary set or toggle product handle
+   * @param {String} productId - productId
+   * @param {String} tagId - tagId
+   * @return {String} return update result
+   */
+  "products/setHandleTag": function (productId, tagId) {
+    check(productId, String);
+    check(tagId, String);
+    // Check first if Product exists and then if user has the right to alter it
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    function getSet(handle) {
+      return {
+        $set: {
+          handle: handle,
+          type: "simple"
+        }
+      };
+    }
+
+    const tag = Tags.findOne(tagId);
+    // set handle
+    if (product.handle === tag.slug) {
+      let handle = Reaction.getSlug(product.title);
+      handle = createHandle(handle, product._id);
+      Products.update(product._id, getSet(handle));
+
+      return handle;
+    }
+    // toggle handle
+    const existingHandles = Products.find({
+      handle: tag.slug
+    }).fetch();
+    // this is needed to take care about product's handle which(product) was
+    // previously tagged.
+    for (const currentProduct of existingHandles) {
+      const currentProductHandle = createHandle(
+        Reaction.getSlug(currentProduct.title),
+        currentProduct._id);
+      Products.update(currentProduct._id,
+        getSet(currentProductHandle));
+    }
+    Products.update(product._id, getSet(tag.slug));
+
+    return tag.slug;
+  },
+
+  /**
+   * @name updateProductPosition
+   * @memberof Meteor/Product
+   * @method
+   * @summary update product grid positions
+   * @param {String} productId - productId
+   * @param {Object} positionData -  an object with position,dimensions
+   * @param {String} tag - current route name. If it is not tag, then we using
+   * shop name as base `positions` name. Could be useful for multi-shopping.
+   * @return {Number} collection update returns
+   */
+  "products/updateProductPosition": function (productId, positionData, tag) {
+    check(productId, String);
+    check(positionData, Object);
+    check(tag, String);
+
+    // Check first if Product exists and then if user has the proper rights
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    this.unblock();
+
+    const position = `positions.${tag}.position`;
+    const pinned = `positions.${tag}.pinned`;
+    const weight = `positions.${tag}.weight`;
+    const updatedAt = `positions.${tag}.updatedAt`;
+
+    return Products.update({
+      _id: productId
+    }, {
+      $set: {
+        [position]: positionData.position,
+        [pinned]: positionData.pinned,
+        [weight]: positionData.weight,
+        [updatedAt]: new Date(),
+        type: "simple" // for multi-schema
+      }
+    });
+  },
+
+  /**
+   * @name updateVariantsPosition
+   * @memberof Meteor/Product
+   * @method
+   * @description updates top level variant position index
+   * @param {Array} sortedVariantIds - array of top level variant `_id`s
+   * @since 0.11.0
+   * @return {Number} Products.update result
+   */
+  "products/updateVariantsPosition": function (sortedVariantIds) {
+    check(sortedVariantIds, [String]);
+
+    // This checks to make sure the user has createProduct permissions for the active shop.
+    // TODO: We should determine if that is the correct role that a user should have
+    // to be permitted to re-arrange products on the grid
+    if (!Reaction.hasPermission("createProduct")) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    sortedVariantIds.forEach((id, index) => {
+      Products.update(id, {
+        $set: {
+          index: index
+        }
+      }, {
+        selector: {
+          type: "variant"
+        }
+      }, (error, result) => {
+        if (result) {
+          Logger.debug(
+            `Variant ${id} position was updated to index ${index}`
+          );
+        }
+      });
+    });
+  },
+
+  /**
+   * @name updateMetaFields
+   * @memberof Meteor/Product
+   * @method
+   * @summary update product metafield
+   * @param {String} productId - productId
+   * @param {Object} updatedMeta - update object with metadata
+   * @param {Object|Number|undefined|null} meta - current meta object, or a number index
+   * @todo should this method works for variants also?
+   * @return {Number} collection update result
+   */
+  "products/updateMetaFields": function (productId, updatedMeta, meta) {
+    check(productId, String);
+    check(updatedMeta, Object);
+    check(meta, Match.OneOf(Object, Number, undefined, null));
+
+    // Check first if Product exists and then if user has the proper rights
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    // update existing metadata
+    if (typeof meta === "object") {
+      return Products.update({
+        _id: productId,
+        metafields: meta
+      }, {
+        $set: {
+          "metafields.$": updatedMeta
+        }
+      }, {
+        selector: {
+          type: "simple"
+        }
+      });
+    } else if (typeof meta === "number") {
+      return Products.update({
+        _id: productId
+      }, {
+        $set: {
+          [`metafields.${meta}`]: updatedMeta
+        }
+      }, {
+        selector: {
+          type: "simple"
+        }
+      });
+    }
+
+    // adds metadata
+    return Products.update({
+      _id: productId
+    }, {
+      $addToSet: {
+        metafields: updatedMeta
+      }
+    }, {
+      selector: {
+        type: "simple"
+      }
+    });
+  },
+
+  /**
+   * @name removeMetaFields
+   * @memberof Meteor/Product
+   * @method
+   * @summary update product metafield
+   * @param {String} productId - productId
+   * @param {Object} metafields - metadata object to remove
+   * @param {Object} type - optional product type for schema selection
+   * @return {Number} collection update result
+   */
+  "products/removeMetaFields": function (productId, metafields, type = "simple") {
+    check(productId, String);
+    check(metafields, Object);
+    check(type, String);
+
+    // Check first if Product exists and then if user has the proper rights
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    return Products.update({
+      _id: productId,
+      type: type
+    }, {
+      $pull: {
+        metafields: metafields
+      }
+    });
+  },
+
+  /**
+   * @name publishProduct
+   * @memberof Meteor/Product
+   * @method
+   * @summary publish (visibility) of product
+   * @todo hook into publishing flow
+   * @param {String} productId - productId
+   * @return {Boolean} product.isVisible
+   */
+  "products/publishProduct": function (productId) {
+    check(productId, String);
+
+    // Check first if Product exists and then if user has the proper rights
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    const variants = Products.find({
+      ancestors: {
+        $in: [productId]
+      }
+    }).fetch();
+    let variantValidator = true;
+
+    if (typeof product === "object" &amp;&amp; product.title.length > 1) {
+      if (variants.length > 0) {
+        variants.forEach(variant => {
+          // if this is a top variant with children, we avoid it to check price
+          // because we using price of its children
+          if (variant.ancestors.length === 1 &amp;&amp;
+            !Catalog.getVariants(variant._id, "variant").length ||
+            variant.ancestors.length !== 1) {
+            if (!(typeof variant.price === "number" &amp;&amp; variant.price > 0)) {
+              variantValidator = false;
+            }
+          }
+          // if variant has no title
+          if (typeof variant.title === "string" &amp;&amp; !variant.title.length) {
+            variantValidator = false;
+          }
+          if (typeof variant.optionTitle === "string" &amp;&amp; !variant.optionTitle.length) {
+            variantValidator = false;
+          }
+        });
+      } else {
+        Logger.debug("invalid product visibility ", productId);
+        throw new Meteor.Error("Forbidden", "Variant is required");
+      }
+
+      if (!variantValidator) {
+        Logger.debug("invalid product visibility ", productId);
+        throw new Meteor.Error("Forbidden",
+          "Some properties are missing.");
+      }
+
+      // update product visibility
+      Logger.debug("toggle product visibility ", product._id, !product.isVisible);
+
+      const res = Products.update(product._id, {
+        $set: {
+          isVisible: !product.isVisible
+        }
+      }, {
+        selector: {
+          type: "simple"
+        }
+      });
+      // update product variants visibility
+      updateVariantProductField(variants, "isVisible", !product.isVisible);
+      // if collection updated we return new `isVisible` state
+      return res === 1 &amp;&amp; !product.isVisible;
+    }
+    Logger.debug("invalid product visibility ", productId);
+    throw new Meteor.Error("Bad Request");
+  },
+
+  /**
+   * @name toggleVisibility
+   * @memberof Meteor/Product
+   * @method
+   * @summary publish (visibility) of product
+   * @todo hook into publishing flow
+   * @param {String} productId - productId
+   * @return {Boolean} product.isVisible
+   */
+  "products/toggleVisibility": function (productId) {
+    check(productId, String);
+
+    // Check first if Product exists and then if user has the proper rights
+    const product = Products.findOne(productId);
+    if (!product) {
+      throw new Meteor.Error("Product not found");
+    } else if (!Reaction.hasPermission("createProduct", this.userId, product.shopId)) {
+      throw new Meteor.Error("Access Denied");
+    }
+
+    const res = Products.update(productId, {
+      $set: {
+        isVisible: !product.isVisible
+      }
+    }, {
+      selector: {
+        type: product.type
+      }
+    });
+
+    if (Array.isArray(product.ancestors) &amp;&amp; product.ancestors.length) {
+      const updateId = product.ancestors[0] || product._id;
+      const updatedPriceRange = ReactionProduct.getProductPriceRange(updateId);
+
+      Meteor.call("products/updateProductField", updateId, "price", updatedPriceRange);
+    }
+
+    // if collection updated we return new `isVisible` state
+    return res === 1 &amp;&amp; !product.isVisible;
+  }
+});
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

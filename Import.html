@@ -1,0 +1,2768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Import - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="AddEmail.html">AddEmail</a><ul class='methods'><li data-type='method'><a href="AddEmail.html#handleSubmit">handleSubmit</a></li></ul></li><li><a href="FS.Store.GridFS.html">GridFS</a></li><li><a href="global.html#Invoice">Invoice</a><ul class='methods'><li data-type='method'><a href="global.html#Invoice#formatDate">formatDate</a></li><li data-type='method'><a href="global.html#Invoice#renderConditionalDisplay">renderConditionalDisplay</a></li><li data-type='method'><a href="global.html#Invoice#renderDiscountForm">renderDiscountForm</a></li><li data-type='method'><a href="global.html#Invoice#renderInvoice">renderInvoice</a></li><li data-type='method'><a href="global.html#Invoice#renderRefundsInfo">renderRefundsInfo</a></li><li data-type='method'><a href="global.html#Invoice#renderTotal">renderTotal</a></li></ul></li><li><a href="InvoiceActions.html">InvoiceActions</a></li><li><a href="LineItems.html">LineItems</a></li><li><a href="OrderSearch.html">OrderSearch</a></li><li><a href="global.html#Products">Products</a><ul class='methods'><li data-type='method'><a href="global.html#Products#render">render</a></li><li data-type='method'><a href="global.html#Products#renderLoadMoreProductsButton">renderLoadMoreProductsButton</a></li><li data-type='method'><a href="global.html#Products#renderNotFound">renderNotFound</a></li><li data-type='method'><a href="global.html#Products#renderProductGrid">renderProductGrid</a></li><li data-type='method'><a href="global.html#Products#renderSpinner">renderSpinner</a></li></ul></li><li><a href="ReactiveAggregate.html">ReactiveAggregate</a></li><li><a href="Router.html">Router</a><ul class='members'><li data-type='member'><a href="Router.html#._routes">_routes</a></li><li data-type='member'><a href="Router.html#.triggers">triggers</a></li><li data-type='member'><a href="Router.html#_initialized">_initialized</a></li><li data-type='member'><a href="Router.html#activeClassName">activeClassName</a></li><li data-type='member'><a href="Router.html#history">history</a></li><li data-type='member'><a href="Router.html#Hooks">Hooks</a></li><li data-type='member'><a href="Router.html#routes">routes</a></li></ul><ul class='methods'><li data-type='method'><a href="Router.html#.current">current</a></li><li data-type='method'><a href="Router.html#.getParam">getParam</a></li><li data-type='method'><a href="Router.html#.getQueryParam">getQueryParam</a></li><li data-type='method'><a href="Router.html#.getRouteName">getRouteName</a></li><li data-type='method'><a href="Router.html#.go">go</a></li><li data-type='method'><a href="Router.html#.initPackageRoutes">initPackageRoutes</a></li><li data-type='method'><a href="Router.html#.isActiveClassName">isActiveClassName</a></li><li data-type='method'><a href="Router.html#.pathFor">pathFor</a></li><li data-type='method'><a href="Router.html#.ready">ready</a></li><li data-type='method'><a href="Router.html#.reload">reload</a></li><li data-type='method'><a href="Router.html#.replace">replace</a></li><li data-type='method'><a href="Router.html#.setCurrentRoute">setCurrentRoute</a></li><li data-type='method'><a href="Router.html#.setQueryParams">setQueryParams</a></li><li data-type='method'><a href="Router.html#.triggerRouterReady">triggerRouterReady</a></li><li data-type='method'><a href="Router.html#.watchPathChange">watchPathChange</a></li></ul></li><li><a href="Validation.html">Validation</a><ul class='methods'><li data-type='method'><a href="Validation.html#validate">validate</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-components.html">components</a><ul class='members'><li data-type='member'><a href="module-components.html#.getHOCs">getHOCs</a></li><li data-type='member'><a href="module-components.html#.getRawComponent">getRawComponent</a></li></ul><ul class='methods'><li data-type='method'><a href="module-components.html#.composeWithTracker">composeWithTracker</a></li><li data-type='method'><a href="module-components.html#.copyHOCs">copyHOCs</a></li><li data-type='method'><a href="module-components.html#.getComponent">getComponent</a></li><li data-type='method'><a href="module-components.html#.loadRegisteredComponents">loadRegisteredComponents</a></li><li data-type='method'><a href="module-components.html#.registerComponent">registerComponent</a></li><li data-type='method'><a href="module-components.html#.registerHOC">registerHOC</a></li><li data-type='method'><a href="module-components.html#.replaceComponent">replaceComponent</a></li><li data-type='method'><a href="module-components.html#.withCurrentAccount">withCurrentAccount</a></li><li data-type='method'><a href="module-components.html#.withCurrentUser">withCurrentUser</a></li><li data-type='method'><a href="module-components.html#.withIsAdmin">withIsAdmin</a></li><li data-type='method'><a href="module-components.html#.withIsOwner">withIsOwner</a></li><li data-type='method'><a href="module-components.html#.withPermissions">withPermissions</a></li><li data-type='method'><a href="module-components.html#~getTrackerLoader">getTrackerLoader</a></li></ul></li><li><a href="module-connectors-shopify.html">connectors-shopify</a><ul class='methods'><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/api/products/count">connectors/shopify/api/products/count</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/import/products">connectors/shopify/import/products</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/orders/created">connectors/shopify/sync/orders/created</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/setup">connectors/shopify/sync/setup</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/sync/teardown">connectors/shopify/sync/teardown</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/create">connectors/shopify/webhooks/create</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/delete">connectors/shopify/webhooks/delete</a></li><li data-type='method'><a href="module-connectors-shopify.html#~connectors/shopify/webhooks/deleteAll">connectors/shopify/webhooks/deleteAll</a></li></ul></li><li><a href="module-ReactionAlerts.html">ReactionAlerts</a><ul class='methods'><li data-type='method'><a href="module-ReactionAlerts.html#~alert">alert</a></li></ul></li><li><a href="module-SortableTable.html">SortableTable</a></li><li><a href="module-Translations.html">Translations</a></li></ul><h3>Namespaces</h3><ul><li><a href="FS.TempStore.html">TempStore</a><ul class='methods'><li data-type='method'><a href="FS.TempStore.html#.createReadStream">createReadStream</a></li><li data-type='method'><a href="FS.TempStore.html#.createWriteStream">createWriteStream</a></li><li data-type='method'><a href="FS.TempStore.html#.exists">exists</a></li><li data-type='method'><a href="FS.TempStore.html#.listParts">listParts</a></li><li data-type='method'><a href="FS.TempStore.html#.removeAll">removeAll</a></li><li data-type='method'><a href="FS.TempStore.html#.removeFile">removeFile</a></li></ul></li><li><a href="Hooks.Events.html">Events</a><ul class='methods'><li data-type='method'><a href="Hooks.Events.html#.add">add</a></li><li data-type='method'><a href="Hooks.Events.html#.remove">remove</a></li><li data-type='method'><a href="Hooks.Events.html#.run">run</a></li><li data-type='method'><a href="Hooks.Events.html#.runAsync">runAsync</a></li></ul></li><li><a href="Import.html">Import</a><ul class='methods'><li data-type='method'><a href="Import.html#.buffer">buffer</a></li><li data-type='method'><a href="Import.html#.commit">commit</a></li><li data-type='method'><a href="Import.html#.context">context</a></li><li data-type='method'><a href="Import.html#.flush">flush</a></li><li data-type='method'><a href="Import.html#.identify">identify</a></li><li data-type='method'><a href="Import.html#.layout">layout</a></li><li data-type='method'><a href="Import.html#.object">object</a></li><li data-type='method'><a href="Import.html#.package">package</a></li><li data-type='method'><a href="Import.html#.process">process</a></li><li data-type='method'><a href="Import.html#.product">product</a></li><li data-type='method'><a href="Import.html#.shipping">shipping</a></li><li data-type='method'><a href="Import.html#.shop">shop</a></li><li data-type='method'><a href="Import.html#.tag">tag</a></li><li data-type='method'><a href="Import.html#.template">template</a></li><li data-type='method'><a href="Import.html#.translation">translation</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#%2522cart/addToCart%2522">"cart/addToCart"</a></li><li><a href="global.html#%2522cart/createCart%2522">"cart/createCart"</a></li><li><a href="global.html#%2522cart/mergeCart%2522">"cart/mergeCart"</a></li><li><a href="global.html#%2522cart/removeFromCart%2522">"cart/removeFromCart"</a></li><li><a href="global.html#%2522cart/resetShipmentMethod%2522">"cart/resetShipmentMethod"</a></li><li><a href="global.html#%2522cart/setPaymentAddress%2522">"cart/setPaymentAddress"</a></li><li><a href="global.html#%2522cart/setShipmentAddress%2522">"cart/setShipmentAddress"</a></li><li><a href="global.html#%2522cart/setShipmentMethod%2522">"cart/setShipmentMethod"</a></li><li><a href="global.html#%2522cart/setUserCurrency%2522">"cart/setUserCurrency"</a></li><li><a href="global.html#%2522cart/submitPayment%2522">"cart/submitPayment"</a></li><li><a href="global.html#%2522cart/unsetAddresses%2522">"cart/unsetAddresses"</a></li><li><a href="global.html#%2522changeinput.checkbox-switch.connector-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.connector-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput.checkbox-switch.shipping-settings%255Bname=enabled%255D%2522">"change input.checkbox-switch.shipping-settings[name=enabled]"</a></li><li><a href="global.html#%2522changeinput%255Bname=enabled%255D%2522">"change input[name=enabled]"</a></li><li><a href="global.html#%2522click.js-paypal-express-checkout%2522">"click .js-paypal-express-checkout"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=cancelOrder%255D%2522">"click [data-event-action=cancelOrder]"</a></li><li><a href="global.html#%2522click%255Bdata-event-action=showSecret%255D%2522">"click [data-event-action=showSecret]"</a></li><li><a href="global.html#%2522email/saveSettings%2522">"email/saveSettings"</a></li><li><a href="global.html#%2522email/verifySettings%2522">"email/verifySettings"</a></li><li><a href="global.html#%2522emails/retryFailed%2522">"emails/retryFailed"</a></li><li><a href="global.html#%2522example/payment/capture%2522">"example/payment/capture"</a></li><li><a href="global.html#%2522example/refund/create%2522">"example/refund/create"</a></li><li><a href="global.html#%2522example/refund/list%2522">"example/refund/list"</a></li><li><a href="global.html#%2522group/addUser%2522">"group/addUser"</a></li><li><a href="global.html#%2522group/createGroup%2522">"group/createGroup"</a></li><li><a href="global.html#%2522group/removeUser%2522">"group/removeUser"</a></li><li><a href="global.html#%2522group/updateGroup%2522">"group/updateGroup"</a></li><li><a href="global.html#%2522i18n/addTranslation%2522">"i18n/addTranslation"</a></li><li><a href="global.html#%2522i18n/flushTranslations%2522">"i18n/flushTranslations"</a></li><li><a href="global.html#%2522inventory/addReserve%2522">"inventory/addReserve"</a></li><li><a href="global.html#%2522inventory/backorder%2522">"inventory/backorder"</a></li><li><a href="global.html#%2522inventory/clearReserve%2522">"inventory/clearReserve"</a></li><li><a href="global.html#%2522inventory/clearStatus%2522">"inventory/clearStatus"</a></li><li><a href="global.html#%2522inventory/remove%2522">"inventory/remove"</a></li><li><a href="global.html#%2522inventory/return%2522">"inventory/return"</a></li><li><a href="global.html#%2522inventory/returnToStock%2522">"inventory/returnToStock"</a></li><li><a href="global.html#%2522inventory/setStatus%2522">"inventory/setStatus"</a></li><li><a href="global.html#%2522inventory/shipped%2522">"inventory/shipped"</a></li><li><a href="global.html#%2522inventory/sold%2522">"inventory/sold"</a></li><li><a href="global.html#%2522notification/delete%2522">"notification/delete"</a></li><li><a href="global.html#%2522notification/markOneAsRead%2522">"notification/markOneAsRead"</a></li><li><a href="global.html#%2522notification/send%2522">"notification/send"</a></li><li><a href="global.html#%2522products/archiveProduct%2522">"products/archiveProduct"</a></li><li><a href="global.html#%2522products/cloneProduct%2522">"products/cloneProduct"</a></li><li><a href="global.html#%2522products/cloneVariant%2522">"products/cloneVariant"</a></li><li><a href="global.html#%2522products/createProduct%2522">"products/createProduct"</a></li><li><a href="global.html#%2522products/createVariant%2522">"products/createVariant"</a></li><li><a href="global.html#%2522products/deleteVariant%2522">"products/deleteVariant"</a></li><li><a href="global.html#%2522products/publishProduct%2522">"products/publishProduct"</a></li><li><a href="global.html#%2522products/removeMetaFields%2522">"products/removeMetaFields"</a></li><li><a href="global.html#%2522products/removeProductTag%2522">"products/removeProductTag"</a></li><li><a href="global.html#%2522products/setHandle%2522">"products/setHandle"</a></li><li><a href="global.html#%2522products/setHandleTag%2522">"products/setHandleTag"</a></li><li><a href="global.html#%2522products/toggleVisibility%2522">"products/toggleVisibility"</a></li><li><a href="global.html#%2522products/updateMetaFields%2522">"products/updateMetaFields"</a></li><li><a href="global.html#%2522products/updateProductField%2522">"products/updateProductField"</a></li><li><a href="global.html#%2522products/updateProductPosition%2522">"products/updateProductPosition"</a></li><li><a href="global.html#%2522products/updateProductTags%2522">"products/updateProductTags"</a></li><li><a href="global.html#%2522products/updateVariant%2522">"products/updateVariant"</a></li><li><a href="global.html#%2522products/updateVariantsPosition%2522">"products/updateVariantsPosition"</a></li><li><a href="global.html#%2522reaction/getUserId%2522">"reaction/getUserId"</a></li><li><a href="global.html#%2522shop/createShop%2522">"shop/createShop"</a></li><li><a href="global.html#%2522shop/createTag%2522">"shop/createTag"</a></li><li><a href="global.html#%2522shop/fetchCurrencyRate%2522">"shop/fetchCurrencyRate"</a></li><li><a href="global.html#%2522shop/flushCurrencyRate%2522">"shop/flushCurrencyRate"</a></li><li><a href="global.html#%2522shop/getCurrencyRates%2522">"shop/getCurrencyRates"</a></li><li><a href="global.html#%2522shop/getLocale%2522">"shop/getLocale"</a></li><li><a href="global.html#%2522shop/getWorkflow%2522">"shop/getWorkflow"</a></li><li><a href="global.html#%2522shop/hideHeaderTag%2522">"shop/hideHeaderTag"</a></li><li><a href="global.html#%2522shop/locateAddress%2522">"shop/locateAddress"</a></li><li><a href="global.html#%2522shop/removeHeaderTag%2522">"shop/removeHeaderTag"</a></li><li><a href="global.html#%2522shop/updateBrandAssets%2522">"shop/updateBrandAssets"</a></li><li><a href="global.html#%2522shop/updateCurrencyConfiguration%2522">"shop/updateCurrencyConfiguration"</a></li><li><a href="global.html#%2522shop/updateHeaderTags%2522">"shop/updateHeaderTags"</a></li><li><a href="global.html#%2522shop/updateLanguageConfiguration%2522">"shop/updateLanguageConfiguration"</a></li><li><a href="global.html#%2522shop/updateShopExternalServices%2522">"shop/updateShopExternalServices"</a></li><li><a href="global.html#%2522sms/saveSettings%2522">"sms/saveSettings"</a></li><li><a href="global.html#%2522sms/send%2522">"sms/send"</a></li><li><a href="global.html#%2522submitform%2522">"submit form"</a></li><li><a href="global.html#%2522taxcloud/getTaxCodes%2522">"taxcloud/getTaxCodes"</a></li><li><a href="global.html#%2522workflow/coreOrderWorkflow/coreOrderCompleted%2522">"workflow/coreOrderWorkflow/coreOrderCompleted"</a></li><li><a href="global.html#%2522workflow/coreOrderWorkflow/coreOrderProcessing%2522">"workflow/coreOrderWorkflow/coreOrderProcessing"</a></li><li><a href="global.html#%2522workflow/pullOrderWorkflow%2522">"workflow/pullOrderWorkflow"</a></li><li><a href="global.html#%2522workflow/pushCartWorkflow%2522">"workflow/pushCartWorkflow"</a></li><li><a href="global.html#%2522workflow/pushOrderWorkflow%2522">"workflow/pushOrderWorkflow"</a></li><li><a href="global.html#%2522workflow/revertCartWorkflow%2522">"workflow/revertCartWorkflow"</a></li><li><a href="global.html#Accounts">Accounts</a></li><li><a href="global.html#addBodyClasses">addBodyClasses</a></li><li><a href="global.html#Address">Address</a></li><li><a href="global.html#addressBookAdd">addressBookAdd</a></li><li><a href="global.html#addressBookRemove">addressBookRemove</a></li><li><a href="global.html#addressBookUpdate">addressBookUpdate</a></li><li><a href="global.html#addRolesToGroups">addRolesToGroups</a></li><li><a href="global.html#addTag">addTag</a></li><li><a href="global.html#addUserPermissions">addUserPermissions</a></li><li><a href="global.html#approvePayment">approvePayment</a></li><li><a href="global.html#Assets">Assets</a></li><li><a href="global.html#assignOwnerRoles">assignOwnerRoles</a></li><li><a href="global.html#AuthNetPackageConfig">AuthNetPackageConfig</a></li><li><a href="global.html#avaGet">avaGet</a></li><li><a href="global.html#AvalaraPackageConfig">AvalaraPackageConfig</a></li><li><a href="global.html#avaPost">avaPost</a></li><li><a href="global.html#baseOrder">baseOrder</a></li><li><a href="global.html#BraintreePackageConfig">BraintreePackageConfig</a></li><li><a href="global.html#BrandAsset">BrandAsset</a></li><li><a href="global.html#capturePayments">capturePayments</a></li><li><a href="global.html#cardProps">cardProps</a></li><li><a href="global.html#Cart">Cart</a></li><li><a href="global.html#cart/setAnonymousUserEmail">cart/setAnonymousUserEmail</a></li><li><a href="global.html#cartCount">cartCount</a></li><li><a href="global.html#cartDiscounts">cartDiscounts</a></li><li><a href="global.html#CartItem">CartItem</a></li><li><a href="global.html#CartItems">CartItems</a></li><li><a href="global.html#cartOrderTransform">cartOrderTransform</a></li><li><a href="global.html#cartShipmentMethods">cartShipmentMethods</a></li><li><a href="global.html#cartShipping">cartShipping</a></li><li><a href="global.html#cartShippingQuotes">cartShippingQuotes</a></li><li><a href="global.html#cartSubtotal">cartSubtotal</a></li><li><a href="global.html#cartTaxes">cartTaxes</a></li><li><a href="global.html#cartToSalesOrder">cartToSalesOrder</a></li><li><a href="global.html#cartTotal">cartTotal</a></li><li><a href="global.html#changeMarketplaceOwner">changeMarketplaceOwner</a></li><li><a href="global.html#checkConfiguration">checkConfiguration</a></li><li><a href="global.html#checked">checked</a></li><li><a href="global.html#checkout">checkout</a></li><li><a href="global.html#cleanupAvalaraJobs">cleanupAvalaraJobs</a></li><li><a href="global.html#collectDropSource">collectDropSource</a></li><li><a href="global.html#compareAddress">compareAddress</a></li><li><a href="global.html#compileHandlebarsTemplate">compileHandlebarsTemplate</a></li><li><a href="global.html#CompletedOrder">CompletedOrder</a></li><li><a href="global.html#CompletedOrderItem">CompletedOrderItem</a></li><li><a href="global.html#CompletedOrderPaymentMethod">CompletedOrderPaymentMethod</a></li><li><a href="global.html#CompletedOrderSummary">CompletedOrderSummary</a></li><li><a href="global.html#CompletedShopOrders">CompletedShopOrders</a></li><li><a href="global.html#copyCartToOrder">copyCartToOrder</a></li><li><a href="global.html#copyMedia">copyMedia</a></li><li><a href="global.html#CorePackageConfig">CorePackageConfig</a></li><li><a href="global.html#Countries">Countries</a></li><li><a href="global.html#createCountryCollection">createCountryCollection</a></li><li><a href="global.html#createFallbackLoginToken">createFallbackLoginToken</a></li><li><a href="global.html#createHandle">createHandle</a></li><li><a href="global.html#createRefund">createRefund</a></li><li><a href="global.html#createTitle">createTitle</a></li><li><a href="global.html#Currency">Currency</a></li><li><a href="global.html#CustomEmailSettings">CustomEmailSettings</a></li><li><a href="global.html#DEFAULT_FILTER_NAME">DEFAULT_FILTER_NAME</a></li><li><a href="global.html#DEFAULT_LAYOUT">DEFAULT_LAYOUT</a></li><li><a href="global.html#denormalize">denormalize</a></li><li><a href="global.html#DiscountCodes">DiscountCodes</a></li><li><a href="global.html#DiscountCodesPackageConfig">DiscountCodesPackageConfig</a></li><li><a href="global.html#DiscountRates">DiscountRates</a></li><li><a href="global.html#DiscountRatesPackageConfig">DiscountRatesPackageConfig</a></li><li><a href="global.html#Discounts">Discounts</a></li><li><a href="global.html#DiscountsPackageConfig">DiscountsPackageConfig</a></li><li><a href="global.html#displayEmail">displayEmail</a></li><li><a href="global.html#displayName">displayName</a></li><li><a href="global.html#Document">Document</a></li><li><a href="global.html#doesUserExist">doesUserExist</a></li><li><a href="global.html#doRightJoinNoIntersection">doRightJoinNoIntersection</a></li><li><a href="global.html#EditButton">EditButton</a></li><li><a href="global.html#Emails">Emails</a></li><li><a href="global.html#EmailTemplates">EmailTemplates</a></li><li><a href="global.html#Event">Event</a></li><li><a href="global.html#exampleSubmit">exampleSubmit</a></li><li><a href="global.html#expressCheckoutSettingsValid">expressCheckoutSettingsValid</a></li><li><a href="global.html#filterShippingStatus">filterShippingStatus</a></li><li><a href="global.html#filterWorkflowStatus">filterWorkflowStatus</a></li><li><a href="global.html#findCurrency">findCurrency</a></li><li><a href="global.html#findProductMedia">findProductMedia</a></li><li><a href="global.html#flushQuantity">flushQuantity</a></li><li><a href="global.html#formatPriceString">formatPriceString</a></li><li><a href="global.html#fulfillmentNumber">fulfillmentNumber</a></li><li><a href="global.html#GeoCoder">GeoCoder</a></li><li><a href="global.html#getAbsoluteUrl">getAbsoluteUrl</a></li><li><a href="global.html#getAuthData">getAuthData</a></li><li><a href="global.html#getBillingInfo">getBillingInfo</a></li><li><a href="global.html#getBrowserLanguage">getBrowserLanguage</a></li><li><a href="global.html#getCardType">getCardType</a></li><li><a href="global.html#getCartItem">getCartItem</a></li><li><a href="global.html#getCurrentShop">getCurrentShop</a></li><li><a href="global.html#getCurrentShopCursor">getCurrentShopCursor</a></li><li><a href="global.html#getCurrentTag">getCurrentTag</a></li><li><a href="global.html#getDiscountsByShop">getDiscountsByShop</a></li><li><a href="global.html#getGuestLoginState">getGuestLoginState</a></li><li><a href="global.html#getInvitableGroups">getInvitableGroups</a></li><li><a href="global.html#getItemsByShop">getItemsByShop</a></li><li><a href="global.html#getLabelsFor">getLabelsFor</a></li><li><a href="global.html#getMailConfig">getMailConfig</a></li><li><a href="global.html#getMailUrl">getMailUrl</a></li><li><a href="global.html#getMarketplaceSettings">getMarketplaceSettings</a></li><li><a href="global.html#getMarketplaceSettingsFromPackages">getMarketplaceSettingsFromPackages</a></li><li><a href="global.html#getMessagesFor">getMessagesFor</a></li><li><a href="global.html#getPackageSettingsWithOptions">getPackageSettingsWithOptions</a></li><li><a href="global.html#getPaymentMethod">getPaymentMethod</a></li><li><a href="global.html#getPublishedOrRevision">getPublishedOrRevision</a></li><li><a href="global.html#getRegistryDomain">getRegistryDomain</a></li><li><a href="global.html#getRegistryRouteName">getRegistryRouteName</a></li><li><a href="global.html#getRouteName">getRouteName</a></li><li><a href="global.html#getSchemas">getSchemas</a></li><li><a href="global.html#getSellerShop">getSellerShop</a></li><li><a href="global.html#getSellerShopId">getSellerShopId</a></li><li><a href="global.html#getSessionCarts">getSessionCarts</a></li><li><a href="global.html#getShippingByShop">getShippingByShop</a></li><li><a href="global.html#getShippingInfo">getShippingInfo</a></li><li><a href="global.html#getShippingRates">getShippingRates</a></li><li><a href="global.html#getShopId">getShopId</a></li><li><a href="global.html#getShopName">getShopName</a></li><li><a href="global.html#getShopPrefix">getShopPrefix</a></li><li><a href="global.html#getShopSummary">getShopSummary</a></li><li><a href="global.html#getShopsWithRoles">getShopsWithRoles</a></li><li><a href="global.html#getSiblings">getSiblings</a></li><li><a href="global.html#getSlug">getSlug</a></li><li><a href="global.html#getstaleCarts">getstaleCarts</a></li><li><a href="global.html#getSubject">getSubject</a></li><li><a href="global.html#getSubtotalByShop">getSubtotalByShop</a></li><li><a href="global.html#getSummary">getSummary</a></li><li><a href="global.html#getTargetAccount">getTargetAccount</a></li><li><a href="global.html#getTaxesByShop">getTaxesByShop</a></li><li><a href="global.html#getTaxSettings">getTaxSettings</a></li><li><a href="global.html#getTemplate">getTemplate</a></li><li><a href="global.html#getTemplateFile">getTemplateFile</a></li><li><a href="global.html#getTopVariants">getTopVariants</a></li><li><a href="global.html#getTotalByShop">getTotalByShop</a></li><li><a href="global.html#getUniquePaymentMethods">getUniquePaymentMethods</a></li><li><a href="global.html#getUrl">getUrl</a></li><li><a href="global.html#getUser">getUser</a></li><li><a href="global.html#getValidator">getValidator</a></li><li><a href="global.html#getVariantParent">getVariantParent</a></li><li><a href="global.html#getVariants">getVariants</a></li><li><a href="global.html#Groups">Groups</a></li><li><a href="global.html#GroupsTableButton">GroupsTableButton</a></li><li><a href="global.html#Handle">Handle</a></li><li><a href="global.html#handleEmailSubmit">handleEmailSubmit</a></li><li><a href="global.html#handleFieldChange">handleFieldChange</a></li><li><a href="global.html#handleOpenShortcut">handleOpenShortcut</a></li><li><a href="global.html#handleShopSelectChange">handleShopSelectChange</a></li><li><a href="global.html#handleShowDashboard">handleShowDashboard</a></li><li><a href="global.html#handleShowPackage">handleShowPackage</a></li><li><a href="global.html#hasAdminAccess">hasAdminAccess</a></li><li><a href="global.html#History">History</a></li><li><a href="global.html#Hook">Hook</a></li><li><a href="global.html#Hooks">Hooks</a></li><li><a href="global.html#i18nextDep">i18nextDep</a></li><li><a href="global.html#Inventory">Inventory</a></li><li><a href="global.html#inviteShopMember">inviteShopMember</a></li><li><a href="global.html#inviteShopOwner">inviteShopOwner</a></li><li><a href="global.html#isAdmin">isAdmin</a></li><li><a href="global.html#isBackorder">isBackorder</a></li><li><a href="global.html#isCompleted">isCompleted</a></li><li><a href="global.html#isConfigured">isConfigured</a></li><li><a href="global.html#isCustomValue">isCustomValue</a></li><li><a href="global.html#isLowQuantity">isLowQuantity</a></li><li><a href="global.html#isObject">isObject</a></li><li><a href="global.html#isOwnerOfProfile">isOwnerOfProfile</a></li><li><a href="global.html#isPackageEnabled">isPackageEnabled</a></li><li><a href="global.html#isPending">isPending</a></li><li><a href="global.html#isShopGuest">isShopGuest</a></li><li><a href="global.html#isShopMember">isShopMember</a></li><li><a href="global.html#isSoldOut">isSoldOut</a></li><li><a href="global.html#Jobs">Jobs</a></li><li><a href="global.html#label">label</a></li><li><a href="global.html#Languages">Languages</a></li><li><a href="global.html#LayoutStructure">LayoutStructure</a></li><li><a href="global.html#listRefunds">listRefunds</a></li><li><a href="global.html#loadCoreTranslations">loadCoreTranslations</a></li><li><a href="global.html#loadMoreProducts">loadMoreProducts</a></li><li><a href="global.html#loadSettings">loadSettings</a></li><li><a href="global.html#loadTranslation">loadTranslation</a></li><li><a href="global.html#loadTranslations">loadTranslations</a></li><li><a href="global.html#Locale">Locale</a></li><li><a href="global.html#Logs">Logs</a></li><li><a href="global.html#Media">Media</a></li><li><a href="global.html#members">members</a></li><li><a href="global.html#mergeDeep">mergeDeep</a></li><li><a href="global.html#MetaData">MetaData</a></li><li><a href="global.html#metaField">metaField</a></li><li><a href="global.html#Metafield">Metafield</a></li><li><a href="global.html#methods">methods</a></li><li><a href="global.html#normalizeAddresses">normalizeAddresses</a></li><li><a href="global.html#normalizeMode">normalizeMode</a></li><li><a href="global.html#normalizeStatus">normalizeStatus</a></li><li><a href="global.html#Notes">Notes</a></li><li><a href="global.html#NotFound">NotFound</a></li><li><a href="global.html#Notifications">Notifications</a></li><li><a href="global.html#ns">ns</a></li><li><a href="global.html#onCalculateStripeApplicationFee">onCalculateStripeApplicationFee</a></li><li><a href="global.html#Order">Order</a></li><li><a href="global.html#order">order</a></li><li><a href="global.html#ORDER_LIST_FILTERS_PREFERENCE_NAME">ORDER_LIST_FILTERS_PREFERENCE_NAME</a></li><li><a href="global.html#ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME">ORDER_LIST_SELECTED_ORDER_PREFERENCE_NAME</a></li><li><a href="global.html#orderCount">orderCount</a></li><li><a href="global.html#orderCreditMethod">orderCreditMethod</a></li><li><a href="global.html#orderDiscounts">orderDiscounts</a></li><li><a href="global.html#orderFulfillmentData">orderFulfillmentData</a></li><li><a href="global.html#OrderItem">OrderItem</a></li><li><a href="global.html#Orders">Orders</a></li><li><a href="global.html#orderShipping">orderShipping</a></li><li><a href="global.html#ordersInventoryAdjust">ordersInventoryAdjust</a></li><li><a href="global.html#ordersInventoryAdjustByShop">ordersInventoryAdjustByShop</a></li><li><a href="global.html#orderSubTotal">orderSubTotal</a></li><li><a href="global.html#orderTaxes">orderTaxes</a></li><li><a href="global.html#orderToSalesInvoice">orderToSalesInvoice</a></li><li><a href="global.html#orderTotal">orderTotal</a></li><li><a href="global.html#OrderTransaction">OrderTransaction</a></li><li><a href="global.html#PACKAGE_NAME">PACKAGE_NAME</a></li><li><a href="global.html#PackageConfig">PackageConfig</a></li><li><a href="global.html#Packages">Packages</a></li><li><a href="global.html#parseError">parseError</a></li><li><a href="global.html#parseRefundReponse">parseRefundReponse</a></li><li><a href="global.html#Payment">Payment</a></li><li><a href="global.html#paymentCapture">paymentCapture</a></li><li><a href="global.html#PaymentItem">PaymentItem</a></li><li><a href="global.html#PaymentMethod">PaymentMethod</a></li><li><a href="global.html#paymentSubmit">paymentSubmit</a></li><li><a href="global.html#Permissions">Permissions</a></li><li><a href="global.html#pkgPermissions">pkgPermissions</a></li><li><a href="global.html#Product">Product</a></li><li><a href="global.html#ProductPosition">ProductPosition</a></li><li><a href="global.html#ProductVariant">ProductVariant</a></li><li><a href="global.html#productVariant">productVariant</a></li><li><a href="global.html#quantityProcessing">quantityProcessing</a></li><li><a href="global.html#randomProcessor">randomProcessor</a></li><li><a href="global.html#Reaction">Reaction</a></li><li><a href="global.html#ReactionAvatar">ReactionAvatar</a></li><li><a href="global.html#ReactionLayout">ReactionLayout</a></li><li><a href="global.html#ReactionProduct">ReactionProduct</a></li><li><a href="global.html#registerInventory">registerInventory</a></li><li><a href="global.html#registerSchema">registerSchema</a></li><li><a href="global.html#Registry">Registry</a></li><li><a href="global.html#registry">registry</a></li><li><a href="global.html#removeEmailAddress">removeEmailAddress</a></li><li><a href="global.html#removeMedia">removeMedia</a></li><li><a href="global.html#resetRegisteredTemplates">resetRegisteredTemplates</a></li><li><a href="global.html#Revisions">Revisions</a></li><li><a href="global.html#schemaIdAutoValue">schemaIdAutoValue</a></li><li><a href="global.html#SellerShop">SellerShop</a></li><li><a href="global.html#send">send</a></li><li><a href="global.html#sendResetPasswordEmail">sendResetPasswordEmail</a></li><li><a href="global.html#sendUpdatedVerificationEmail">sendUpdatedVerificationEmail</a></li><li><a href="global.html#sendVerificationEmail">sendVerificationEmail</a></li><li><a href="global.html#sendWelcomeEmail">sendWelcomeEmail</a></li><li><a href="global.html#ServerSessions">ServerSessions</a></li><li><a href="global.html#services">services</a></li><li><a href="global.html#setUserPermissions">setUserPermissions</a></li><li><a href="global.html#Shipment">Shipment</a></li><li><a href="global.html#ShipmentQuote">ShipmentQuote</a></li><li><a href="global.html#ShipmentQuotesQueryStatus">ShipmentQuotesQueryStatus</a></li><li><a href="global.html#Shipping">Shipping</a></li><li><a href="global.html#ShippingMethod">ShippingMethod</a></li><li><a href="global.html#ShippingPackageConfig">ShippingPackageConfig</a></li><li><a href="global.html#ShippingParcel">ShippingParcel</a></li><li><a href="global.html#ShippingProvider">ShippingProvider</a></li><li><a href="global.html#shippingStates">shippingStates</a></li><li><a href="global.html#shippingStatus">shippingStatus</a></li><li><a href="global.html#ShippoShipment">ShippoShipment</a></li><li><a href="global.html#ShippoShippingMethod">ShippoShippingMethod</a></li><li><a href="global.html#ShippoShippingProvider">ShippoShippingProvider</a></li><li><a href="global.html#Shop">Shop</a></li><li><a href="global.html#shopDefaultCountry">shopDefaultCountry</a></li><li><a href="global.html#shopIdAutoValue">shopIdAutoValue</a></li><li><a href="global.html#shopIdAutoValueForCart">shopIdAutoValueForCart</a></li><li><a href="global.html#ShopOrderSummary">ShopOrderSummary</a></li><li><a href="global.html#Shops">Shops</a></li><li><a href="global.html#ShopTheme">ShopTheme</a></li><li><a href="global.html#showAvalaraTaxSettings">showAvalaraTaxSettings</a></li><li><a href="global.html#showMerchantSignup">showMerchantSignup</a></li><li><a href="global.html#shown">shown</a></li><li><a href="global.html#showVariant">showVariant</a></li><li><a href="global.html#Sms">Sms</a></li><li><a href="global.html#stripeCaptureCharge">stripeCaptureCharge</a></li><li><a href="global.html#syncUsersAndAccounts">syncUsersAndAccounts</a></li><li><a href="global.html#Tag">Tag</a></li><li><a href="global.html#TagHelpers">TagHelpers</a></li><li><a href="global.html#Tags">Tags</a></li><li><a href="global.html#TaxCloudPackageConfig">TaxCloudPackageConfig</a></li><li><a href="global.html#TaxCodes">TaxCodes</a></li><li><a href="global.html#TaxEntityCodes">TaxEntityCodes</a></li><li><a href="global.html#Taxes">Taxes</a></li><li><a href="global.html#TaxJarPackageConfig">TaxJarPackageConfig</a></li><li><a href="global.html#TaxPackageConfig">TaxPackageConfig</a></li><li><a href="global.html#TaxRates">TaxRates</a></li><li><a href="global.html#TaxSettings">TaxSettings</a></li><li><a href="global.html#Templates">Templates</a></li><li><a href="global.html#Themes">Themes</a></li><li><a href="global.html#thisApp">thisApp</a></li><li><a href="global.html#toCamelCase">toCamelCase</a></li><li><a href="global.html#toDenormalize">toDenormalize</a></li><li><a href="global.html#toggleSession">toggleSession</a></li><li><a href="global.html#ToolbarGroup">ToolbarGroup</a></li><li><a href="global.html#ToolbarText">ToolbarText</a></li><li><a href="global.html#transform">transform</a></li><li><a href="global.html#translateRegistry">translateRegistry</a></li><li><a href="global.html#Translations">Translations</a></li><li><a href="global.html#type">type</a></li><li><a href="global.html#UpdateEmail">UpdateEmail</a></li><li><a href="global.html#updateEmailAddress">updateEmailAddress</a></li><li><a href="global.html#updateInventoryPolicyIfChildVariants">updateInventoryPolicyIfChildVariants</a></li><li><a href="global.html#updateMediaPriorities">updateMediaPriorities</a></li><li><a href="global.html#updateVariantProductField">updateVariantProductField</a></li><li><a href="global.html#user">user</a></li><li><a href="global.html#userHasPassword">userHasPassword</a></li><li><a href="global.html#userOrders">userOrders</a></li><li><a href="global.html#validateAddress">validateAddress</a></li><li><a href="global.html#valueForField">valueForField</a></li><li><a href="global.html#VariantMedia">VariantMedia</a></li><li><a href="global.html#verifyAccount">verifyAccount</a></li><li><a href="global.html#verifyConfig">verifyConfig</a></li><li><a href="global.html#VisibilityButton">VisibilityButton</a></li><li><a href="global.html#Workflow">Workflow</a></li><li><a href="global.html#workflowStatus">workflowStatus</a></li><li><a href="global.html#writeJsonToBody">writeJsonToBody</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Import</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Import
+        </h2>
+        
+    
+</header>
+
+<article>
+    <div class="container-overview">
+    
+        
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-author">Author:</dt>
+    <dd class="tag-author">
+        <ul>
+            <li>Tom De Caluwé</li>
+        </ul>
+    </dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+        
+            <div class="description"><p>Exposes the Import object implementing methods for bulk imports.</p></div>
+        
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+     
+
+    
+
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id=".buffer"><span class="type-signature">(static) </span>buffer<span class="signature">(collection)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>Get an import buffer for a given collection.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line199">line 199</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>collection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The target collection</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>return buffer
+If no buffer is presented, a new one will be constructed.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".commit"><span class="type-signature">(static) </span>commit<span class="signature">(collection)</span><span class="type-signature"> &rarr; {undefined}</span></h4>
+
+    
+    <p class="summary"><p>Commit the buffer for a given collection to the database.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line111">line 111</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>collection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Mongo.Collection</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The target collection to be flushed to disk</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".context"><span class="type-signature">(static) </span>context<span class="signature">(collection, selector<span class="signature-attributes">opt</span>)</span><span class="type-signature"> &rarr; {SimpleSchemaValidationContext}</span></h4>
+
+    
+    <p class="summary"><p>Get a validation context for a given collection.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line176">line 176</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+        <th>Attributes</th>
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>collection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Mongo.Collection</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>The target collection</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>selector</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+                <td class="attributes">
+                
+                    &lt;optional><br>
+                
+
+                
+
+                
+                </td>
+            
+
+            
+
+            <td class="description last"><p>A selector object to retrieve the correct schema.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>A validation context.</p>
+<p>The validation context is requested from the schema associated with the
+collection.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">SimpleSchemaValidationContext</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".flush"><span class="type-signature">(static) </span>flush<span class="signature">(collection)</span><span class="type-signature"> &rarr; {undefined}</span></h4>
+
+    
+    <p class="summary"><p>Process the buffer for a given collection and commit the database.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line157">line 157</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>collection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Mongo.Collection</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>optional - supply a Mongo collection, or leave empty to commit all buffer entries</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".identify"><span class="type-signature">(static) </span>identify<span class="signature">(document)</span><span class="type-signature"> &rarr; {Mongo.Collection}</span></h4>
+
+    
+    <p class="summary"><p>Tries to identify the schema associated with a document.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line69">line 69</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description">
+    <p>Import.identify</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>document</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A document with unknown schema</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+
+        
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        <p>Throws an error if the schema couldn't be determined.</p>
+<p>The algorithm initially assumes the document can be anything. It associates
+with each field in the document a probability that it isn't following some
+schema other than the one the field is associated with.</p>
+<p>Afterwards the schema with the maximal probability is selected. An error is
+thrown if the schema cannot be determined.</p>
+        </div>
+    </dt>
+    <dd></dd>
+    <dt>
+        <dl class="param-type">
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Error</span>
+
+
+            </dd>
+        </dl>
+    </dt>
+    <dd></dd>
+</dl>
+
+
+    
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Returns a MongoDB collection in which the
+document can be inserted.</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Mongo.Collection</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".layout"><span class="type-signature">(static) </span>layout<span class="signature">(layout, shopId)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>store a shop layout in the import buffer</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line303">line 303</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>layout</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>an array of layouts to be added to shop</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>shopId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>shopId</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>this shop</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".object"><span class="type-signature">(static) </span>object<span class="signature">(collection, key, object)</span><span class="type-signature"> &rarr; {undefined}</span></h4>
+
+    
+    <p class="summary"><p>Push a new upsert document to the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line357">line 357</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>collection</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Mongo.Collection</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The target collection</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A key to look up the object</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>object</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The object data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".package"><span class="type-signature">(static) </span>package<span class="signature">(pkg, shopId)</span><span class="type-signature"> &rarr; {undefined}</span></h4>
+
+    
+    <p class="summary"><p>Store a package in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line245">line 245</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>pkg</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The package data to be updated</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>shopId</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The package data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".process"><span class="type-signature">(static) </span>process<span class="signature">(json, keys, callback)</span><span class="type-signature"> &rarr; {undefined}</span></h4>
+
+    
+    <p class="summary"><p>Process a json array of import documents using a callback.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line414">line 414</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>json</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;Object></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>An array containing the import documents</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>keys</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>Fields that should be used as the import key.</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A callback accepting two parameters.
+The callback should accept a key document to consult the database as a first
+parameter and an update document as the second parameter.</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".product"><span class="type-signature">(static) </span>product<span class="signature">(key, product)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>Store a product in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line229">line 229</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A key to look up the product</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>product</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The product data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>Importing a variant currently consists of the following steps:</p>
+<ul>
+<li>Pull the variant from non-matching parent products.</li>
+<li>Push the variant if it doesn't exist.</li>
+<li>Update the variant.</li>
+</ul>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".shipping"><span class="type-signature">(static) </span>shipping<span class="signature">(key, shipping)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>Store shipping in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line319">line 319</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A shipping service key used in combination with provider</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>shipping</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The shipping data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>this shipping</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".shop"><span class="type-signature">(static) </span>shop<span class="signature">(key, shop)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>Store a shop in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line293">line 293</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A key to look up the shop</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>shop</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The shop data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>this shop</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".tag"><span class="type-signature">(static) </span>tag<span class="signature">(key, tag)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>Store a tag in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line346">line 346</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A key to look up the tag</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>tag</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The tag data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>this tag</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".template"><span class="type-signature">(static) </span>template<span class="signature">(templateInfo)</span><span class="type-signature"> &rarr; {undefined}</span></h4>
+
+    
+    <p class="summary"><p>Store a template in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line265">line 265</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>templateInfo</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The template data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">undefined</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+            
+
+    
+
+    <h4 class="name" id=".translation"><span class="type-signature">(static) </span>translation<span class="signature">(key, translation)</span><span class="type-signature"> &rarr; {Object}</span></h4>
+
+    
+    <p class="summary"><p>Store a translation in the import buffer.</p></p>
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="server_api_core_import.js.html">server/api/core/import.js</a>, <a href="server_api_core_import.js.html#line282">line 282</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>key</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>A key to look up the translation</p></td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>translation</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"><p>The translation data to be updated</p></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    <p>updated translation buffer</p>
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
