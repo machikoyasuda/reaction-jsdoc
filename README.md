@@ -1,3 +1,5 @@
+> Note: This repository is archived for read-only reference purposes.
+
 # reaction-jsdoc
 
 ## requirements
